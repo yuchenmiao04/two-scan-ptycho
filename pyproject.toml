@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "two-scan-ptycho"
+version = "0.1.0"
+description = "Two-scan clean-lag recovery for sparse affine ptychography"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+authors = [
+  {name = "Yuchen Miao"},
+  {name = "Mingtai Zhang"},
+  {name = "Zijun Wang"},
+  {name = "Ruobing Han"},
+  {name = "Chang Han"},
+  {name = "Siyang Xu"},
+]
+
+[project.urls]
+Source = "https://github.com/PNemo04/two-scan-ptycho"
+
+[tool.setuptools.packages.find]
+where = ["src"]

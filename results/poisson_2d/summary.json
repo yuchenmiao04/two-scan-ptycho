@@ -1,0 +1,106 @@
+{
+  "seed": 20260802,
+  "trials_per_point": 50,
+  "n": 65,
+  "sparsity": 3,
+  "gamma": 0.015,
+  "lag_box": [
+    12,
+    12
+  ],
+  "scan_centers": [
+    [
+      -2,
+      -1
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "true_positions": [
+    [
+      -9,
+      -8
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      8,
+      -7
+    ]
+  ],
+  "defect_phase_rad": 0.8,
+  "probe_width_mismatch_fraction": 0.02,
+  "blank_field_background_subtraction": true,
+  "aggregate": [
+    {
+      "photons_per_scan": 30000000.0,
+      "calibrated_success_rate": 0.02,
+      "mismatched_success_rate": 0.02,
+      "calibrated_median_localization_rmse": 1.2909944487358056,
+      "mismatched_median_localization_rmse": 1.2909944487358056
+    },
+    {
+      "photons_per_scan": 100000000.0,
+      "calibrated_success_rate": 0.12,
+      "mismatched_success_rate": 0.12,
+      "calibrated_median_localization_rmse": 0.816496580927726,
+      "mismatched_median_localization_rmse": 0.816496580927726
+    },
+    {
+      "photons_per_scan": 300000000.0,
+      "calibrated_success_rate": 0.52,
+      "mismatched_success_rate": 0.5,
+      "calibrated_median_localization_rmse": 0.0,
+      "mismatched_median_localization_rmse": 0.28867513459481287
+    },
+    {
+      "photons_per_scan": 1000000000.0,
+      "calibrated_success_rate": 0.8,
+      "mismatched_success_rate": 0.76,
+      "calibrated_median_localization_rmse": 0.0,
+      "mismatched_median_localization_rmse": 0.0
+    },
+    {
+      "photons_per_scan": 3000000000.0,
+      "calibrated_success_rate": 1.0,
+      "mismatched_success_rate": 0.94,
+      "calibrated_median_localization_rmse": 0.0,
+      "mismatched_median_localization_rmse": 0.0
+    },
+    {
+      "photons_per_scan": 10000000000.0,
+      "calibrated_success_rate": 1.0,
+      "mismatched_success_rate": 0.98,
+      "calibrated_median_localization_rmse": 0.0,
+      "mismatched_median_localization_rmse": 0.0
+    }
+  ],
+  "fixed_case": {
+    "photons_per_scan": 1000000000.0,
+    "recovered_positions": [
+      [
+        -9,
+        -8
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        8,
+        -7
+      ]
+    ],
+    "recovered_strengths": [
+      1.007061602656269,
+      1.0155343031374817,
+      1.0969217918029643
+    ],
+    "exact_support": true,
+    "relative_residual": 0.02745102691072653
+  }
+}

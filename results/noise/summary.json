@@ -1,0 +1,297 @@
+{
+  "created_utc": "2026-08-02T12:22:41.110422+00:00",
+  "seed": 20260802,
+  "configuration": {
+    "trials": 200,
+    "max_atoms": 3,
+    "beam_width": 2048,
+    "row_scaling": "noise",
+    "minimum_amplitude": 0.75,
+    "lag_multiplier": 2,
+    "gamma_scale": 5.0,
+    "solvers": [
+      "beam"
+    ],
+    "snr_db": [
+      "inf",
+      "120",
+      "110",
+      "100",
+      "90",
+      "80",
+      "70",
+      "60"
+    ]
+  },
+  "environment": {
+    "python": "3.11.15 (main, Jun 11 2026, 15:20:16) [GCC 14.3.0]",
+    "platform": "Linux-6.18.33.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "numpy": "2.4.4"
+  },
+  "summary": [
+    {
+      "n_atoms": 1,
+      "snr_db": "100.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.915,
+      "support_f1_mean": 0.915,
+      "effective_signal_snr_db_mean": 75.26827184682246,
+      "nrmse_median": 5.218823900307886e-05,
+      "nrmse_q90": 0.03856869473310749
+    },
+    {
+      "n_atoms": 1,
+      "snr_db": "110.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.98,
+      "support_f1_mean": 0.98,
+      "effective_signal_snr_db_mean": 85.90735679998201,
+      "nrmse_median": 8.92862440921298e-06,
+      "nrmse_q90": 0.0014696744070481357
+    },
+    {
+      "n_atoms": 1,
+      "snr_db": "120.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.99,
+      "support_f1_mean": 0.99,
+      "effective_signal_snr_db_mean": 96.60005945945021,
+      "nrmse_median": 2.3495594817821945e-06,
+      "nrmse_q90": 0.0007282313245778159
+    },
+    {
+      "n_atoms": 1,
+      "snr_db": "60.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.74,
+      "support_f1_mean": 0.74,
+      "effective_signal_snr_db_mean": 36.82756043517672,
+      "nrmse_median": 0.003285701315420704,
+      "nrmse_q90": 1.2338416696207866
+    },
+    {
+      "n_atoms": 1,
+      "snr_db": "70.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.785,
+      "support_f1_mean": 0.785,
+      "effective_signal_snr_db_mean": 44.52120079997736,
+      "nrmse_median": 0.00123569756169055,
+      "nrmse_q90": 1.0037771179649173
+    },
+    {
+      "n_atoms": 1,
+      "snr_db": "80.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.81,
+      "support_f1_mean": 0.81,
+      "effective_signal_snr_db_mean": 55.47273352333494,
+      "nrmse_median": 0.00033778892502786854,
+      "nrmse_q90": 1.0147951711174021
+    },
+    {
+      "n_atoms": 1,
+      "snr_db": "90.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.87,
+      "support_f1_mean": 0.87,
+      "effective_signal_snr_db_mean": 63.101513927175965,
+      "nrmse_median": 0.0002048541914354804,
+      "nrmse_q90": 1.0016764153381548
+    },
+    {
+      "n_atoms": 1,
+      "snr_db": "inf",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 1.0,
+      "support_f1_mean": 1.0,
+      "effective_signal_snr_db_mean": Infinity,
+      "nrmse_median": 2.7021911723791166e-15,
+      "nrmse_q90": 3.372337925566943e-13
+    },
+    {
+      "n_atoms": 2,
+      "snr_db": "100.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.905,
+      "support_f1_mean": 0.925,
+      "effective_signal_snr_db_mean": 86.0517787773578,
+      "nrmse_median": 0.0006424572517511062,
+      "nrmse_q90": 0.5135258053082253
+    },
+    {
+      "n_atoms": 2,
+      "snr_db": "110.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.985,
+      "support_f1_mean": 0.99,
+      "effective_signal_snr_db_mean": 96.8196610675833,
+      "nrmse_median": 0.00028738287465656287,
+      "nrmse_q90": 0.00571179868173064
+    },
+    {
+      "n_atoms": 2,
+      "snr_db": "120.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.995,
+      "support_f1_mean": 0.995,
+      "effective_signal_snr_db_mean": 106.62494871417667,
+      "nrmse_median": 6.651336599344197e-05,
+      "nrmse_q90": 0.00269565020859869
+    },
+    {
+      "n_atoms": 2,
+      "snr_db": "60.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.34,
+      "support_f1_mean": 0.4575,
+      "effective_signal_snr_db_mean": 46.054212747459545,
+      "nrmse_median": 1.2837582096001463,
+      "nrmse_q90": 95.39139254568184
+    },
+    {
+      "n_atoms": 2,
+      "snr_db": "70.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.43,
+      "support_f1_mean": 0.54,
+      "effective_signal_snr_db_mean": 54.933866186066936,
+      "nrmse_median": 0.779327998133857,
+      "nrmse_q90": 30.790162661576943
+    },
+    {
+      "n_atoms": 2,
+      "snr_db": "80.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.66,
+      "support_f1_mean": 0.735,
+      "effective_signal_snr_db_mean": 65.75381082084397,
+      "nrmse_median": 0.011921090628367262,
+      "nrmse_q90": 6.2404422486116315
+    },
+    {
+      "n_atoms": 2,
+      "snr_db": "90.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.8,
+      "support_f1_mean": 0.8425,
+      "effective_signal_snr_db_mean": 75.77374940677178,
+      "nrmse_median": 0.0023950175969893114,
+      "nrmse_q90": 3.3728121916759437
+    },
+    {
+      "n_atoms": 2,
+      "snr_db": "inf",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 1.0,
+      "support_f1_mean": 1.0,
+      "effective_signal_snr_db_mean": Infinity,
+      "nrmse_median": 3.942231117757099e-14,
+      "nrmse_q90": 1.2420596601979302e-12
+    },
+    {
+      "n_atoms": 3,
+      "snr_db": "100.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.4,
+      "support_f1_mean": 0.5766666666666665,
+      "effective_signal_snr_db_mean": 88.14079925181449,
+      "nrmse_median": 0.7814104048744728,
+      "nrmse_q90": 5.436967037947083
+    },
+    {
+      "n_atoms": 3,
+      "snr_db": "110.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.63,
+      "support_f1_mean": 0.7633333333333333,
+      "effective_signal_snr_db_mean": 98.56706116865915,
+      "nrmse_median": 0.008804738465294193,
+      "nrmse_q90": 2.3929845379863988
+    },
+    {
+      "n_atoms": 3,
+      "snr_db": "120.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.875,
+      "support_f1_mean": 0.9266666666666667,
+      "effective_signal_snr_db_mean": 108.39374461051325,
+      "nrmse_median": 0.0022855489443045773,
+      "nrmse_q90": 0.6382056653345471
+    },
+    {
+      "n_atoms": 3,
+      "snr_db": "60.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.0,
+      "support_f1_mean": 0.06333333333333332,
+      "effective_signal_snr_db_mean": 48.78239156452859,
+      "nrmse_median": 28.19422468777949,
+      "nrmse_q90": 284.91155225470993
+    },
+    {
+      "n_atoms": 3,
+      "snr_db": "70.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.0,
+      "support_f1_mean": 0.085,
+      "effective_signal_snr_db_mean": 58.31882881463523,
+      "nrmse_median": 5.301092539213865,
+      "nrmse_q90": 74.61894770357304
+    },
+    {
+      "n_atoms": 3,
+      "snr_db": "80.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.015,
+      "support_f1_mean": 0.11666666666666665,
+      "effective_signal_snr_db_mean": 69.03415440635848,
+      "nrmse_median": 2.8081063627462948,
+      "nrmse_q90": 30.580415827648924
+    },
+    {
+      "n_atoms": 3,
+      "snr_db": "90.0",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 0.125,
+      "support_f1_mean": 0.30666666666666664,
+      "effective_signal_snr_db_mean": 79.26057138690891,
+      "nrmse_median": 1.884425467261286,
+      "nrmse_q90": 10.421435280571492
+    },
+    {
+      "n_atoms": 3,
+      "snr_db": "inf",
+      "solver": "beam",
+      "trials": 200,
+      "support_success_rate": 1.0,
+      "support_f1_mean": 1.0,
+      "effective_signal_snr_db_mean": Infinity,
+      "nrmse_median": 9.710108204448153e-13,
+      "nrmse_q90": 5.85441924343362e-12
+    }
+  ]
+}

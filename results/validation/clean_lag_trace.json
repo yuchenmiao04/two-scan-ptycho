@@ -1,0 +1,19 @@
+{
+  "figure_panel": "Fig. 1(a)",
+  "n": 257,
+  "sparsity": 3,
+  "gamma": 0.02,
+  "scan": 0,
+  "positions": [
+    -12,
+    0,
+    12
+  ],
+  "phases_rad": [
+    0.65,
+    -1.1,
+    1.45
+  ],
+  "clean_lag_limit": 6,
+  "normalization": 1.0786480035216472
+}

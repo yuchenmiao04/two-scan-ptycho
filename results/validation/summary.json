@@ -1,0 +1,2976 @@
+{
+  "created_utc": "2026-08-02T12:01:06.011560+00:00",
+  "seed": 20260802,
+  "configuration": {
+    "trials_per_n": 10,
+    "max_atoms": 4,
+    "beam_width": 10000
+  },
+  "environment": {
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "numpy": "2.2.6"
+  },
+  "summary": {
+    "formula_relative_error_max": 5.503737124612566e-10,
+    "one_scan_reflection_relative_error_max": 5.970126631783327e-16,
+    "by_n_atoms": {
+      "1": {
+        "trials": 10,
+        "beam_support_success_rate": 1.0,
+        "beam_nrmse_median": 1.9911095195603045e-15,
+        "omp_support_success_rate": 1.0,
+        "omp_nrmse_median": 1.9911095195603045e-15,
+        "condition_real_median": 1.0,
+        "condition_imag_median": 1.0
+      },
+      "2": {
+        "trials": 10,
+        "beam_support_success_rate": 1.0,
+        "beam_nrmse_median": 3.2734617239526795e-14,
+        "omp_support_success_rate": 0.0,
+        "omp_nrmse_median": 15.264050960089897,
+        "condition_real_median": 10.097916813835834,
+        "condition_imag_median": 65.03685820732568
+      },
+      "3": {
+        "trials": 10,
+        "beam_support_success_rate": 1.0,
+        "beam_nrmse_median": 2.0969408456153925e-12,
+        "omp_support_success_rate": 0.0,
+        "omp_nrmse_median": 19.602907289320022,
+        "condition_real_median": 251.71503176964387,
+        "condition_imag_median": 2019.5582954246872
+      },
+      "4": {
+        "trials": 10,
+        "beam_support_success_rate": 1.0,
+        "beam_nrmse_median": 1.1983186425800883e-10,
+        "omp_support_success_rate": 0.0,
+        "omp_nrmse_median": 5.834648845473401,
+        "condition_real_median": 26199.95266598963,
+        "condition_imag_median": 648175.4264245268
+      }
+    }
+  },
+  "two_n_minus_one_null_examples": {
+    "1": {
+      "lag_count": 1,
+      "relative_residual": 1.5693079276092526e-16
+    },
+    "2": {
+      "lag_count": 3,
+      "relative_residual": 1.8569330218641272e-16
+    },
+    "3": {
+      "lag_count": 5,
+      "relative_residual": 6.215805275671348e-16
+    },
+    "4": {
+      "lag_count": 7,
+      "relative_residual": 6.239116407451894e-16
+    }
+  },
+  "cases": [
+    {
+      "n_atoms": 1,
+      "trial": 0,
+      "n": 257,
+      "lag_count": 2,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        -7
+      ],
+      "amplitudes": [
+        [
+          -0.08280958056208032,
+          0.39844916173998024
+        ]
+      ],
+      "formula_relative_error_max": 8.34613579340861e-14,
+      "one_scan_reflection_relative_error_max": 4.049402309859792e-16,
+      "condition_real_max": 1.0,
+      "condition_imag_max": 1.0,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.667056326775281e-14,
+        "scan_supports": [
+          [
+            7
+          ],
+          [
+            8
+          ]
+        ],
+        "scan_residuals": [
+          2.4230033861874134e-16,
+          4.337767018778857e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.667056326775281e-14,
+        "scan_supports": [
+          [
+            7
+          ],
+          [
+            8
+          ]
+        ],
+        "scan_residuals": [
+          2.4230033861874134e-16,
+          4.337767018778857e-16
+        ]
+      }
+    },
+    {
+      "n_atoms": 1,
+      "trial": 1,
+      "n": 257,
+      "lag_count": 2,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        -9
+      ],
+      "amplitudes": [
+        [
+          -1.5539846008607145,
+          -0.8325269136845936
+        ]
+      ],
+      "formula_relative_error_max": 9.348849165265974e-14,
+      "one_scan_reflection_relative_error_max": 4.324578415678333e-16,
+      "condition_real_max": 1.0,
+      "condition_imag_max": 1.0,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 5.304054517651154e-14,
+        "scan_supports": [
+          [
+            9
+          ],
+          [
+            10
+          ]
+        ],
+        "scan_residuals": [
+          4.643693468835047e-16,
+          3.6616619859149845e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 5.304054517651154e-14,
+        "scan_supports": [
+          [
+            9
+          ],
+          [
+            10
+          ]
+        ],
+        "scan_residuals": [
+          4.643693468835047e-16,
+          3.6616619859149845e-16
+        ]
+      }
+    },
+    {
+      "n_atoms": 1,
+      "trial": 2,
+      "n": 257,
+      "lag_count": 2,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        2
+      ],
+      "amplitudes": [
+        [
+          -1.9116552580206296,
+          0.4109558255133261
+        ]
+      ],
+      "formula_relative_error_max": 4.3024238294068657e-16,
+      "one_scan_reflection_relative_error_max": 5.250105603077358e-16,
+      "condition_real_max": 1.0,
+      "condition_imag_max": 1.0,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 6.015664663166273e-16,
+        "scan_supports": [
+          [
+            2
+          ],
+          [
+            1
+          ]
+        ],
+        "scan_residuals": [
+          5.14567057016661e-16,
+          4.969187991963562e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 6.015664663166273e-16,
+        "scan_supports": [
+          [
+            2
+          ],
+          [
+            1
+          ]
+        ],
+        "scan_residuals": [
+          5.14567057016661e-16,
+          4.969187991963562e-16
+        ]
+      }
+    },
+    {
+      "n_atoms": 1,
+      "trial": 3,
+      "n": 257,
+      "lag_count": 2,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        0
+      ],
+      "amplitudes": [
+        [
+          -1.572473655286899e-06,
+          -0.0017733992324997355
+        ]
+      ],
+      "formula_relative_error_max": 5.503737124612566e-10,
+      "one_scan_reflection_relative_error_max": 5.081809039164699e-16,
+      "condition_real_max": 1.0,
+      "condition_imag_max": 1.0,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 7.957866866052153e-13,
+        "scan_supports": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "scan_residuals": [
+          4.4322134380699676e-16,
+          3.034781162542869e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 7.957866866052153e-13,
+        "scan_supports": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "scan_residuals": [
+          4.4322134380699676e-16,
+          3.034781162542869e-16
+        ]
+      }
+    },
+    {
+      "n_atoms": 1,
+      "trial": 4,
+      "n": 257,
+      "lag_count": 2,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        0
+      ],
+      "amplitudes": [
+        [
+          -0.0819030315603062,
+          0.396355845852996
+        ]
+      ],
+      "formula_relative_error_max": 6.175770931460912e-15,
+      "one_scan_reflection_relative_error_max": 4.0747179130255674e-16,
+      "condition_real_max": 1.0,
+      "condition_imag_max": 1.0,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 3.527773451898255e-15,
+        "scan_supports": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "scan_residuals": [
+          3.2293234649152936e-16,
+          2.7749069640085626e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 3.527773451898255e-15,
+        "scan_supports": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "scan_residuals": [
+          3.2293234649152936e-16,
+          2.7749069640085626e-16
+        ]
+      }
+    },
+    {
+      "n_atoms": 1,
+      "trial": 5,
+      "n": 257,
+      "lag_count": 2,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        2
+      ],
+      "amplitudes": [
+        [
+          -1.8503702471803605,
+          0.5261847990111578
+        ]
+      ],
+      "formula_relative_error_max": 2.9469405306080696e-16,
+      "one_scan_reflection_relative_error_max": 4.4399325804108083e-16,
+      "condition_real_max": 1.0,
+      "condition_imag_max": 1.0,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 5.771197191942384e-16,
+        "scan_supports": [
+          [
+            2
+          ],
+          [
+            1
+          ]
+        ],
+        "scan_residuals": [
+          2.611090194369167e-16,
+          5.071804592028564e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 5.771197191942384e-16,
+        "scan_supports": [
+          [
+            2
+          ],
+          [
+            1
+          ]
+        ],
+        "scan_residuals": [
+          2.611090194369167e-16,
+          5.071804592028564e-16
+        ]
+      }
+    },
+    {
+      "n_atoms": 1,
+      "trial": 6,
+      "n": 257,
+      "lag_count": 2,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        1
+      ],
+      "amplitudes": [
+        [
+          -1.8095651055082693,
+          0.5870301013946257
+        ]
+      ],
+      "formula_relative_error_max": 2.769360197066536e-16,
+      "one_scan_reflection_relative_error_max": 5.940367654656961e-16,
+      "condition_real_max": 1.0,
+      "condition_imag_max": 1.0,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 5.380437467819393e-16,
+        "scan_supports": [
+          [
+            1
+          ],
+          [
+            0
+          ]
+        ],
+        "scan_residuals": [
+          2.2253196106415096e-16,
+          6.413430957795179e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 5.380437467819393e-16,
+        "scan_supports": [
+          [
+            1
+          ],
+          [
+            0
+          ]
+        ],
+        "scan_residuals": [
+          2.2253196106415096e-16,
+          6.413430957795179e-16
+        ]
+      }
+    },
+    {
+      "n_atoms": 1,
+      "trial": 7,
+      "n": 257,
+      "lag_count": 2,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        -1
+      ],
+      "amplitudes": [
+        [
+          -0.6719271221993901,
+          -0.9446524158925472
+        ]
+      ],
+      "formula_relative_error_max": 1.70314554886012e-15,
+      "one_scan_reflection_relative_error_max": 4.510859986290536e-16,
+      "condition_real_max": 1.0,
+      "condition_imag_max": 1.0,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 6.424515822377357e-16,
+        "scan_supports": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "scan_residuals": [
+          2.4708698718685164e-16,
+          4.3731549649841195e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 6.424515822377357e-16,
+        "scan_supports": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "scan_residuals": [
+          2.4708698718685164e-16,
+          4.3731549649841195e-16
+        ]
+      }
+    },
+    {
+      "n_atoms": 1,
+      "trial": 8,
+      "n": 257,
+      "lag_count": 2,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        1
+      ],
+      "amplitudes": [
+        [
+          -0.0008577628061436915,
+          -0.041410021193617114
+        ]
+      ],
+      "formula_relative_error_max": 2.71574037734379e-13,
+      "one_scan_reflection_relative_error_max": 3.8387712191131823e-16,
+      "condition_real_max": 1.0,
+      "condition_imag_max": 1.0,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 3.2195452477632655e-15,
+        "scan_supports": [
+          [
+            1
+          ],
+          [
+            0
+          ]
+        ],
+        "scan_residuals": [
+          5.16057182903455e-16,
+          2.14390933016436e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 3.2195452477632655e-15,
+        "scan_supports": [
+          [
+            1
+          ],
+          [
+            0
+          ]
+        ],
+        "scan_residuals": [
+          5.16057182903455e-16,
+          2.14390933016436e-16
+        ]
+      }
+    },
+    {
+      "n_atoms": 1,
+      "trial": 9,
+      "n": 257,
+      "lag_count": 2,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        0
+      ],
+      "amplitudes": [
+        [
+          -0.4767880180080335,
+          -0.8522025709301974
+        ]
+      ],
+      "formula_relative_error_max": 2.0068366678547857e-15,
+      "one_scan_reflection_relative_error_max": 3.6757982169397267e-16,
+      "condition_real_max": 1.0,
+      "condition_imag_max": 1.0,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 7.626737913573435e-16,
+        "scan_supports": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "scan_residuals": [
+          3.489696132402441e-16,
+          3.611559295977647e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 7.626737913573435e-16,
+        "scan_supports": [
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "scan_residuals": [
+          3.489696132402441e-16,
+          3.611559295977647e-16
+        ]
+      }
+    },
+    {
+      "n_atoms": 2,
+      "trial": 0,
+      "n": 257,
+      "lag_count": 4,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        -2,
+        8
+      ],
+      "amplitudes": [
+        [
+          -0.8888736992453408,
+          0.9938062916285976
+        ],
+        [
+          -1.3446074798538574,
+          -0.9387468694109042
+        ]
+      ],
+      "formula_relative_error_max": 8.639648683742106e-16,
+      "one_scan_reflection_relative_error_max": 4.990835300845272e-16,
+      "condition_real_max": 8.743782561001836,
+      "condition_imag_max": 43.88538744183444,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 8.418841292547712e-15,
+        "scan_supports": [
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        "scan_residuals": [
+          4.518813144550864e-16,
+          2.8911132732289485e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 24.36868778365255,
+        "scan_supports": [
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          0.0019668841368295008,
+          0.0014046560614761133
+        ]
+      }
+    },
+    {
+      "n_atoms": 2,
+      "trial": 1,
+      "n": 257,
+      "lag_count": 4,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        0,
+        5
+      ],
+      "amplitudes": [
+        [
+          -0.07728184368137259,
+          -0.38547529622526155
+        ],
+        [
+          -0.22418333339875218,
+          -0.630958397854984
+        ]
+      ],
+      "formula_relative_error_max": 2.0959529091752044e-15,
+      "one_scan_reflection_relative_error_max": 4.076164438285061e-16,
+      "condition_real_max": 15.277145079131097,
+      "condition_imag_max": 112.65528250598705,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 3.424645252436798e-14,
+        "scan_supports": [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "scan_residuals": [
+          2.2339574679016217e-16,
+          2.249796576380341e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 51.00175490662263,
+        "scan_supports": [
+          [
+            3,
+            12
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          0.00025565944803315147,
+          0.00023795823223264173
+        ]
+      }
+    },
+    {
+      "n_atoms": 2,
+      "trial": 2,
+      "n": 257,
+      "lag_count": 4,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        -10,
+        -3
+      ],
+      "amplitudes": [
+        [
+          -0.12504649384786237,
+          -0.48420694137122944
+        ],
+        [
+          -1.1527143040426004,
+          -0.9882703786620259
+        ]
+      ],
+      "formula_relative_error_max": 1.0314066295825705e-15,
+      "one_scan_reflection_relative_error_max": 4.717673734685212e-16,
+      "condition_real_max": 8.67201808526985,
+      "condition_imag_max": 33.085980995590106,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.0763296745583241e-13,
+        "scan_supports": [
+          [
+            3,
+            10
+          ],
+          [
+            4,
+            11
+          ]
+        ],
+        "scan_residuals": [
+          3.091508911360544e-16,
+          5.914364092185496e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.5,
+        "support_recall": 0.5,
+        "support_f1": 0.5,
+        "nrmse": 3.339254450777602,
+        "scan_supports": [
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          1.4126370082768943e-05,
+          2.664081993054297e-06
+        ]
+      }
+    },
+    {
+      "n_atoms": 2,
+      "trial": 3,
+      "n": 257,
+      "lag_count": 4,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        -9,
+        -4
+      ],
+      "amplitudes": [
+        [
+          -1.5838090075583127,
+          0.8118910288294718
+        ],
+        [
+          -0.03648895985321843,
+          0.2676685926948976
+        ]
+      ],
+      "formula_relative_error_max": 1.23245866848669e-14,
+      "one_scan_reflection_relative_error_max": 3.708013408982242e-16,
+      "condition_real_max": 9.034601139735871,
+      "condition_imag_max": 26.941083647808135,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.1504260139852717e-13,
+        "scan_supports": [
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            10
+          ]
+        ],
+        "scan_residuals": [
+          2.921863503246523e-16,
+          2.0077316603396418e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 12.22134385827172,
+        "scan_supports": [
+          [
+            6,
+            12
+          ],
+          [
+            6,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          0.00016196776502076134,
+          6.289766647301601e-05
+        ]
+      }
+    },
+    {
+      "n_atoms": 2,
+      "trial": 4,
+      "n": 257,
+      "lag_count": 4,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        -3,
+        4
+      ],
+      "amplitudes": [
+        [
+          -1.6321680930710651,
+          -0.7748312733123859
+        ],
+        [
+          -0.009509343110651214,
+          -0.13758000804952125
+        ]
+      ],
+      "formula_relative_error_max": 1.061565593842549e-15,
+      "one_scan_reflection_relative_error_max": 4.574805006761958e-16,
+      "condition_real_max": 34.53822497292593,
+      "condition_imag_max": 112.2775377070863,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 3.122278195468562e-14,
+        "scan_supports": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "scan_residuals": [
+          5.88743782762156e-16,
+          4.107010493556896e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.5,
+        "support_recall": 0.5,
+        "support_f1": 0.5,
+        "nrmse": 3.2262131554079763,
+        "scan_supports": [
+          [
+            3,
+            12
+          ],
+          [
+            4,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          4.031795262294601e-05,
+          5.157128760696916e-05
+        ]
+      }
+    },
+    {
+      "n_atoms": 2,
+      "trial": 5,
+      "n": 257,
+      "lag_count": 4,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        -4,
+        1
+      ],
+      "amplitudes": [
+        [
+          -0.8668844783863934,
+          0.9911005286576824
+        ],
+        [
+          -0.025680516558664213,
+          -0.22517003394459179
+        ]
+      ],
+      "formula_relative_error_max": 1.1430275933470556e-15,
+      "one_scan_reflection_relative_error_max": 4.0118842270925714e-16,
+      "condition_real_max": 15.277145079131097,
+      "condition_imag_max": 112.65528250598705,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.0405607280654706e-14,
+        "scan_supports": [
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            5
+          ]
+        ],
+        "scan_residuals": [
+          2.808323899101692e-16,
+          1.5944364291470363e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 18.306758061908074,
+        "scan_supports": [
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          0.00030578185011731013,
+          0.0005175029105994637
+        ]
+      }
+    },
+    {
+      "n_atoms": 2,
+      "trial": 6,
+      "n": 257,
+      "lag_count": 4,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        -4,
+        9
+      ],
+      "amplitudes": [
+        [
+          -0.9880758263192683,
+          -0.9999289045137318
+        ],
+        [
+          -0.9237770285368264,
+          0.9970907975813057
+        ]
+      ],
+      "formula_relative_error_max": 1.8737314668512715e-15,
+      "one_scan_reflection_relative_error_max": 4.993603094566204e-16,
+      "condition_real_max": 11.161232487935798,
+      "condition_imag_max": 29.897780926820186,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 4.570505285264071e-14,
+        "scan_supports": [
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            8
+          ]
+        ],
+        "scan_residuals": [
+          1.9091418018976075e-16,
+          6.172106147821789e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 19.3992172127836,
+        "scan_supports": [
+          [
+            4,
+            12
+          ],
+          [
+            5,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          0.00021459593217711817,
+          0.0004254918718614399
+        ]
+      }
+    },
+    {
+      "n_atoms": 2,
+      "trial": 7,
+      "n": 257,
+      "lag_count": 4,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        -2,
+        10
+      ],
+      "amplitudes": [
+        [
+          -0.26158877068619546,
+          0.6743506924614788
+        ],
+        [
+          -0.039592839825115966,
+          -0.27860022735958906
+        ]
+      ],
+      "formula_relative_error_max": 2.938212748237866e-15,
+      "one_scan_reflection_relative_error_max": 4.710525445011982e-16,
+      "condition_real_max": 7.476617780525059,
+      "condition_imag_max": 47.22912701482951,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.783491824705047e-13,
+        "scan_supports": [
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "scan_residuals": [
+          4.952931724406507e-16,
+          2.82200643515234e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 7.512535771488723,
+        "scan_supports": [
+          [
+            2,
+            12
+          ],
+          [
+            3,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          7.2142762942748015e-06,
+          2.1276512710770643e-05
+        ]
+      }
+    },
+    {
+      "n_atoms": 2,
+      "trial": 8,
+      "n": 257,
+      "lag_count": 4,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        0,
+        5
+      ],
+      "amplitudes": [
+        [
+          -0.5193465875510259,
+          0.8769106551417633
+        ],
+        [
+          -0.09928694695286577,
+          0.4344145440365807
+        ]
+      ],
+      "formula_relative_error_max": 1.6960757883407763e-15,
+      "one_scan_reflection_relative_error_max": 3.6577067038915924e-16,
+      "condition_real_max": 15.277145079131097,
+      "condition_imag_max": 112.65528250598705,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.6204163622878586e-14,
+        "scan_supports": [
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "scan_residuals": [
+          2.9073054609774806e-16,
+          3.5722518521806415e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.5,
+        "support_recall": 0.5,
+        "support_f1": 0.5,
+        "nrmse": 34.29658641836749,
+        "scan_supports": [
+          [
+            1,
+            12
+          ],
+          [
+            1,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          0.0002686123379197643,
+          0.0005012771163263112
+        ]
+      }
+    },
+    {
+      "n_atoms": 2,
+      "trial": 9,
+      "n": 257,
+      "lag_count": 4,
+      "location_bound": 10,
+      "gamma": 0.03,
+      "positions": [
+        2,
+        9
+      ],
+      "amplitudes": [
+        [
+          -1.1473411913464258,
+          -0.9890857259775898
+        ],
+        [
+          -0.07346166008246546,
+          -0.37620035175802163
+        ]
+      ],
+      "formula_relative_error_max": 8.772758351550834e-16,
+      "one_scan_reflection_relative_error_max": 4.544891336320789e-16,
+      "condition_real_max": 7.044745697237661,
+      "condition_imag_max": 82.84458939982186,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 2.651873011988125e-14,
+        "scan_supports": [
+          [
+            2,
+            9
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        "scan_residuals": [
+          5.829083894048173e-16,
+          3.299624632721742e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 9.738205412562596,
+        "scan_supports": [
+          [
+            2,
+            12
+          ],
+          [
+            1,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          3.3684831169634175e-05,
+          8.692580191000613e-05
+        ]
+      }
+    },
+    {
+      "n_atoms": 3,
+      "trial": 0,
+      "n": 257,
+      "lag_count": 6,
+      "location_bound": 13,
+      "gamma": 0.01775147928994083,
+      "positions": [
+        -10,
+        -3,
+        7
+      ],
+      "amplitudes": [
+        [
+          -1.5353579307704375,
+          0.8446252932284206
+        ],
+        [
+          -1.0845189113953349,
+          0.9964218753201616
+        ],
+        [
+          -1.5635893262416007,
+          0.8260551260942206
+        ]
+      ],
+      "formula_relative_error_max": 1.3295860232174283e-15,
+      "one_scan_reflection_relative_error_max": 5.046786933338491e-16,
+      "condition_real_max": 380.9589594810203,
+      "condition_imag_max": 2804.2492975680116,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 2.3339871992863464e-13,
+        "scan_supports": [
+          [
+            3,
+            7,
+            10
+          ],
+          [
+            4,
+            6,
+            11
+          ]
+        ],
+        "scan_residuals": [
+          1.2554796751581139e-15,
+          1.1189275707558252e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 42.32349727980853,
+        "scan_supports": [
+          [
+            5,
+            11,
+            15
+          ],
+          [
+            5,
+            11,
+            15
+          ]
+        ],
+        "scan_residuals": [
+          0.00030597982070365093,
+          6.534820562451505e-05
+        ]
+      }
+    },
+    {
+      "n_atoms": 3,
+      "trial": 1,
+      "n": 257,
+      "lag_count": 6,
+      "location_bound": 13,
+      "gamma": 0.01775147928994083,
+      "positions": [
+        -13,
+        -6,
+        13
+      ],
+      "amplitudes": [
+        [
+          -0.7251182795885647,
+          0.9614780495589327
+        ],
+        [
+          -0.1867960680566949,
+          0.5819788355876426
+        ],
+        [
+          -0.0034190773338798053,
+          -0.08262242176276643
+        ]
+      ],
+      "formula_relative_error_max": 1.089173873648611e-14,
+      "one_scan_reflection_relative_error_max": 3.307610091922366e-16,
+      "condition_real_max": 207.39508287365854,
+      "condition_imag_max": 745.3424185553063,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 9.744272345213115e-12,
+        "scan_supports": [
+          [
+            0,
+            6,
+            13
+          ],
+          [
+            7,
+            12,
+            14
+          ]
+        ],
+        "scan_residuals": [
+          8.163049094332062e-16,
+          7.913343812108971e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.3333333333333333,
+        "support_recall": 0.3333333333333333,
+        "support_f1": 0.3333333333333333,
+        "nrmse": 5.7978799745849985,
+        "scan_supports": [
+          [
+            0,
+            6,
+            15
+          ],
+          [
+            1,
+            7,
+            15
+          ]
+        ],
+        "scan_residuals": [
+          3.0045138599529377e-05,
+          1.318245277963643e-06
+        ]
+      }
+    },
+    {
+      "n_atoms": 3,
+      "trial": 2,
+      "n": 257,
+      "lag_count": 6,
+      "location_bound": 13,
+      "gamma": 0.01775147928994083,
+      "positions": [
+        -11,
+        -2,
+        10
+      ],
+      "amplitudes": [
+        [
+          -0.2652923458354056,
+          -0.6783838610344138
+        ],
+        [
+          -1.7572501978787118,
+          -0.653124902153219
+        ],
+        [
+          -0.4038106662348101,
+          0.8028438691953865
+        ]
+      ],
+      "formula_relative_error_max": 1.0998007984909449e-15,
+      "one_scan_reflection_relative_error_max": 4.843490381928301e-16,
+      "condition_real_max": 300.8899394915207,
+      "condition_imag_max": 1554.2515911095593,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 2.384439331689972e-12,
+        "scan_supports": [
+          [
+            2,
+            10,
+            11
+          ],
+          [
+            3,
+            9,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          1.7100115305351424e-15,
+          1.3118363853039046e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.3333333333333333,
+        "support_recall": 0.3333333333333333,
+        "support_f1": 0.3333333333333333,
+        "nrmse": 2.0390190105485746,
+        "scan_supports": [
+          [
+            2,
+            10,
+            15
+          ],
+          [
+            3,
+            10,
+            15
+          ]
+        ],
+        "scan_residuals": [
+          1.8054425171068865e-06,
+          6.2536861997128235e-06
+        ]
+      }
+    },
+    {
+      "n_atoms": 3,
+      "trial": 3,
+      "n": 257,
+      "lag_count": 6,
+      "location_bound": 13,
+      "gamma": 0.01775147928994083,
+      "positions": [
+        -10,
+        0,
+        8
+      ],
+      "amplitudes": [
+        [
+          -1.8855981907897952,
+          -0.4644521982613943
+        ],
+        [
+          -0.9707504859794361,
+          0.9995721414333039
+        ],
+        [
+          -0.00046053599981621396,
+          -0.030345673599796345
+        ]
+      ],
+      "formula_relative_error_max": 1.6921174262027916e-15,
+      "one_scan_reflection_relative_error_max": 5.068061919925982e-16,
+      "condition_real_max": 249.5390071913068,
+      "condition_imag_max": 3476.2369631405627,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 2.933047913190962e-13,
+        "scan_supports": [
+          [
+            0,
+            8,
+            10
+          ],
+          [
+            1,
+            7,
+            11
+          ]
+        ],
+        "scan_residuals": [
+          1.6608893044917943e-15,
+          9.493677384379401e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 44.43333099696693,
+        "scan_supports": [
+          [
+            3,
+            10,
+            15
+          ],
+          [
+            2,
+            10,
+            15
+          ]
+        ],
+        "scan_residuals": [
+          0.0002908736119638146,
+          0.00010410286236357511
+        ]
+      }
+    },
+    {
+      "n_atoms": 3,
+      "trial": 4,
+      "n": 257,
+      "lag_count": 6,
+      "location_bound": 13,
+      "gamma": 0.01775147928994083,
+      "positions": [
+        -9,
+        3,
+        12
+      ],
+      "amplitudes": [
+        [
+          -1.238173063341917,
+          -0.9712227303241657
+        ],
+        [
+          -1.8400317948683813,
+          -0.5425371725607434
+        ],
+        [
+          -1.859864517167483,
+          -0.5105222934567415
+        ]
+      ],
+      "formula_relative_error_max": 9.891547125577652e-16,
+      "one_scan_reflection_relative_error_max": 4.424218333465363e-16,
+      "condition_real_max": 300.8899394915207,
+      "condition_imag_max": 1554.2515911095593,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.3571906676173092e-12,
+        "scan_supports": [
+          [
+            3,
+            9,
+            12
+          ],
+          [
+            2,
+            10,
+            11
+          ]
+        ],
+        "scan_residuals": [
+          1.1912915874383653e-15,
+          1.5366399494324186e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 41.42377464403948,
+        "scan_supports": [
+          [
+            4,
+            11,
+            15
+          ],
+          [
+            3,
+            10,
+            15
+          ]
+        ],
+        "scan_residuals": [
+          0.0002971827497854614,
+          0.00026296500628054774
+        ]
+      }
+    },
+    {
+      "n_atoms": 3,
+      "trial": 5,
+      "n": 257,
+      "lag_count": 6,
+      "location_bound": 13,
+      "gamma": 0.01775147928994083,
+      "positions": [
+        -13,
+        -6,
+        2
+      ],
+      "amplitudes": [
+        [
+          -0.7895011279223245,
+          0.9775941002553291
+        ],
+        [
+          -0.9470916617650084,
+          0.9985993729946018
+        ],
+        [
+          -0.10974124725809531,
+          0.4554551055443644
+        ]
+      ],
+      "formula_relative_error_max": 4.196900309116477e-15,
+      "one_scan_reflection_relative_error_max": 3.3268804432829775e-16,
+      "condition_real_max": 212.74828491432595,
+      "condition_imag_max": 3830.127285385526,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.2797214652513095e-12,
+        "scan_supports": [
+          [
+            2,
+            6,
+            13
+          ],
+          [
+            1,
+            7,
+            14
+          ]
+        ],
+        "scan_residuals": [
+          1.0553108676613122e-15,
+          5.209371998871975e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 21.32293892422262,
+        "scan_supports": [
+          [
+            5,
+            11,
+            15
+          ],
+          [
+            0,
+            6,
+            15
+          ]
+        ],
+        "scan_residuals": [
+          1.9367548692315788e-05,
+          0.0005989185973037649
+        ]
+      }
+    },
+    {
+      "n_atoms": 3,
+      "trial": 6,
+      "n": 257,
+      "lag_count": 6,
+      "location_bound": 13,
+      "gamma": 0.01775147928994083,
+      "positions": [
+        -10,
+        0,
+        13
+      ],
+      "amplitudes": [
+        [
+          -0.7327213477793428,
+          0.963619282739355
+        ],
+        [
+          -0.6202209750994689,
+          -0.9250772358271507
+        ],
+        [
+          -0.03836525527195278,
+          -0.27433304163338307
+        ]
+      ],
+      "formula_relative_error_max": 2.341819879308463e-15,
+      "one_scan_reflection_relative_error_max": 3.859980607987771e-16,
+      "condition_real_max": 253.89105634798094,
+      "condition_imag_max": 2004.9295448888572,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 2.998824120986389e-12,
+        "scan_supports": [
+          [
+            0,
+            10,
+            13
+          ],
+          [
+            1,
+            11,
+            12
+          ]
+        ],
+        "scan_residuals": [
+          1.2035205933087556e-15,
+          8.598805721178034e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 17.882875654417425,
+        "scan_supports": [
+          [
+            2,
+            10,
+            15
+          ],
+          [
+            2,
+            10,
+            15
+          ]
+        ],
+        "scan_residuals": [
+          8.291091189094165e-05,
+          6.385812225598856e-05
+        ]
+      }
+    },
+    {
+      "n_atoms": 3,
+      "trial": 7,
+      "n": 257,
+      "lag_count": 6,
+      "location_bound": 13,
+      "gamma": 0.01775147928994083,
+      "positions": [
+        -13,
+        1,
+        8
+      ],
+      "amplitudes": [
+        [
+          -0.19970938035279628,
+          0.5996123115019361
+        ],
+        [
+          -1.8964682453719195,
+          0.44310798349814456
+        ],
+        [
+          -0.327150307936275,
+          0.7397792183413578
+        ]
+      ],
+      "formula_relative_error_max": 7.460007818172178e-16,
+      "one_scan_reflection_relative_error_max": 4.519570471420687e-16,
+      "condition_real_max": 227.97077317937502,
+      "condition_imag_max": 2862.429981064231,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.809442359540813e-12,
+        "scan_supports": [
+          [
+            1,
+            8,
+            13
+          ],
+          [
+            0,
+            7,
+            14
+          ]
+        ],
+        "scan_residuals": [
+          1.6777242475401305e-15,
+          1.0487145916512894e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 11.52525438143187,
+        "scan_supports": [
+          [
+            1,
+            10,
+            15
+          ],
+          [
+            1,
+            10,
+            15
+          ]
+        ],
+        "scan_residuals": [
+          2.054567181399511e-05,
+          2.6520722376630366e-05
+        ]
+      }
+    },
+    {
+      "n_atoms": 3,
+      "trial": 8,
+      "n": 257,
+      "lag_count": 6,
+      "location_bound": 13,
+      "gamma": 0.01775147928994083,
+      "positions": [
+        -12,
+        2,
+        11
+      ],
+      "amplitudes": [
+        [
+          -0.328363560644753,
+          -0.7408808901100132
+        ],
+        [
+          -1.5111111915849462,
+          0.8595146012934373
+        ],
+        [
+          -1.5474080730819657,
+          0.8368658205021218
+        ]
+      ],
+      "formula_relative_error_max": 1.4506933976245176e-15,
+      "one_scan_reflection_relative_error_max": 4.556016643862734e-16,
+      "condition_real_max": 261.9456529139781,
+      "condition_imag_max": 2034.1870459605173,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 4.074014208502058e-12,
+        "scan_supports": [
+          [
+            2,
+            11,
+            12
+          ],
+          [
+            1,
+            10,
+            13
+          ]
+        ],
+        "scan_residuals": [
+          2.9712729368186775e-15,
+          1.0647076430956654e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 33.85950188747816,
+        "scan_supports": [
+          [
+            3,
+            10,
+            15
+          ],
+          [
+            2,
+            10,
+            15
+          ]
+        ],
+        "scan_residuals": [
+          0.00021786517484116786,
+          0.00014511220460650186
+        ]
+      }
+    },
+    {
+      "n_atoms": 3,
+      "trial": 9,
+      "n": 257,
+      "lag_count": 6,
+      "location_bound": 13,
+      "gamma": 0.01775147928994083,
+      "positions": [
+        -13,
+        -2,
+        13
+      ],
+      "amplitudes": [
+        [
+          -0.3840744229657965,
+          -0.7878043434477139
+        ],
+        [
+          -1.0300456817719037,
+          -0.9995485265893105
+        ],
+        [
+          -0.23563839812384657,
+          -0.6447878267905813
+        ]
+      ],
+      "formula_relative_error_max": 1.9786236233218565e-15,
+      "one_scan_reflection_relative_error_max": 4.611209295369756e-16,
+      "condition_real_max": 134.23649782038805,
+      "condition_imag_max": 721.9717241369684,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 4.545360682525336e-12,
+        "scan_supports": [
+          [
+            2,
+            10,
+            13
+          ],
+          [
+            3,
+            12,
+            14
+          ]
+        ],
+        "scan_residuals": [
+          6.901670982418483e-16,
+          1.1668075581205913e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 1.8335820077612406,
+        "scan_supports": [
+          [
+            2,
+            10,
+            15
+          ],
+          [
+            3,
+            10,
+            15
+          ]
+        ],
+        "scan_residuals": [
+          1.8494588972709185e-06,
+          1.6909687687913043e-06
+        ]
+      }
+    },
+    {
+      "n_atoms": 4,
+      "trial": 0,
+      "n": 257,
+      "lag_count": 8,
+      "location_bound": 20,
+      "gamma": 0.0075,
+      "positions": [
+        -17,
+        -2,
+        8,
+        20
+      ],
+      "amplitudes": [
+        [
+          -1.776815417708393,
+          -0.6297283595412667
+        ],
+        [
+          -1.7310368164354384,
+          -0.6823380196177987
+        ],
+        [
+          -1.8685110087943093,
+          0.49566987764346865
+        ],
+        [
+          -1.8937501634778366,
+          0.4485650959262661
+        ]
+      ],
+      "formula_relative_error_max": 8.532570513212092e-16,
+      "one_scan_reflection_relative_error_max": 3.6765865561865626e-16,
+      "condition_real_max": 23020.316456041008,
+      "condition_imag_max": 401506.849682857,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.1275209467445366e-10,
+        "scan_supports": [
+          [
+            2,
+            8,
+            17,
+            20
+          ],
+          [
+            3,
+            7,
+            18,
+            19
+          ]
+        ],
+        "scan_residuals": [
+          3.139786235770669e-15,
+          1.6270337601933359e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 70.3268169718732,
+        "scan_supports": [
+          [
+            5,
+            15,
+            19,
+            22
+          ],
+          [
+            5,
+            15,
+            19,
+            22
+          ]
+        ],
+        "scan_residuals": [
+          3.698751247043456e-06,
+          1.8076458611523974e-06
+        ]
+      }
+    },
+    {
+      "n_atoms": 4,
+      "trial": 1,
+      "n": 257,
+      "lag_count": 8,
+      "location_bound": 20,
+      "gamma": 0.0075,
+      "positions": [
+        -16,
+        -5,
+        6,
+        20
+      ],
+      "amplitudes": [
+        [
+          -1.1371785147987747,
+          -0.9905463417112812
+        ],
+        [
+          -1.3322669941322158,
+          -0.9431853712872894
+        ],
+        [
+          -0.11772271539611323,
+          0.4707300639134835
+        ],
+        [
+          -0.31227001303970436,
+          0.725966572946435
+        ]
+      ],
+      "formula_relative_error_max": 2.011877919896784e-15,
+      "one_scan_reflection_relative_error_max": 3.7680417145327794e-16,
+      "condition_real_max": 72293.05324652798,
+      "condition_imag_max": 1263651.7626324524,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.26911633841564e-10,
+        "scan_supports": [
+          [
+            5,
+            6,
+            16,
+            20
+          ],
+          [
+            5,
+            6,
+            17,
+            19
+          ]
+        ],
+        "scan_residuals": [
+          1.1353523293578855e-15,
+          1.950903061686576e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.25,
+        "support_recall": 0.25,
+        "support_f1": 0.25,
+        "nrmse": 5.76233697002891,
+        "scan_supports": [
+          [
+            0,
+            6,
+            16,
+            22
+          ],
+          [
+            0,
+            6,
+            16,
+            22
+          ]
+        ],
+        "scan_residuals": [
+          3.0085121912818154e-06,
+          1.9567178166377117e-06
+        ]
+      }
+    },
+    {
+      "n_atoms": 4,
+      "trial": 2,
+      "n": 257,
+      "lag_count": 8,
+      "location_bound": 20,
+      "gamma": 0.0075,
+      "positions": [
+        -12,
+        0,
+        10,
+        20
+      ],
+      "amplitudes": [
+        [
+          -0.08895884922586828,
+          -0.4123154394345981
+        ],
+        [
+          -1.5426096638888378,
+          -0.8399849716836859
+        ],
+        [
+          -1.877260436453527,
+          0.48001471501753695
+        ],
+        [
+          -0.5317719348497434,
+          0.8836076499248108
+        ]
+      ],
+      "formula_relative_error_max": 1.2293361997414722e-15,
+      "one_scan_reflection_relative_error_max": 5.970126631783327e-16,
+      "condition_real_max": 41710.974757354634,
+      "condition_imag_max": 830327.5403311037,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 3.359759052418534e-11,
+        "scan_supports": [
+          [
+            0,
+            10,
+            12,
+            20
+          ],
+          [
+            1,
+            9,
+            13,
+            19
+          ]
+        ],
+        "scan_residuals": [
+          2.3276550370064635e-15,
+          3.654031017068957e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 154.94128557485888,
+        "scan_supports": [
+          [
+            5,
+            15,
+            19,
+            22
+          ],
+          [
+            5,
+            15,
+            19,
+            22
+          ]
+        ],
+        "scan_residuals": [
+          5.57504722187594e-06,
+          4.538227091381354e-06
+        ]
+      }
+    },
+    {
+      "n_atoms": 4,
+      "trial": 3,
+      "n": 257,
+      "lag_count": 8,
+      "location_bound": 20,
+      "gamma": 0.0075,
+      "positions": [
+        -20,
+        -7,
+        2,
+        13
+      ],
+      "amplitudes": [
+        [
+          -1.7773132042987223,
+          0.6291138072104704
+        ],
+        [
+          -1.0007212421863876,
+          -0.9999997399048205
+        ],
+        [
+          -0.8390695856923689,
+          -0.9869657551054009
+        ],
+        [
+          -1.5783897104777407,
+          -0.815760591603612
+        ]
+      ],
+      "formula_relative_error_max": 1.4404275044352388e-15,
+      "one_scan_reflection_relative_error_max": 4.607178576991606e-16,
+      "condition_real_max": 29062.376743410485,
+      "condition_imag_max": 1174385.6730603613,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 7.631829683297064e-11,
+        "scan_supports": [
+          [
+            2,
+            7,
+            13,
+            20
+          ],
+          [
+            1,
+            8,
+            12,
+            21
+          ]
+        ],
+        "scan_residuals": [
+          1.5987658028845895e-15,
+          1.61190445646954e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 5.906960720917893,
+        "scan_supports": [
+          [
+            0,
+            6,
+            16,
+            22
+          ],
+          [
+            0,
+            6,
+            16,
+            22
+          ]
+        ],
+        "scan_residuals": [
+          6.0946965453493045e-06,
+          4.9065405692808215e-06
+        ]
+      }
+    },
+    {
+      "n_atoms": 4,
+      "trial": 4,
+      "n": 257,
+      "lag_count": 8,
+      "location_bound": 20,
+      "gamma": 0.0075,
+      "positions": [
+        -19,
+        -10,
+        7,
+        20
+      ],
+      "amplitudes": [
+        [
+          -1.9497241063800794,
+          0.31308804154831527
+        ],
+        [
+          -1.4847581272975647,
+          0.8746482481654886
+        ],
+        [
+          -0.4052658655098389,
+          0.8039224522752421
+        ],
+        [
+          -0.5823549184569113,
+          0.9086102497016346
+        ]
+      ],
+      "formula_relative_error_max": 4.9862710605974985e-15,
+      "one_scan_reflection_relative_error_max": 4.657474757607917e-16,
+      "condition_real_max": 23337.528588568777,
+      "condition_imag_max": 205492.40340534813,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 5.468348962235163e-10,
+        "scan_supports": [
+          [
+            7,
+            10,
+            19,
+            20
+          ],
+          [
+            6,
+            11,
+            19,
+            20
+          ]
+        ],
+        "scan_residuals": [
+          1.1305154429235358e-15,
+          1.5810860171699474e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.25,
+        "support_recall": 0.25,
+        "support_f1": 0.25,
+        "nrmse": 3.985543601235783,
+        "scan_supports": [
+          [
+            1,
+            9,
+            18,
+            22
+          ],
+          [
+            1,
+            9,
+            18,
+            22
+          ]
+        ],
+        "scan_residuals": [
+          7.556720964557122e-08,
+          1.850148457314792e-07
+        ]
+      }
+    },
+    {
+      "n_atoms": 4,
+      "trial": 5,
+      "n": 257,
+      "lag_count": 8,
+      "location_bound": 20,
+      "gamma": 0.0075,
+      "positions": [
+        -16,
+        0,
+        10,
+        20
+      ],
+      "amplitudes": [
+        [
+          -0.10861155851131521,
+          -0.453240164129762
+        ],
+        [
+          -1.8951846257689764,
+          -0.44569550792761825
+        ],
+        [
+          -1.459038920319952,
+          -0.8884161579077076
+        ],
+        [
+          -0.12947828066865474,
+          0.49212999926076306
+        ]
+      ],
+      "formula_relative_error_max": 1.1143360272394454e-15,
+      "one_scan_reflection_relative_error_max": 4.1573130771657216e-16,
+      "condition_real_max": 15137.25367074816,
+      "condition_imag_max": 550266.2602277116,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 4.236790684507562e-11,
+        "scan_supports": [
+          [
+            0,
+            10,
+            16,
+            20
+          ],
+          [
+            1,
+            9,
+            17,
+            19
+          ]
+        ],
+        "scan_residuals": [
+          1.966319581583001e-15,
+          3.2522711202920123e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 112.80926318665168,
+        "scan_supports": [
+          [
+            4,
+            15,
+            19,
+            22
+          ],
+          [
+            4,
+            15,
+            19,
+            22
+          ]
+        ],
+        "scan_residuals": [
+          4.24755593427476e-06,
+          3.150118884398433e-06
+        ]
+      }
+    },
+    {
+      "n_atoms": 4,
+      "trial": 6,
+      "n": 257,
+      "lag_count": 8,
+      "location_bound": 20,
+      "gamma": 0.0075,
+      "positions": [
+        -16,
+        -7,
+        9,
+        18
+      ],
+      "amplitudes": [
+        [
+          -0.27267070547048844,
+          0.6862886399461986
+        ],
+        [
+          -0.7635410157643199,
+          0.971641471312454
+        ],
+        [
+          -0.10816994944537739,
+          0.45237060130797546
+        ],
+        [
+          -0.011471766996710264,
+          -0.15103619617626018
+        ]
+      ],
+      "formula_relative_error_max": 4.575965870779435e-15,
+      "one_scan_reflection_relative_error_max": 4.624615075511337e-16,
+      "condition_real_max": 42103.34909052397,
+      "condition_imag_max": 455323.63014143455,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 4.198796665005057e-10,
+        "scan_supports": [
+          [
+            7,
+            9,
+            16,
+            18
+          ],
+          [
+            4,
+            5,
+            8,
+            17
+          ]
+        ],
+        "scan_residuals": [
+          2.0443022484023935e-15,
+          3.4798397269608184e-16
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 5.16220319776422,
+        "scan_supports": [
+          [
+            0,
+            7,
+            16,
+            22
+          ],
+          [
+            0,
+            8,
+            16,
+            22
+          ]
+        ],
+        "scan_residuals": [
+          2.163930558193461e-06,
+          2.2678683676702144e-07
+        ]
+      }
+    },
+    {
+      "n_atoms": 4,
+      "trial": 7,
+      "n": 257,
+      "lag_count": 8,
+      "location_bound": 20,
+      "gamma": 0.0075,
+      "positions": [
+        -15,
+        0,
+        9,
+        20
+      ],
+      "amplitudes": [
+        [
+          -0.5394212756623878,
+          -0.8876188589070975
+        ],
+        [
+          -0.4768773159759643,
+          -0.8522573892079134
+        ],
+        [
+          -1.8189215206883664,
+          0.5739055174446865
+        ],
+        [
+          -1.785242963188245,
+          0.6191877653534061
+        ]
+      ],
+      "formula_relative_error_max": 2.4657011976191397e-15,
+      "one_scan_reflection_relative_error_max": 3.8941292843025403e-16,
+      "condition_real_max": 18525.856966739397,
+      "condition_imag_max": 746084.5926213422,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.754067028358944e-10,
+        "scan_supports": [
+          [
+            0,
+            9,
+            15,
+            20
+          ],
+          [
+            1,
+            8,
+            16,
+            19
+          ]
+        ],
+        "scan_residuals": [
+          2.1989534329281682e-15,
+          1.2717309742233933e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.25,
+        "support_recall": 0.25,
+        "support_f1": 0.25,
+        "nrmse": 3.806210828117121,
+        "scan_supports": [
+          [
+            0,
+            7,
+            16,
+            22
+          ],
+          [
+            0,
+            7,
+            16,
+            22
+          ]
+        ],
+        "scan_residuals": [
+          3.133195135516968e-06,
+          2.277810352754571e-06
+        ]
+      }
+    },
+    {
+      "n_atoms": 4,
+      "trial": 8,
+      "n": 257,
+      "lag_count": 8,
+      "location_bound": 20,
+      "gamma": 0.0075,
+      "positions": [
+        -18,
+        -7,
+        11,
+        20
+      ],
+      "amplitudes": [
+        [
+          -0.5727289276395078,
+          0.9041235704946061
+        ],
+        [
+          -1.7287859543430621,
+          -0.684741581001382
+        ],
+        [
+          -1.9321951243947826,
+          -0.36195614382766816
+        ],
+        [
+          -0.164876304698652,
+          0.5500621906168621
+        ]
+      ],
+      "formula_relative_error_max": 1.5172807384241432e-15,
+      "one_scan_reflection_relative_error_max": 2.75780548116962e-16,
+      "condition_real_max": 18273.11956411872,
+      "condition_imag_max": 162618.852365995,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 1.81275992110901e-10,
+        "scan_supports": [
+          [
+            7,
+            11,
+            18,
+            20
+          ],
+          [
+            8,
+            9,
+            10,
+            19
+          ]
+        ],
+        "scan_residuals": [
+          2.369388429205673e-15,
+          2.072506015514871e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.25,
+        "support_recall": 0.25,
+        "support_f1": 0.25,
+        "nrmse": 4.8274963655652074,
+        "scan_supports": [
+          [
+            0,
+            8,
+            16,
+            22
+          ],
+          [
+            0,
+            1,
+            9,
+            22
+          ]
+        ],
+        "scan_residuals": [
+          3.5927300861134203e-06,
+          1.5479329438810248e-06
+        ]
+      }
+    },
+    {
+      "n_atoms": 4,
+      "trial": 9,
+      "n": 257,
+      "lag_count": 8,
+      "location_bound": 20,
+      "gamma": 0.0075,
+      "positions": [
+        -13,
+        0,
+        9,
+        18
+      ],
+      "amplitudes": [
+        [
+          -0.6057398694607874,
+          -0.9189988843666803
+        ],
+        [
+          -1.2611199332045273,
+          -0.9653063661259379
+        ],
+        [
+          -1.5516134221934075,
+          0.8340998935715539
+        ],
+        [
+          -1.9359073233898505,
+          0.3522463371353148
+        ]
+      ],
+      "formula_relative_error_max": 9.226435614601187e-16,
+      "one_scan_reflection_relative_error_max": 5.732995735550654e-16,
+      "condition_real_max": 30975.687838432255,
+      "condition_imag_max": 979229.5106520351,
+      "beam": {
+        "support_exact": 1.0,
+        "support_precision": 1.0,
+        "support_recall": 1.0,
+        "support_f1": 1.0,
+        "nrmse": 5.274030428580148e-11,
+        "scan_supports": [
+          [
+            0,
+            9,
+            13,
+            18
+          ],
+          [
+            1,
+            8,
+            14,
+            17
+          ]
+        ],
+        "scan_residuals": [
+          2.3249747471556878e-15,
+          2.002781639414366e-15
+        ]
+      },
+      "omp": {
+        "support_exact": 0.0,
+        "support_precision": 0.0,
+        "support_recall": 0.0,
+        "support_f1": 0.0,
+        "nrmse": 57.903228165479135,
+        "scan_supports": [
+          [
+            0,
+            6,
+            16,
+            22
+          ],
+          [
+            5,
+            15,
+            19,
+            22
+          ]
+        ],
+        "scan_residuals": [
+          8.149577751573838e-06,
+          3.4671731277232e-06
+        ]
+      }
+    }
+  ]
+}
