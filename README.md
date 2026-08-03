@@ -8,8 +8,8 @@ intensity measurements. It implements the paper's clean-lag moment decoder, the
 full-data linearization baseline, PIE, hard-thresholded Wirtinger flow, and the
 two-dimensional calibrated Poisson case.
 
-> This repository contains numerical experiment code and result data only. Plotting
-> scripts are intentionally excluded.
+Each entry point below recreates one reported experiment and writes its numerical
+outputs to `results/`.
 
 ## What is included
 
@@ -21,9 +21,6 @@ two-dimensional calibrated Poisson case.
 | Fig. 2(a), proposed decoder for `N=1,2,3` | `experiments/run_noise.py` | `results/noise/` |
 | Fig. 2(b), paired four-method comparison | `experiments/run_comparison.py` | `results/comparison/` |
 | Fig. 3, two-dimensional Poisson case | `experiments/run_poisson_2d.py` | `results/poisson_2d/` |
-
-No conditioning sweep, pilot run, smoke test, or experiment absent from the paper is
-included.
 
 ## Installation
 
@@ -47,8 +44,7 @@ python -m experiments.run_clean_lag_trace
 python -m unittest discover -s tests -v
 ```
 
-The first command regenerates the values underlying Fig. 1(a), without creating a
-figure.
+The first command regenerates the numerical values underlying Fig. 1(a).
 
 ## Reproduce the paper results
 

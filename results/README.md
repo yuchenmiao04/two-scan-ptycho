@@ -1,7 +1,6 @@
 # Frozen result files
 
-These files are the outputs used by the paper. Console logs, pilot runs, smoke tests,
-conditioning sweeps, and plotting artifacts are not included.
+These files are the frozen numerical outputs used by the paper.
 
 | Directory | Contents |
 | --- | --- |
