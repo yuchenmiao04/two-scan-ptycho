@@ -1,0 +1,2 @@
+# Validation, 2-D case and setup timing: Python 3.12.
+numpy==2.3.5

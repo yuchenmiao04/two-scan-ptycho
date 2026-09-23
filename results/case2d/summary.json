@@ -1,0 +1,344 @@
+{
+  "suite": "case2d",
+  "rows": 2400,
+  "aggregate": [
+    {
+      "total_photons_two_frames": 60000000.0,
+      "photons_per_frame": 30000000.0,
+      "method": "calibrated",
+      "trials": 200,
+      "successes": 8,
+      "exact_support_rate": 0.04,
+      "wilson_95_interval": [
+        0.020405632066152306,
+        0.07693206820093293
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 1.1547005383792515,
+        "mean": 1.3029557512164347,
+        "max": 4.760952285695233
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.02426593653595563,
+        "median": 1.1810327433907417,
+        "mean": 1.1406292945650611,
+        "max": 2.7291992698391794
+      }
+    },
+    {
+      "total_photons_two_frames": 60000000.0,
+      "photons_per_frame": 30000000.0,
+      "method": "gamma_plus_2pct",
+      "trials": 200,
+      "successes": 12,
+      "exact_support_rate": 0.06,
+      "wilson_95_interval": [
+        0.03465219425433187,
+        0.1019316929576627
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 1.2909944487358056,
+        "mean": 1.4019693738199501,
+        "max": 7.788880963698615
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.005517061201766757,
+        "median": 1.1048577072471713,
+        "mean": 1.1004902136359882,
+        "max": 3.0779040346940576
+      }
+    },
+    {
+      "total_photons_two_frames": 200000000.0,
+      "photons_per_frame": 100000000.0,
+      "method": "calibrated",
+      "trials": 200,
+      "successes": 42,
+      "exact_support_rate": 0.21,
+      "wilson_95_interval": [
+        0.15928412069979,
+        0.2716461685990246
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 0.5773502691896257,
+        "mean": 0.8193630011596232,
+        "max": 3.4641016151377544
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.006844173275560322,
+        "median": 0.7636939615093656,
+        "mean": 0.8016038362474106,
+        "max": 1.793247310116771
+      }
+    },
+    {
+      "total_photons_two_frames": 200000000.0,
+      "photons_per_frame": 100000000.0,
+      "method": "gamma_plus_2pct",
+      "trials": 200,
+      "successes": 40,
+      "exact_support_rate": 0.2,
+      "wilson_95_interval": [
+        0.15045200926098115,
+        0.2608551865653788
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 0.5773502691896257,
+        "mean": 0.8894202920385815,
+        "max": 3.2145502536643185
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.018936464132469556,
+        "median": 0.7504487451161167,
+        "mean": 0.7920214557446479,
+        "max": 1.8654032199812542
+      }
+    },
+    {
+      "total_photons_two_frames": 600000000.0,
+      "photons_per_frame": 300000000.0,
+      "method": "calibrated",
+      "trials": 200,
+      "successes": 101,
+      "exact_support_rate": 0.505,
+      "wilson_95_interval": [
+        0.43627000033527485,
+        0.5735415464009526
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 0.0,
+        "mean": 0.4158565534029428,
+        "max": 2.70801280154532
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.003360737397850268,
+        "median": 0.09772585693718044,
+        "mean": 0.48038309028329323,
+        "max": 1.526989114904771
+      }
+    },
+    {
+      "total_photons_two_frames": 600000000.0,
+      "photons_per_frame": 300000000.0,
+      "method": "gamma_plus_2pct",
+      "trials": 200,
+      "successes": 83,
+      "exact_support_rate": 0.415,
+      "wilson_95_interval": [
+        0.34894285449757567,
+        0.4842608509865596
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 0.5773502691896257,
+        "mean": 0.5361651769670991,
+        "max": 2.70801280154532
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.00856499788056967,
+        "median": 0.6845960084613301,
+        "mean": 0.5337785732212879,
+        "max": 1.4861338862518558
+      }
+    },
+    {
+      "total_photons_two_frames": 2000000000.0,
+      "photons_per_frame": 1000000000.0,
+      "method": "calibrated",
+      "trials": 200,
+      "successes": 183,
+      "exact_support_rate": 0.915,
+      "wilson_95_interval": [
+        0.8681041292843443,
+        0.9462542498225244
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 0.0,
+        "mean": 0.06531366174257376,
+        "max": 2.0816659994661326
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0012517489928876799,
+        "median": 0.02240885279687391,
+        "mean": 0.10165498537824448,
+        "max": 1.3361878421570568
+      }
+    },
+    {
+      "total_photons_two_frames": 2000000000.0,
+      "photons_per_frame": 1000000000.0,
+      "method": "gamma_plus_2pct",
+      "trials": 200,
+      "successes": 156,
+      "exact_support_rate": 0.78,
+      "wilson_95_interval": [
+        0.7176120008170632,
+        0.8318346164116674
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 0.0,
+        "mean": 0.20988191372907353,
+        "max": 2.6457513110645907
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.012279461953809408,
+        "median": 0.06639055071422756,
+        "mean": 0.2282631990206887,
+        "max": 1.2710872021963506
+      }
+    },
+    {
+      "total_photons_two_frames": 6000000000.0,
+      "photons_per_frame": 3000000000.0,
+      "method": "calibrated",
+      "trials": 200,
+      "successes": 198,
+      "exact_support_rate": 0.99,
+      "wilson_95_interval": [
+        0.9642782382838231,
+        0.9972533418664555
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 0.0,
+        "mean": 0.013295081343278791,
+        "max": 2.0816659994661326
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0010780729462808232,
+        "median": 0.011826905587097496,
+        "mean": 0.023405100708441425,
+        "max": 1.2472072754329102
+      }
+    },
+    {
+      "total_photons_two_frames": 6000000000.0,
+      "photons_per_frame": 3000000000.0,
+      "method": "gamma_plus_2pct",
+      "trials": 200,
+      "successes": 192,
+      "exact_support_rate": 0.96,
+      "wilson_95_interval": [
+        0.923067931799067,
+        0.9795943679338476
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 0.0,
+        "mean": 0.054376056931805666,
+        "max": 2.0816659994661326
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.014887389503218398,
+        "median": 0.05561437339002193,
+        "mean": 0.09271417163868494,
+        "max": 1.2624962908942414
+      }
+    },
+    {
+      "total_photons_two_frames": 20000000000.0,
+      "photons_per_frame": 10000000000.0,
+      "method": "calibrated",
+      "trials": 200,
+      "successes": 200,
+      "exact_support_rate": 1.0,
+      "wilson_95_interval": [
+        0.9811546736227335,
+        1.0
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.000592672803329947,
+        "median": 0.0064357340892140505,
+        "mean": 0.007338738755794209,
+        "max": 0.021835906802882776
+      }
+    },
+    {
+      "total_photons_two_frames": 20000000000.0,
+      "photons_per_frame": 10000000000.0,
+      "method": "gamma_plus_2pct",
+      "trials": 200,
+      "successes": 199,
+      "exact_support_rate": 0.995,
+      "wilson_95_interval": [
+        0.9722262956021069,
+        0.9991168312843989
+      ],
+      "localization_rmse_pixels": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.0,
+        "median": 0.0,
+        "mean": 0.010408329997330663,
+        "max": 2.0816659994661326
+      },
+      "perturbation_nrmse": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 0.034328355450523304,
+        "median": 0.0558953929925729,
+        "mean": 0.06173108982904495,
+        "max": 1.2652199045001173
+      }
+    }
+  ],
+  "summary_verification": "Every retained recorded aggregate was recomputed from the per-trial CSV and matched within floating-point tolerance.",
+  "runtime_warning": "Six-process trial wall times are archived only as diagnostics, not as fair method timing measurements."
+}

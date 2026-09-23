@@ -6,3 +6,6 @@ __pycache__/
 build/
 dist/
 *.log
+results/reproduced/
+.venv-*/
+.pytest_cache/

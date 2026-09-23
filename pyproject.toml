@@ -20,7 +20,7 @@ authors = [
 ]
 
 [project.urls]
-Source = "https://github.com/PNemo04/two-scan-ptycho"
+Source = "https://github.com/yuchenmiao04/two-scan-ptycho"
 
 [tool.setuptools.packages.find]
 where = ["src"]

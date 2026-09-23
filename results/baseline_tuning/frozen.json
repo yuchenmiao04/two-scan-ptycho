@@ -1,0 +1,316 @@
+{
+  "created_utc": "2026-09-19T17:27:30.355365+00:00",
+  "seed": 19692001,
+  "selection_criterion": "Minimum mean log(1+min(defect NRMSE,100)); numerical failures assigned log(101).",
+  "baseline_configs": {
+    "pie": {
+      "iterations": 1200,
+      "restarts": 32,
+      "pie_relaxation": 0.5,
+      "threshold_after": 200
+    },
+    "htwf": {
+      "iterations": 1200,
+      "restarts": 32,
+      "learning_rate": 0.5,
+      "threshold_after": 200
+    },
+    "htaf": {
+      "iterations": 1200,
+      "restarts": 32,
+      "learning_rate": 0.5,
+      "threshold_after": 200
+    },
+    "full_linear": {
+      "iterations": 12,
+      "restarts": 1
+    }
+  },
+  "validation": {
+    "pie": {
+      "selected": {
+        "iterations": 1200,
+        "restarts": 32,
+        "pie_relaxation": 0.5,
+        "threshold_after": 200
+      },
+      "validation": [
+        {
+          "config": {
+            "iterations": 200,
+            "restarts": 4,
+            "pie_relaxation": 0.5,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.7641733021455287,
+          "runtime_median": 0.11190316645661369
+        },
+        {
+          "config": {
+            "iterations": 600,
+            "restarts": 8,
+            "pie_relaxation": 0.5,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.7156725569754506,
+          "runtime_median": 0.44208204152528197
+        },
+        {
+          "config": {
+            "iterations": 1200,
+            "restarts": 8,
+            "pie_relaxation": 0.5,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.7085310852493848,
+          "runtime_median": 0.9512301664799452
+        },
+        {
+          "config": {
+            "iterations": 600,
+            "restarts": 8,
+            "pie_relaxation": 1,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.7023895224717681,
+          "runtime_median": 0.49968404206447303
+        },
+        {
+          "config": {
+            "iterations": 600,
+            "restarts": 8,
+            "pie_relaxation": 0.5,
+            "threshold_after": 100
+          },
+          "score_mean_log1p_nrmse": 0.6645464528593626,
+          "runtime_median": 0.5247993540251628
+        },
+        {
+          "config": {
+            "iterations": 1200,
+            "restarts": 32,
+            "pie_relaxation": 0.5,
+            "threshold_after": 200
+          },
+          "score_mean_log1p_nrmse": 0.4764819022019989,
+          "runtime_median": 3.841336583485827
+        }
+      ]
+    },
+    "htwf": {
+      "selected": {
+        "iterations": 1200,
+        "restarts": 32,
+        "learning_rate": 0.5,
+        "threshold_after": 200
+      },
+      "validation": [
+        {
+          "config": {
+            "iterations": 200,
+            "restarts": 4,
+            "learning_rate": 0.5,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.7370415850365869,
+          "runtime_median": 0.4435102079878561
+        },
+        {
+          "config": {
+            "iterations": 600,
+            "restarts": 8,
+            "learning_rate": 0.5,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.7244524915698926,
+          "runtime_median": 2.025480291515123
+        },
+        {
+          "config": {
+            "iterations": 1200,
+            "restarts": 8,
+            "learning_rate": 0.5,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.72247671727689,
+          "runtime_median": 2.915312604047358
+        },
+        {
+          "config": {
+            "iterations": 600,
+            "restarts": 8,
+            "learning_rate": 1,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.7219795997183702,
+          "runtime_median": 1.8520836040261202
+        },
+        {
+          "config": {
+            "iterations": 600,
+            "restarts": 8,
+            "learning_rate": 0.5,
+            "threshold_after": 100
+          },
+          "score_mean_log1p_nrmse": 0.6990381548878941,
+          "runtime_median": 1.6017304165288806
+        },
+        {
+          "config": {
+            "iterations": 1200,
+            "restarts": 32,
+            "learning_rate": 0.5,
+            "threshold_after": 200
+          },
+          "score_mean_log1p_nrmse": 0.592883276694445,
+          "runtime_median": 12.360734500049148
+        }
+      ]
+    },
+    "htaf": {
+      "selected": {
+        "iterations": 1200,
+        "restarts": 32,
+        "learning_rate": 0.5,
+        "threshold_after": 200
+      },
+      "validation": [
+        {
+          "config": {
+            "iterations": 200,
+            "restarts": 4,
+            "learning_rate": 0.5,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.7499714305060069,
+          "runtime_median": 0.3450910209794529
+        },
+        {
+          "config": {
+            "iterations": 600,
+            "restarts": 8,
+            "learning_rate": 0.5,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.7561321283198446,
+          "runtime_median": 1.8325637294910848
+        },
+        {
+          "config": {
+            "iterations": 1200,
+            "restarts": 8,
+            "learning_rate": 0.5,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.7292647266999723,
+          "runtime_median": 3.3830572710139677
+        },
+        {
+          "config": {
+            "iterations": 600,
+            "restarts": 8,
+            "learning_rate": 1,
+            "threshold_after": 0
+          },
+          "score_mean_log1p_nrmse": 0.7264895190137087,
+          "runtime_median": 1.9475847710273229
+        },
+        {
+          "config": {
+            "iterations": 600,
+            "restarts": 8,
+            "learning_rate": 0.5,
+            "threshold_after": 100
+          },
+          "score_mean_log1p_nrmse": 0.6950930029847584,
+          "runtime_median": 1.925333604507614
+        },
+        {
+          "config": {
+            "iterations": 1200,
+            "restarts": 32,
+            "learning_rate": 0.5,
+            "threshold_after": 200
+          },
+          "score_mean_log1p_nrmse": 0.5467369877441807,
+          "runtime_median": 10.253957458480727
+        }
+      ]
+    },
+    "full_linear": {
+      "selected": {
+        "iterations": 12,
+        "restarts": 1
+      },
+      "validation": [
+        {
+          "config": {
+            "iterations": 4,
+            "restarts": 1
+          },
+          "score_mean_log1p_nrmse": 0.1343457073629191,
+          "runtime_median": 0.2021773754968308
+        },
+        {
+          "config": {
+            "iterations": 12,
+            "restarts": 1
+          },
+          "score_mean_log1p_nrmse": 0.132451846799991,
+          "runtime_median": 0.21871454152278602
+        },
+        {
+          "config": {
+            "iterations": 12,
+            "restarts": 4
+          },
+          "score_mean_log1p_nrmse": 0.14160696497322914,
+          "runtime_median": 0.21375122951576486
+        },
+        {
+          "config": {
+            "iterations": 24,
+            "restarts": 8
+          },
+          "score_mean_log1p_nrmse": 0.14935949342516264,
+          "runtime_median": 0.23709106200840324
+        }
+      ]
+    }
+  },
+  "provenance_note": "Calibration used the source versions recorded in its manifest. During calibration, only non-tuning stress acquisition, off-grid metric reporting, and runtime metadata in the orchestration script were corrected. Recovery implementations and tuning jobs were unchanged. Formal evaluation separately verifies every src/ hash.",
+  "recorded_sources": {
+    "experiments/run_experiments.py": "93c12c8b656fcde2db12ad493bd6e8ef4b783d425d238e522aa6331e54dbb5a1",
+    "src/twoscan_ptycho/__init__.py": "038033ee7edd079bdeea9f516b6bd69f07b75b8a2deaca0821c8f9b28d35e9b7",
+    "src/twoscan_ptycho/case2d.py": "c89efce0adeeffb05561a1c1022d29804ce609b437e1a5a67d821c1be6c9e6a2",
+    "src/twoscan_ptycho/core.py": "17b00679c7a2917d6b598589ba748768b2a31a48d047a55a926b5174a85701e6",
+    "src/twoscan_ptycho/full_data.py": "9defd806cf915efa73cbb8b5f560ba0802585a36959fbff9f32001d942e7ee4a",
+    "src/twoscan_ptycho/iterative.py": "152f7707f04a8257e2f015079d49c6fc0befcc34c3ae3f7ca61d636a82462e46",
+    "src/twoscan_ptycho/reconstruction.py": "61db4a257c6143c2859ace319c672ff1117e1d4b9b691b16d6d1a6d6cbc1a882",
+    "src/twoscan_ptycho/baselines.py": "600697b3ce6a10720710f24bd0483e710153b9680bb73f281b6b6e3c8b078cb6"
+  },
+  "recorded_solver_sources": {
+    "src/twoscan_ptycho/__init__.py": "038033ee7edd079bdeea9f516b6bd69f07b75b8a2deaca0821c8f9b28d35e9b7",
+    "src/twoscan_ptycho/case2d.py": "c89efce0adeeffb05561a1c1022d29804ce609b437e1a5a67d821c1be6c9e6a2",
+    "src/twoscan_ptycho/core.py": "17b00679c7a2917d6b598589ba748768b2a31a48d047a55a926b5174a85701e6",
+    "src/twoscan_ptycho/full_data.py": "9defd806cf915efa73cbb8b5f560ba0802585a36959fbff9f32001d942e7ee4a",
+    "src/twoscan_ptycho/iterative.py": "152f7707f04a8257e2f015079d49c6fc0befcc34c3ae3f7ca61d636a82462e46",
+    "src/twoscan_ptycho/reconstruction.py": "61db4a257c6143c2859ace319c672ff1117e1d4b9b691b16d6d1a6d6cbc1a882",
+    "src/twoscan_ptycho/baselines.py": "600697b3ce6a10720710f24bd0483e710153b9680bb73f281b6b6e3c8b078cb6"
+  },
+  "distribution_source_hashes": {
+    "src/twoscan_ptycho/__init__.py": "fa16a13d3fe6ed69cab3b8c78f8fe5629991b7eaad2e1f340a15293478fb78e1",
+    "src/twoscan_ptycho/baselines.py": "ac10035e2c10cc387e7b4d9a2a50f71872e36a3353cf78351fdc3b83de89039d",
+    "src/twoscan_ptycho/case2d.py": "4ec360c338a6f940133eb81a87a1de7b2dc878ffe0ab893e2d141f489315ad91",
+    "src/twoscan_ptycho/core.py": "fc92546fbbe9df15bea3fa027c83c10c912d0d87ce4116d320bab628e13d114d",
+    "src/twoscan_ptycho/reconstruction.py": "fb5990204dd2b04d632af18db4a43fe14ed44d066c77cbf6213b9a883682050e",
+    "experiments/__init__.py": "ce2aeda1ea5e7ee0e4991b8db0220667ababe9c6090dc811455407681edd0a4f",
+    "experiments/_shared.py": "155e8ae14a28f6697d6dff6e6c179b1484c99e697bd42c220009f68d02d7f431",
+    "experiments/run_case2d.py": "cec6c910957249c4482848d054db98802904dc703e22c378d8ac5304234c0e57",
+    "experiments/run_experiments.py": "6c7f1f8535551e1edfd092c67a9d10dffd8ae40c14f095e7829f88d90dffe5e9",
+    "experiments/run_timing_setup.py": "334ac9801d857ea8f052fc347f137c57b3e837699f5771c545ab93d2d1c66f78",
+    "experiments/run_validation.py": "c3a53ef40cf6189cac2abf0c066f8973a584d3c6fb2e3945853275aefb43524c",
+    "experiments/verify_results.py": "e17f20d825f47024d19e898a4e2f392224ead034e41ac41d1044423076d98617"
+  },
+  "source_hash_interpretation": "recorded_sources contains SHA-256 values recorded when the measurements were computed, indexed by neutral component identifiers; these are not hashes of the distributed files. distribution_source_hashes authenticates the distributed implementation. Numerical CSV cells retain the recorded values. The solver entries in distribution_source_hashes are an execution guard, not a claim that current source bytes generated the recorded trials."
+}

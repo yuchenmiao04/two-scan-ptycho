@@ -1,0 +1,3367 @@
+{
+  "suite": "poisson",
+  "rows": 7000,
+  "aggregate": [
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000.0,
+      "method": "joint",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.295,
+      "support_wilson95": [
+        0.23613943856849148,
+        0.36158714524618774
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.7070670599052842,
+      "defect_nrmse_q10_q90": [
+        0.08517740682307175,
+        5.052734905020674
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4976761962286425,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.280109889280518
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.5277362000017894,
+      "amplitude_relative_error_q10_q90": [
+        0.045649379119151394,
+        4.364336843906641
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.28128893841851804,
+      "phase_rmse_rad_q10_q90": [
+        0.039756841568137906,
+        1.9966575663143737
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.02857393334204362,
+      "relative_intensity_residual_q10_q90": [
+        0.023859405404376446,
+        0.03890512726611263
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.0008503335411660373,
+      "wall_seconds_q10_q90": [
+        0.0007716753287240862,
+        0.0010763670317828656
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0012816250091418624,
+      "setup_seconds_q10_q90": [
+        0.0012059170985594392,
+        0.0017168329795822501
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.0005545830354094505,
+      "online_seconds_q10_q90": [
+        0.0005157291772775352,
+        0.0007206954178400338
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.0018815629300661385,
+      "algorithm_total_seconds_q10_q90": [
+        0.0017429071362130345,
+        0.002267086610663682
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1.0,
+      "iterations_q10_q90": [
+        1.0,
+        1.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 12.874937811752417,
+      "effective_snr_db_q10_q90": [
+        0.6884713012250732,
+        19.322304763215246
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 31.223889982640372,
+      "total_snr_db_q10_q90": [
+        29.942052992687096,
+        32.46528599740942
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 2.0040200281806584,
+      "defect_nrmse_q25_q75": [
+        0.27158509656418833,
+        1.003973768788059
+      ],
+      "online_seconds_mean": 0.0005912070453632623,
+      "online_seconds_q25_q75": [
+        0.0005342184158507735,
+        0.0006404472514986992
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000.0,
+      "method": "full_linear",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.665,
+      "support_wilson95": [
+        0.5970219120796653,
+        0.7267591302158368
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.09457638884479937,
+      "defect_nrmse_q10_q90": [
+        0.019625799101081906,
+        1.0
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        6.503678267750278
+      ],
+      "localization_rmse_available": 172,
+      "amplitude_relative_error_median": 0.04896256113113491,
+      "amplitude_relative_error_q10_q90": [
+        0.0086415488942673,
+        0.6690166316696762
+      ],
+      "amplitude_relative_error_available": 172,
+      "phase_rmse_rad_median": 0.04697920051873539,
+      "phase_rmse_rad_q10_q90": [
+        0.010756294187473871,
+        1.6665622304383128
+      ],
+      "phase_rmse_rad_available": 172,
+      "relative_intensity_residual_median": 0.027506734573368344,
+      "relative_intensity_residual_q10_q90": [
+        0.024044573718424386,
+        0.03196959901281153
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.05856872949516401,
+      "wall_seconds_q10_q90": [
+        0.0547850375645794,
+        0.06221267506480216
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.02060312550747767,
+      "setup_seconds_q10_q90": [
+        0.018080425553489477,
+        0.022995349648408592
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.0372323960182257,
+      "online_seconds_q10_q90": [
+        0.03537300799507648,
+        0.03918792916228995
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.057901437452528626,
+      "algorithm_total_seconds_q10_q90": [
+        0.054268724413122985,
+        0.061401645489968355
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 7.0,
+      "iterations_q10_q90": [
+        6.0,
+        12.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 12.874937811752417,
+      "effective_snr_db_q10_q90": [
+        0.6884713012250732,
+        19.322304763215246
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 31.223889982640372,
+      "total_snr_db_q10_q90": [
+        29.942052992687096,
+        32.46528599740942
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.3557803002963788,
+      "defect_nrmse_q25_q75": [
+        0.038943353177203724,
+        0.6844066736286937
+      ],
+      "online_seconds_mean": 0.03634256874967832,
+      "online_seconds_q25_q75": [
+        0.036250156204914674,
+        0.03823771924362518
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000.0,
+      "method": "pie",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.475,
+      "support_wilson95": [
+        0.4069162264657108,
+        0.5440260398531525
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.5749036618413347,
+      "defect_nrmse_q10_q90": [
+        0.02414524543176396,
+        0.971167818184098
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.7071067811865476,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.648529270389178
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.4166673091178258,
+      "amplitude_relative_error_q10_q90": [
+        0.012400725213924012,
+        0.7651270853271338
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.3049977359161179,
+      "phase_rmse_rad_q10_q90": [
+        0.015117210939546962,
+        1.9109619773640383
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.027970067827373057,
+      "relative_intensity_residual_q10_q90": [
+        0.024213636304552064,
+        0.03400396540242747
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 3.3056071039754897,
+      "wall_seconds_q10_q90": [
+        2.768798703921493,
+        3.760571449715644
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0014880835078656673,
+      "setup_seconds_q10_q90": [
+        0.0012351659941487014,
+        0.001756679208483547
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 3.3034128335420974,
+      "online_seconds_q10_q90": [
+        2.766919524769764,
+        3.758902183326427
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 3.305242875008844,
+      "algorithm_total_seconds_q10_q90": [
+        2.7684574454906397,
+        3.7602144791278986
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 886.5,
+      "iterations_q10_q90": [
+        371.1,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 12.874937811752417,
+      "effective_snr_db_q10_q90": [
+        0.6884713012250732,
+        19.322304763215246
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 31.223889982640372,
+      "total_snr_db_q10_q90": [
+        29.942052992687096,
+        32.46528599740942
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.4874127473371513,
+      "defect_nrmse_q25_q75": [
+        0.05189213890281789,
+        0.7449975117558957
+      ],
+      "online_seconds_mean": 3.2565243809868116,
+      "online_seconds_q25_q75": [
+        3.069684344023699,
+        3.5576328752213158
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000.0,
+      "method": "htwf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.255,
+      "support_wilson95": [
+        0.1996049517203135,
+        0.3196292582045472
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.7495118274442432,
+      "defect_nrmse_q10_q90": [
+        0.07134006996927234,
+        1.320153926222442
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.7781745930520225
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.40215836928776666,
+      "amplitude_relative_error_q10_q90": [
+        0.02962234085936011,
+        0.7772240835780138
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.24986742393773104,
+      "phase_rmse_rad_q10_q90": [
+        0.03631934005365528,
+        2.079477237113748
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.027572232476987577,
+      "relative_intensity_residual_q10_q90": [
+        0.02357525893298682,
+        0.03428490419969728
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 8.408051625068765,
+      "wall_seconds_q10_q90": [
+        7.532549512723927,
+        8.77562452056445
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0014341245405375957,
+      "setup_seconds_q10_q90": [
+        0.001217483903747052,
+        0.0016766414162702858
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 8.406426604022272,
+      "online_seconds_q10_q90": [
+        7.530502291687299,
+        8.773694246215745
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 8.407663895981386,
+      "algorithm_total_seconds_q10_q90": [
+        7.5321645374991935,
+        8.775270928861573
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        725.2,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 12.874937811752417,
+      "effective_snr_db_q10_q90": [
+        0.6884713012250732,
+        19.322304763215246
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 31.223889982640372,
+      "total_snr_db_q10_q90": [
+        29.942052992687096,
+        32.46528599740942
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.7356805336670726,
+      "defect_nrmse_q25_q75": [
+        0.4660174466055008,
+        1.0449816838154455
+      ],
+      "online_seconds_mean": 8.129047282462707,
+      "online_seconds_q25_q75": [
+        7.990274030977162,
+        8.609820291749202
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000.0,
+      "method": "htaf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.39,
+      "support_wilson95": [
+        0.3250834313746962,
+        0.4590625404283025
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.6247401869467992,
+      "defect_nrmse_q10_q90": [
+        0.028746013155932486,
+        1.0957288434225767
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.905694150420948
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.49323607827459537,
+      "amplitude_relative_error_q10_q90": [
+        0.017286821143291664,
+        0.839775723483696
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.47879467320560887,
+      "phase_rmse_rad_q10_q90": [
+        0.017179284873794592,
+        2.0649867838616642
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.028244217289070582,
+      "relative_intensity_residual_q10_q90": [
+        0.02424779987506201,
+        0.03713414607389248
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 6.221905270940624,
+      "wall_seconds_q10_q90": [
+        5.18108052915195,
+        7.08673483756138
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0015127079677768052,
+      "setup_seconds_q10_q90": [
+        0.0012530959211289883,
+        0.0017828410142101347
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 6.220218957983889,
+      "online_seconds_q10_q90": [
+        5.179103667032905,
+        7.084559424675535
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 6.221512249961961,
+      "algorithm_total_seconds_q10_q90": [
+        5.1806272502988575,
+        7.086348341719713
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1143.5,
+      "iterations_q10_q90": [
+        448.5,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 12.874937811752417,
+      "effective_snr_db_q10_q90": [
+        0.6884713012250732,
+        19.322304763215246
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 31.223889982640372,
+      "total_snr_db_q10_q90": [
+        29.942052992687096,
+        32.46528599740942
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.5699552972435088,
+      "defect_nrmse_q25_q75": [
+        0.0948474162407241,
+        0.810624936084715
+      ],
+      "online_seconds_mean": 6.049758239584626,
+      "online_seconds_q25_q75": [
+        5.654145926760975,
+        6.661269594216719
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 1000000.0,
+      "method": "joint",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.445,
+      "support_wilson95": [
+        0.3778060100295335,
+        0.5142669758719658
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.5807420618013412,
+      "defect_nrmse_q10_q90": [
+        0.02102952625602132,
+        1.700950267081073
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.7071067811865476,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.0710678118654755
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.396999164274094,
+      "amplitude_relative_error_q10_q90": [
+        0.010977339558016877,
+        1.027676383829176
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.078096380238064,
+      "phase_rmse_rad_q10_q90": [
+        0.013487580204872092,
+        1.797183681453354
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.00904000738735448,
+      "relative_intensity_residual_q10_q90": [
+        0.00794871777801813,
+        0.012463138824273357
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.00043266703141853213,
+      "wall_seconds_q10_q90": [
+        0.00036828358424827455,
+        0.0006878159707412123
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0012816250091418624,
+      "setup_seconds_q10_q90": [
+        0.0012059170985594392,
+        0.0017168329795822501
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.0003086880315095186,
+      "online_seconds_q10_q90": [
+        0.00025398285361006857,
+        0.00044863714138045904
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.001622729585506022,
+      "algorithm_total_seconds_q10_q90": [
+        0.001479486539028585,
+        0.002006432681810111
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1.0,
+      "iterations_q10_q90": [
+        1.0,
+        1.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 22.999199987041344,
+      "effective_snr_db_q10_q90": [
+        10.571181195571377,
+        29.19067251053889
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 41.21151165513702,
+      "total_snr_db_q10_q90": [
+        39.98619075068496,
+        42.42299873424182
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.8176132889476821,
+      "defect_nrmse_q25_q75": [
+        0.04624698768428117,
+        0.8238396834050209
+      ],
+      "online_seconds_mean": 0.00033519061340484766,
+      "online_seconds_q25_q75": [
+        0.00027105154003947973,
+        0.0004005835216958076
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 1000000.0,
+      "method": "full_linear",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.88,
+      "support_wilson95": [
+        0.8276574790170326,
+        0.9180200729362449
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.027513739758447515,
+      "defect_nrmse_q10_q90": [
+        0.005454447888978787,
+        0.4965217558020135
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        0.0
+      ],
+      "localization_rmse_available": 187,
+      "amplitude_relative_error_median": 0.014386871726917327,
+      "amplitude_relative_error_q10_q90": [
+        0.0024872350527254585,
+        0.16461455474213374
+      ],
+      "amplitude_relative_error_available": 187,
+      "phase_rmse_rad_median": 0.01661484650363722,
+      "phase_rmse_rad_q10_q90": [
+        0.0029763296692618,
+        0.14416773247783915
+      ],
+      "phase_rmse_rad_available": 187,
+      "relative_intensity_residual_median": 0.008687042158031379,
+      "relative_intensity_residual_q10_q90": [
+        0.0075788188075954915,
+        0.009922962527382721
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.032485291943885386,
+      "wall_seconds_q10_q90": [
+        0.028429329534992574,
+        0.03666989582125098
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.010202916979324073,
+      "setup_seconds_q10_q90": [
+        0.008501207968220115,
+        0.014137991215102374
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.021564395516179502,
+      "online_seconds_q10_q90": [
+        0.018505229498259723,
+        0.023845816287212072
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.032095582981128246,
+      "algorithm_total_seconds_q10_q90": [
+        0.028171350620687007,
+        0.036385299451649186
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 6.0,
+      "iterations_q10_q90": [
+        6.0,
+        9.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 22.999199987041344,
+      "effective_snr_db_q10_q90": [
+        10.571181195571377,
+        29.19067251053889
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 41.21151165513702,
+      "total_snr_db_q10_q90": [
+        39.98619075068496,
+        42.42299873424182
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.13317980130241885,
+      "defect_nrmse_q25_q75": [
+        0.009740142605682595,
+        0.09972055111087398
+      ],
+      "online_seconds_mean": 0.021399530188064092,
+      "online_seconds_q25_q75": [
+        0.020053885004017502,
+        0.022926562262000516
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 1000000.0,
+      "method": "pie",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.475,
+      "support_wilson95": [
+        0.4069162264657108,
+        0.5440260398531525
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.4924171422052239,
+      "defect_nrmse_q10_q90": [
+        0.0057037217978922125,
+        1.041112582109171
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.7071067811865476,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.280109889280518
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.41860295701990413,
+      "amplitude_relative_error_q10_q90": [
+        0.002890487990395709,
+        0.8307007937476096
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.26848540205276,
+      "phase_rmse_rad_q10_q90": [
+        0.003756445017923737,
+        1.9972506775919616
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.009200857107787687,
+      "relative_intensity_residual_q10_q90": [
+        0.007934274057851088,
+        0.016568488312647872
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 1.7338037914596498,
+      "wall_seconds_q10_q90": [
+        1.4807192125474102,
+        2.0024747707764616
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.000658750010188669,
+      "setup_seconds_q10_q90": [
+        0.0005742419511079788,
+        0.001209537498652935
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 1.732762604020536,
+      "online_seconds_q10_q90": [
+        1.4796132627641783,
+        2.001574424980208
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 1.7336323540657759,
+      "algorithm_total_seconds_q10_q90": [
+        1.4805333166499621,
+        2.002295295568183
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1006.5,
+      "iterations_q10_q90": [
+        361.0,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 22.999199987041344,
+      "effective_snr_db_q10_q90": [
+        10.571181195571377,
+        29.19067251053889
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 41.21151165513702,
+      "total_snr_db_q10_q90": [
+        39.98619075068496,
+        42.42299873424182
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.47069397844673444,
+      "defect_nrmse_q25_q75": [
+        0.01457517490045137,
+        0.7473631781395853
+      ],
+      "online_seconds_mean": 1.7366307755571324,
+      "online_seconds_q25_q75": [
+        1.5820936977979727,
+        1.8654643954359926
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 1000000.0,
+      "method": "htwf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.275,
+      "support_wilson95": [
+        0.21779700329307355,
+        0.34068339357669647
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.7098851203203769,
+      "defect_nrmse_q10_q90": [
+        0.022165047364779797,
+        1.289159068869184
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.529836297306725
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.4017310458452136,
+      "amplitude_relative_error_q10_q90": [
+        0.013380325574070009,
+        0.7617632197517096
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.22783216407325557,
+      "phase_rmse_rad_q10_q90": [
+        0.013318947047978803,
+        1.9452290942100274
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.009702750202200485,
+      "relative_intensity_residual_q10_q90": [
+        0.008152469169901214,
+        0.019450061616855103
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 4.776628937921487,
+      "wall_seconds_q10_q90": [
+        4.239658412744757,
+        5.111485475336667
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0006527290097437799,
+      "setup_seconds_q10_q90": [
+        0.0005706374300643802,
+        0.0011075246380642056
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 4.775650041468907,
+      "online_seconds_q10_q90": [
+        4.238798216287978,
+        5.110525774967391
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 4.776324333506636,
+      "algorithm_total_seconds_q10_q90": [
+        4.239467650069855,
+        5.111224113148637
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        771.0,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 22.999199987041344,
+      "effective_snr_db_q10_q90": [
+        10.571181195571377,
+        29.19067251053889
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 41.21151165513702,
+      "total_snr_db_q10_q90": [
+        39.98619075068496,
+        42.42299873424182
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.6947078633977897,
+      "defect_nrmse_q25_q75": [
+        0.4232938712772221,
+        1.0120673724883926
+      ],
+      "online_seconds_mean": 4.701818683495512,
+      "online_seconds_q25_q75": [
+        4.457032655773219,
+        4.975874218798708
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 1000000.0,
+      "method": "htaf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.375,
+      "support_wilson95": [
+        0.31085436858409826,
+        0.44385696301021843
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.652046273564056,
+      "defect_nrmse_q10_q90": [
+        0.007629836466948476,
+        1.2350174025976854
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.905694150420948
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.48238487287801324,
+      "amplitude_relative_error_q10_q90": [
+        0.003685827817454022,
+        0.8490939060837683
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.38602808154974977,
+      "phase_rmse_rad_q10_q90": [
+        0.0054023846581056035,
+        2.0750383059365065
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.009867782109415779,
+      "relative_intensity_residual_q10_q90": [
+        0.008216643700250298,
+        0.024567471916096366
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 3.4700688124867156,
+      "wall_seconds_q10_q90": [
+        2.8673684452311137,
+        4.065772366710007
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0006631664582528174,
+      "setup_seconds_q10_q90": [
+        0.0005697668995708228,
+        0.001134366320911795
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 3.468998936994467,
+      "online_seconds_q10_q90": [
+        2.8666111089871267,
+        4.064896370447241
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 3.4698838330223225,
+      "algorithm_total_seconds_q10_q90": [
+        2.8671971964417025,
+        4.065581346093677
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        530.8,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 22.999199987041344,
+      "effective_snr_db_q10_q90": [
+        10.571181195571377,
+        29.19067251053889
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 41.21151165513702,
+      "total_snr_db_q10_q90": [
+        39.98619075068496,
+        42.42299873424182
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.5966051344581116,
+      "defect_nrmse_q25_q75": [
+        0.09471304647575086,
+        0.8704688661489745
+      ],
+      "online_seconds_mean": 3.4746228743565735,
+      "online_seconds_q25_q75": [
+        3.17103205199237,
+        3.761572687566513
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 10000000.0,
+      "method": "joint",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.61,
+      "support_wilson95": [
+        0.5409374595716976,
+        0.6749165686253038
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.06760843542907966,
+      "defect_nrmse_q10_q90": [
+        0.009203336347105137,
+        0.9238376886257903
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        5.065685424949234
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.03109250749944124,
+      "amplitude_relative_error_q10_q90": [
+        0.0037333352418436956,
+        0.9366429125983969
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.024894138040637427,
+      "phase_rmse_rad_q10_q90": [
+        0.003855603326675503,
+        0.7151194648351741
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0029449153113690636,
+      "relative_intensity_residual_q10_q90": [
+        0.0024934050541866827,
+        0.004765118744635313
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.0005181245505809784,
+      "wall_seconds_q10_q90": [
+        0.00045126661425456407,
+        0.0007223543478175997
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0012679590145125985,
+      "setup_seconds_q10_q90": [
+        0.0012059170985594392,
+        0.0017168329795822501
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.0003553749993443489,
+      "online_seconds_q10_q90": [
+        0.00030769968871027233,
+        0.0005151920253410935
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.0016793953254818916,
+      "algorithm_total_seconds_q10_q90": [
+        0.0015501126879826188,
+        0.0020648909732699392
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1.0,
+      "iterations_q10_q90": [
+        1.0,
+        1.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 33.187218153537735,
+      "effective_snr_db_q10_q90": [
+        20.466200128581107,
+        39.090331942952425
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 51.22288852212699,
+      "total_snr_db_q10_q90": [
+        49.94413409434651,
+        52.20036698854273
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.5255528508657611,
+      "defect_nrmse_q25_q75": [
+        0.016454922023730195,
+        0.6829898795507902
+      ],
+      "online_seconds_mean": 0.00039606607984751465,
+      "online_seconds_q25_q75": [
+        0.00033932345104403794,
+        0.00041385451913811266
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 10000000.0,
+      "method": "full_linear",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.975,
+      "support_wilson95": [
+        0.942821659593358,
+        0.9892752803482386
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.008979063047563903,
+      "defect_nrmse_q10_q90": [
+        0.0018536760511811312,
+        0.0633264702485124
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        0.0
+      ],
+      "localization_rmse_available": 198,
+      "amplitude_relative_error_median": 0.004287344698393483,
+      "amplitude_relative_error_q10_q90": [
+        0.0007629741732228828,
+        0.033376525998820405
+      ],
+      "amplitude_relative_error_available": 198,
+      "phase_rmse_rad_median": 0.005921143702296527,
+      "phase_rmse_rad_q10_q90": [
+        0.0008850197238071875,
+        0.04228945562440434
+      ],
+      "phase_rmse_rad_available": 198,
+      "relative_intensity_residual_median": 0.0027176121915660255,
+      "relative_intensity_residual_q10_q90": [
+        0.0024261799471488213,
+        0.0031435875259180493
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.038260792032815516,
+      "wall_seconds_q10_q90": [
+        0.03361607434926554,
+        0.041747541585937145
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.012186167004983872,
+      "setup_seconds_q10_q90": [
+        0.010554866702295839,
+        0.015334341069683432
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.025514916516840458,
+      "online_seconds_q10_q90": [
+        0.0223800586652942,
+        0.02670426215045154
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.03791593748610467,
+      "algorithm_total_seconds_q10_q90": [
+        0.033280796103645115,
+        0.04126891730120406
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 6.0,
+      "iterations_q10_q90": [
+        6.0,
+        9.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 33.187218153537735,
+      "effective_snr_db_q10_q90": [
+        20.466200128581107,
+        39.090331942952425
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 51.22288852212699,
+      "total_snr_db_q10_q90": [
+        49.94413409434651,
+        52.20036698854273
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.03372984161316937,
+      "defect_nrmse_q25_q75": [
+        0.0033384700920629346,
+        0.024484457946353292
+      ],
+      "online_seconds_mean": 0.025051225787610747,
+      "online_seconds_q25_q75": [
+        0.024331406428245828,
+        0.026173906459007412
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 10000000.0,
+      "method": "pie",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.475,
+      "support_wilson95": [
+        0.4069162264657108,
+        0.5440260398531525
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.5006720326512527,
+      "defect_nrmse_q10_q90": [
+        0.0020592772166420706,
+        1.0316458757517168
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.7071067811865476,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.30376371927111
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.4290478905794786,
+      "amplitude_relative_error_q10_q90": [
+        0.0008699697706135579,
+        0.8519293831093436
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.23578274479451494,
+      "phase_rmse_rad_q10_q90": [
+        0.0011700041472271511,
+        1.985775832594467
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0034423216720525134,
+      "relative_intensity_residual_q10_q90": [
+        0.0025628461980871293,
+        0.0144453834644934
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 2.058885416481644,
+      "wall_seconds_q10_q90": [
+        1.7154517416260207,
+        2.38298408719711
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0008234789711423218,
+      "setup_seconds_q10_q90": [
+        0.0006774372071959078,
+        0.0012475959374569356
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 2.0579628749983385,
+      "online_seconds_q10_q90": [
+        1.7143286125152373,
+        2.381606841168832
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 2.0586912914877757,
+      "algorithm_total_seconds_q10_q90": [
+        1.7152024381794035,
+        2.382718720368575
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1122.5,
+      "iterations_q10_q90": [
+        365.40000000000003,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 33.187218153537735,
+      "effective_snr_db_q10_q90": [
+        20.466200128581107,
+        39.090331942952425
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 51.22288852212699,
+      "total_snr_db_q10_q90": [
+        49.94413409434651,
+        52.20036698854273
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.4667259104805619,
+      "defect_nrmse_q25_q75": [
+        0.004573644811943105,
+        0.7376466893450865
+      ],
+      "online_seconds_mean": 2.055484279997763,
+      "online_seconds_q25_q75": [
+        1.896391739777755,
+        2.235815854248358
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 10000000.0,
+      "method": "htwf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.28,
+      "support_wilson95": [
+        0.22236889773949026,
+        0.3459230458665071
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.7125339173871816,
+      "defect_nrmse_q10_q90": [
+        0.008790176042492515,
+        1.2809655039783319
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.2071067811865475,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.280109889280518
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.43711200190699206,
+      "amplitude_relative_error_q10_q90": [
+        0.004484701244030808,
+        0.7653378891211756
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.17305674473530974,
+      "phase_rmse_rad_q10_q90": [
+        0.005644197629430251,
+        1.9758072573775909
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.004894964873619349,
+      "relative_intensity_residual_q10_q90": [
+        0.0027220282254442523,
+        0.01761107273404743
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 5.6469074170454405,
+      "wall_seconds_q10_q90": [
+        4.954960300656967,
+        6.028400004445575
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.000803708448074758,
+      "setup_seconds_q10_q90": [
+        0.0006888622068800032,
+        0.001181728928349912
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 5.645730521006044,
+      "online_seconds_q10_q90": [
+        4.954106833355036,
+        6.027363433712162
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 5.646680979523808,
+      "algorithm_total_seconds_q10_q90": [
+        4.954766812850721,
+        6.028183049918153
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        876.4,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 33.187218153537735,
+      "effective_snr_db_q10_q90": [
+        20.466200128581107,
+        39.090331942952425
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 51.22288852212699,
+      "total_snr_db_q10_q90": [
+        49.94413409434651,
+        52.20036698854273
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.6922969676664832,
+      "defect_nrmse_q25_q75": [
+        0.44202464037553135,
+        1.016496639779838
+      ],
+      "online_seconds_mean": 5.54882306460524,
+      "online_seconds_q25_q75": [
+        5.243520656222245,
+        5.889175156567944
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 10000000.0,
+      "method": "htaf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.39,
+      "support_wilson95": [
+        0.3250834313746962,
+        0.4590625404283025
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.6479790047962339,
+      "defect_nrmse_q10_q90": [
+        0.0029726333307639402,
+        1.2712910057265752
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.905694150420948
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.5146899597307208,
+      "amplitude_relative_error_q10_q90": [
+        0.0013223530164089574,
+        0.8323900271051374
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.36012215811729675,
+      "phase_rmse_rad_q10_q90": [
+        0.002330909333188076,
+        1.9916496125287202
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0051559309276359485,
+      "relative_intensity_residual_q10_q90": [
+        0.0026947607672844383,
+        0.022730260535976442
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 4.1160434789489955,
+      "wall_seconds_q10_q90": [
+        3.4417369337403216,
+        4.844291429442819
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0008108124602586031,
+      "setup_seconds_q10_q90": [
+        0.0006814166088588535,
+        0.0012311169994063675
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 4.114825875498354,
+      "online_seconds_q10_q90": [
+        3.4404675874859096,
+        4.843236241943669
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 4.115759229462128,
+      "algorithm_total_seconds_q10_q90": [
+        3.4415275289677085,
+        4.8440243672346694
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        512.6,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 33.187218153537735,
+      "effective_snr_db_q10_q90": [
+        20.466200128581107,
+        39.090331942952425
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 51.22288852212699,
+      "total_snr_db_q10_q90": [
+        49.94413409434651,
+        52.20036698854273
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.5983896891504585,
+      "defect_nrmse_q25_q75": [
+        0.08871321135519104,
+        0.8670353102239411
+      ],
+      "online_seconds_mean": 4.112786964620463,
+      "online_seconds_q25_q75": [
+        3.746816063008737,
+        4.487770999752684
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000000.0,
+      "method": "joint",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.77,
+      "support_wilson95": [
+        0.7069169563469642,
+        0.8229065674093119
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.01977431047342449,
+      "defect_nrmse_q10_q90": [
+        0.002751641954095483,
+        0.7198754581101657
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        2.1213203435596424
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.008786067869901847,
+      "amplitude_relative_error_q10_q90": [
+        0.0012534426588170502,
+        0.7418011651479296
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.010235438483606002,
+      "phase_rmse_rad_q10_q90": [
+        0.0013350401558725829,
+        0.201868584859373
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0009353789769224309,
+      "relative_intensity_residual_q10_q90": [
+        0.0007898433322459642,
+        0.0017357015815242295
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.0005688334931619465,
+      "wall_seconds_q10_q90": [
+        0.0005003877682611346,
+        0.0007908292231149971
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0012952910037711263,
+      "setup_seconds_q10_q90": [
+        0.0012059170985594392,
+        0.0017168329795822501
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.00040427001658827066,
+      "online_seconds_q10_q90": [
+        0.00034062075428664684,
+        0.0005617414019070566
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.0016995404730550945,
+      "algorithm_total_seconds_q10_q90": [
+        0.0015537628438323735,
+        0.0021173291141167285
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1.0,
+      "iterations_q10_q90": [
+        1.0,
+        1.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 43.103925968799345,
+      "effective_snr_db_q10_q90": [
+        30.78148598751229,
+        49.06938480722089
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 61.182139968612574,
+      "total_snr_db_q10_q90": [
+        60.04197108681325,
+        62.252268987560775
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.2808094395668973,
+      "defect_nrmse_q25_q75": [
+        0.004881433187453077,
+        0.21099837842759997
+      ],
+      "online_seconds_mean": 0.0004143034771550447,
+      "online_seconds_q25_q75": [
+        0.00034778128610923886,
+        0.00044676041579805315
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000000.0,
+      "method": "full_linear",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 1.0,
+      "support_wilson95": [
+        0.9811546736227335,
+        1.0
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.002474898526618934,
+      "defect_nrmse_q10_q90": [
+        0.0006196659960047996,
+        0.022476591142059035
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        0.0
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.0013339482156050435,
+      "amplitude_relative_error_q10_q90": [
+        0.00022051785706166617,
+        0.014378490221827142
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.0016125020834409673,
+      "phase_rmse_rad_q10_q90": [
+        0.0003125709126298138,
+        0.016355711955157625
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0008679555132946912,
+      "relative_intensity_residual_q10_q90": [
+        0.0007613359099333486,
+        0.00099246869382727
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.04051239596446976,
+      "wall_seconds_q10_q90": [
+        0.038360466598533094,
+        0.04360736249946058
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.013051104557234794,
+      "setup_seconds_q10_q90": [
+        0.011714132979977875,
+        0.01569126273971051
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.026892728987149894,
+      "online_seconds_q10_q90": [
+        0.02534623716492206,
+        0.02845795893808827
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.04003050003666431,
+      "algorithm_total_seconds_q10_q90": [
+        0.038025983469560744,
+        0.043119954178109765
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 6.0,
+      "iterations_q10_q90": [
+        6.0,
+        8.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 43.103925968799345,
+      "effective_snr_db_q10_q90": [
+        30.78148598751229,
+        49.06938480722089
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 61.182139968612574,
+      "total_snr_db_q10_q90": [
+        60.04197108681325,
+        62.252268987560775
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.007662674771293065,
+      "defect_nrmse_q25_q75": [
+        0.00104464435815844,
+        0.00821209586921035
+      ],
+      "online_seconds_mean": 0.02687150580692105,
+      "online_seconds_q25_q75": [
+        0.026031489513115957,
+        0.02762988570611924
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000000.0,
+      "method": "pie",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.48,
+      "support_wilson95": [
+        0.411791663783233,
+        0.5489621492718576
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.49558325164641914,
+      "defect_nrmse_q10_q90": [
+        0.0006661713075443399,
+        1.0410904429632093
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.7071067811865476,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.529836297306725
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.39775565219369646,
+      "amplitude_relative_error_q10_q90": [
+        0.00024828399356193354,
+        0.8413252143297456
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.24727954391606194,
+      "phase_rmse_rad_q10_q90": [
+        0.00036838542009978703,
+        1.9795118626102495
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.002081859867268195,
+      "relative_intensity_residual_q10_q90": [
+        0.0008346282417378011,
+        0.014037893228839263
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 2.2259003540384583,
+      "wall_seconds_q10_q90": [
+        1.9284847413888202,
+        2.476186262548435
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0008264789939858019,
+      "setup_seconds_q10_q90": [
+        0.0007794923498295247,
+        0.0013807336799800396
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 2.2245332499733195,
+      "online_seconds_q10_q90": [
+        1.9274174044840038,
+        2.475178871047683
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 2.225612750451546,
+      "algorithm_total_seconds_q10_q90": [
+        1.9282628040993586,
+        2.475978513073642
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        383.40000000000003,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 43.103925968799345,
+      "effective_snr_db_q10_q90": [
+        30.78148598751229,
+        49.06938480722089
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 61.182139968612574,
+      "total_snr_db_q10_q90": [
+        60.04197108681325,
+        62.252268987560775
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.4622965784256969,
+      "defect_nrmse_q25_q75": [
+        0.0016025662079859019,
+        0.7376793653466547
+      ],
+      "online_seconds_mean": 2.2142307493829865,
+      "online_seconds_q25_q75": [
+        2.0706525000277907,
+        2.3774163954367395
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000000.0,
+      "method": "htwf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.275,
+      "support_wilson95": [
+        0.21779700329307355,
+        0.34068339357669647
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.7139426719157386,
+      "defect_nrmse_q10_q90": [
+        0.008384115166464111,
+        1.2801872803676306
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.280109889280518
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.432496744805,
+      "amplitude_relative_error_q10_q90": [
+        0.003980462500410412,
+        0.7780925984194001
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.16766701176964993,
+      "phase_rmse_rad_q10_q90": [
+        0.002324941615838979,
+        1.8652693984509192
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.003952354293925463,
+      "relative_intensity_residual_q10_q90": [
+        0.0009481959134956173,
+        0.01725510415983649
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 6.0362059164908715,
+      "wall_seconds_q10_q90": [
+        5.520528012490831,
+        6.28218144592829
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0008138124831020832,
+      "setup_seconds_q10_q90": [
+        0.0007899833610281349,
+        0.0012721006874926387
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 6.035036312008742,
+      "online_seconds_q10_q90": [
+        5.5192051794729196,
+        6.2807189874583855
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 6.035896082990803,
+      "algorithm_total_seconds_q10_q90": [
+        5.520029812457506,
+        6.281943213148042
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        898.6,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 43.103925968799345,
+      "effective_snr_db_q10_q90": [
+        30.78148598751229,
+        49.06938480722089
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 61.182139968612574,
+      "total_snr_db_q10_q90": [
+        60.04197108681325,
+        62.252268987560775
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.6921539025159348,
+      "defect_nrmse_q25_q75": [
+        0.44201901241507374,
+        1.0075701517176292
+      ],
+      "online_seconds_mean": 5.963496554563753,
+      "online_seconds_q25_q75": [
+        5.813675177021651,
+        6.196006802725606
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000000.0,
+      "method": "htaf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.39,
+      "support_wilson95": [
+        0.3250834313746962,
+        0.4590625404283025
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.6519311707748243,
+      "defect_nrmse_q10_q90": [
+        0.0009360431798499787,
+        1.3273143321558252
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.905694150420948
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.5112990477708945,
+      "amplitude_relative_error_q10_q90": [
+        0.0005214614139710794,
+        0.8548916441638652
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.43286694447058016,
+      "phase_rmse_rad_q10_q90": [
+        0.0007595491033150256,
+        2.078800739766958
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.004046096520748303,
+      "relative_intensity_residual_q10_q90": [
+        0.0008917494433407627,
+        0.02244644054848987
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 4.467114708502777,
+      "wall_seconds_q10_q90": [
+        3.758324824925512,
+        5.068063720408827
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0008245000499300659,
+      "setup_seconds_q10_q90": [
+        0.0008000211673788726,
+        0.0012643996393308043
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 4.46599018748384,
+      "online_seconds_q10_q90": [
+        3.7571610881132074,
+        5.066646245832089
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 4.466851103992667,
+      "algorithm_total_seconds_q10_q90": [
+        3.7580338089028373,
+        5.067828774638474
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        547.6,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 43.103925968799345,
+      "effective_snr_db_q10_q90": [
+        30.78148598751229,
+        49.06938480722089
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 61.182139968612574,
+      "total_snr_db_q10_q90": [
+        60.04197108681325,
+        62.252268987560775
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.5934573819884857,
+      "defect_nrmse_q25_q75": [
+        0.058089800194037464,
+        0.8656886214757811
+      ],
+      "online_seconds_mean": 4.417628467922913,
+      "online_seconds_q25_q75": [
+        4.051774052000837,
+        4.796970999770565
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 1000000000.0,
+      "method": "joint",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.895,
+      "support_wilson95": [
+        0.8448196800887696,
+        0.9302925120731899
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.005573571667128707,
+      "defect_nrmse_q10_q90": [
+        0.0008824336195620591,
+        0.4608119967584062
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        0.7071067811865476
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.002517348042641754,
+      "amplitude_relative_error_q10_q90": [
+        0.0004984435633125439,
+        0.4189713860328094
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.003101742138059153,
+      "phase_rmse_rad_q10_q90": [
+        0.0004083003626520001,
+        0.051941510944033084
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0002957161802094987,
+      "relative_intensity_residual_q10_q90": [
+        0.00024792364887581635,
+        0.0005068428912397316
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.0008127919863909483,
+      "wall_seconds_q10_q90": [
+        0.0005518295336514712,
+        0.001051866274792701
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0012816250091418624,
+      "setup_seconds_q10_q90": [
+        0.0012059170985594392,
+        0.0017168329795822501
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.0005379175418056548,
+      "online_seconds_q10_q90": [
+        0.00037485366920009255,
+        0.0007590835797600448
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.0018489169888198376,
+      "algorithm_total_seconds_q10_q90": [
+        0.001711750403046608,
+        0.002251290704589337
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1.0,
+      "iterations_q10_q90": [
+        1.0,
+        1.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 53.28706466242379,
+      "effective_snr_db_q10_q90": [
+        40.94789203838645,
+        59.110725847132976
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 71.24344954283643,
+      "total_snr_db_q10_q90": [
+        69.99493035111736,
+        72.30321259853153
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.11738056812164135,
+      "defect_nrmse_q25_q75": [
+        0.0015479873480762638,
+        0.030037046439139223
+      ],
+      "online_seconds_mean": 0.0005711989628616721,
+      "online_seconds_q25_q75": [
+        0.0005198956641834229,
+        0.0006195834721438587
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 1000000000.0,
+      "method": "full_linear",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 1.0,
+      "support_wilson95": [
+        0.9811546736227335,
+        1.0
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.0007703198807152737,
+      "defect_nrmse_q10_q90": [
+        0.00019950978436283743,
+        0.006774541210485426
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        0.0
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.0004140361960438447,
+      "amplitude_relative_error_q10_q90": [
+        4.716592835013636e-05,
+        0.00425428920820028
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.0005474582918285854,
+      "phase_rmse_rad_q10_q90": [
+        9.680436686480667e-05,
+        0.00481109361840117
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.00027342384830864573,
+      "relative_intensity_residual_q10_q90": [
+        0.000241338212086091,
+        0.0003137299954233144
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.058775375480763614,
+      "wall_seconds_q10_q90": [
+        0.04138057980453595,
+        0.06226870813407004
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.02045504149282351,
+      "setup_seconds_q10_q90": [
+        0.013646737195085735,
+        0.023116566357202828
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.03737893747165799,
+      "online_seconds_q10_q90": [
+        0.027119621029123665,
+        0.039165341772604736
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.058061458519659936,
+      "algorithm_total_seconds_q10_q90": [
+        0.041007462237030265,
+        0.06149885383201763
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 6.0,
+      "iterations_q10_q90": [
+        5.0,
+        8.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 53.28706466242379,
+      "effective_snr_db_q10_q90": [
+        40.94789203838645,
+        59.110725847132976
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 71.24344954283643,
+      "total_snr_db_q10_q90": [
+        69.99493035111736,
+        72.30321259853153
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.002447232414840997,
+      "defect_nrmse_q25_q75": [
+        0.00034656718935190676,
+        0.0026276039301650683
+      ],
+      "online_seconds_mean": 0.03612769875559024,
+      "online_seconds_q25_q75": [
+        0.03607578098308295,
+        0.03821347907069139
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 1000000000.0,
+      "method": "pie",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.495,
+      "support_wilson95": [
+        0.4264584535990475,
+        0.5637299996647251
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.47627449846733383,
+      "defect_nrmse_q10_q90": [
+        0.00020871263079765373,
+        1.0419166939982116
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.7071067811865476,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.30376371927111
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.38558560253417967,
+      "amplitude_relative_error_q10_q90": [
+        9.293595156878144e-05,
+        0.8380944671124686
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.2317828979224637,
+      "phase_rmse_rad_q10_q90": [
+        0.0001332696754640966,
+        2.081731508181476
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0018960535398063682,
+      "relative_intensity_residual_q10_q90": [
+        0.0002630461524234654,
+        0.01400347740828742
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 3.374910729005933,
+      "wall_seconds_q10_q90": [
+        2.2047152835992163,
+        3.83126770866802
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0014751459821127355,
+      "setup_seconds_q10_q90": [
+        0.0008268128265626728,
+        0.0018233499489724637
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 3.3728809584863484,
+      "online_seconds_q10_q90": [
+        2.203611137159169,
+        3.829440908366814
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 3.37455185392173,
+      "algorithm_total_seconds_q10_q90": [
+        2.2044940496678462,
+        3.830920316942502
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        394.9,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 53.28706466242379,
+      "effective_snr_db_q10_q90": [
+        40.94789203838645,
+        59.110725847132976
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 71.24344954283643,
+      "total_snr_db_q10_q90": [
+        69.99493035111736,
+        72.30321259853153
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.4596694077815667,
+      "defect_nrmse_q25_q75": [
+        0.0005858630667099753,
+        0.737679501671558
+      ],
+      "online_seconds_mean": 3.21333791630459,
+      "online_seconds_q25_q75": [
+        2.8843630829942413,
+        3.667553707782645
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 1000000000.0,
+      "method": "htwf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.27,
+      "support_wilson95": [
+        0.21323449814685846,
+        0.33543435198668425
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.7134857748440673,
+      "defect_nrmse_q10_q90": [
+        0.006893487096581738,
+        1.2797808286762997
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.123712670526404
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.4327376576167361,
+      "amplitude_relative_error_q10_q90": [
+        0.0029006657364084405,
+        0.777630601308684
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.15905146951236504,
+      "phase_rmse_rad_q10_q90": [
+        0.0020808038433483356,
+        1.8709370319066827
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0038803645861913852,
+      "relative_intensity_residual_q10_q90": [
+        0.00035664929366343147,
+        0.017182419331306122
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 8.594501520972699,
+      "wall_seconds_q10_q90": [
+        6.20166081279749,
+        9.036253937159199
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0014377289917320013,
+      "setup_seconds_q10_q90": [
+        0.0008778204908594489,
+        0.0017329787136986853
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 8.59246133355191,
+      "online_seconds_q10_q90": [
+        6.200597104115877,
+        9.034362250682898
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 8.594061062554829,
+      "algorithm_total_seconds_q10_q90": [
+        6.201409728475847,
+        9.035854354838374
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        915.3000000000001,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 53.28706466242379,
+      "effective_snr_db_q10_q90": [
+        40.94789203838645,
+        59.110725847132976
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 71.24344954283643,
+      "total_snr_db_q10_q90": [
+        69.99493035111736,
+        72.30321259853153
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.6912660000893901,
+      "defect_nrmse_q25_q75": [
+        0.4243071191461794,
+        1.0071538240462259
+      ],
+      "online_seconds_mean": 8.189229106474668,
+      "online_seconds_q25_q75": [
+        7.9734943859803025,
+        8.841904010943836
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 1000000000.0,
+      "method": "htaf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.4,
+      "support_wilson95": [
+        0.33460578566807336,
+        0.46916327960737997
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.6479843930172687,
+      "defect_nrmse_q10_q90": [
+        0.00030421760632908304,
+        1.3271497393134748
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.905694150420948
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.4903069497723791,
+      "amplitude_relative_error_q10_q90": [
+        0.00017911404932260987,
+        0.8358297584541399
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.41034501265333057,
+      "phase_rmse_rad_q10_q90": [
+        0.00025345884065931383,
+        2.117411508773687
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.004011043918147864,
+      "relative_intensity_residual_q10_q90": [
+        0.000301917520464795,
+        0.021657281279889508
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 6.339756686938927,
+      "wall_seconds_q10_q90": [
+        4.66724706251407,
+        7.276749063050374
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0014684165362268686,
+      "setup_seconds_q10_q90": [
+        0.0010469830478541556,
+        0.0017963836202397943
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 6.337991729553323,
+      "online_seconds_q10_q90": [
+        4.665753054176458,
+        7.274855708295945
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 6.339382875012234,
+      "algorithm_total_seconds_q10_q90": [
+        4.66694906699704,
+        7.27632941189222
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        560.0,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 53.28706466242379,
+      "effective_snr_db_q10_q90": [
+        40.94789203838645,
+        59.110725847132976
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 71.24344954283643,
+      "total_snr_db_q10_q90": [
+        69.99493035111736,
+        72.30321259853153
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.5929542792217072,
+      "defect_nrmse_q25_q75": [
+        0.05816679335826407,
+        0.8656937229556863
+      ],
+      "online_seconds_mean": 6.174083055856754,
+      "online_seconds_q25_q75": [
+        5.695439332979731,
+        6.905383593461011
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 10000000000.0,
+      "method": "joint",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.945,
+      "support_wilson95": [
+        0.9042130012276914,
+        0.9690146582965411
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.0018779404567235906,
+      "defect_nrmse_q10_q90": [
+        0.00031042209473125114,
+        0.03180136250109756
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        0.0
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.0008591162997699791,
+      "amplitude_relative_error_q10_q90": [
+        0.00015759317081525718,
+        0.018714061129678026
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.0011409117365920353,
+      "phase_rmse_rad_q10_q90": [
+        0.00013088798876493163,
+        0.017569087120082726
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 9.295318951971549e-05,
+      "relative_intensity_residual_q10_q90": [
+        7.80541382893957e-05,
+        0.00012674763340428177
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.0008557499968446791,
+      "wall_seconds_q10_q90": [
+        0.0007811377523466945,
+        0.0010846963617950677
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0012816250091418624,
+      "setup_seconds_q10_q90": [
+        0.0012059170985594392,
+        0.0017168329795822501
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.0005530415801331401,
+      "online_seconds_q10_q90": [
+        0.0005240044440142811,
+        0.00077193338656798
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.0019069365225732327,
+      "algorithm_total_seconds_q10_q90": [
+        0.0017432791762985289,
+        0.0022985660354606805
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1.0,
+      "iterations_q10_q90": [
+        1.0,
+        1.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 63.27029127267758,
+      "effective_snr_db_q10_q90": [
+        51.1738809683644,
+        69.10916296752129
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 81.25105575562745,
+      "total_snr_db_q10_q90": [
+        80.06076483093771,
+        82.31553123223722
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.04718495873067731,
+      "defect_nrmse_q25_q75": [
+        0.0004989331346546354,
+        0.009061774840005523
+      ],
+      "online_seconds_mean": 0.0006293814542004839,
+      "online_seconds_q25_q75": [
+        0.0005327600811142474,
+        0.0006642290391027927
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 10000000000.0,
+      "method": "full_linear",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 1.0,
+      "support_wilson95": [
+        0.9811546736227335,
+        1.0
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.00024690989751140663,
+      "defect_nrmse_q10_q90": [
+        6.210143606968322e-05,
+        0.0023572657464329457
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        0.0
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.0001304593146098556,
+      "amplitude_relative_error_q10_q90": [
+        1.8415095293958223e-05,
+        0.0013632145514687203
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.000178084219423773,
+      "phase_rmse_rad_q10_q90": [
+        3.0481599941370636e-05,
+        0.0016656389522714174
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 8.629536677993654e-05,
+      "relative_intensity_residual_q10_q90": [
+        7.588183693236026e-05,
+        9.921121650218994e-05
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.059174999536480755,
+      "wall_seconds_q10_q90": [
+        0.05649302473757416,
+        0.06281079171458259
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.020700542023405433,
+      "setup_seconds_q10_q90": [
+        0.018568308756221084,
+        0.022579941689036785
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.03782112506451085,
+      "online_seconds_q10_q90": [
+        0.03639108716743067,
+        0.040353053587023166
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.05855822947341949,
+      "algorithm_total_seconds_q10_q90": [
+        0.055731949757318947,
+        0.06219271218869835
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 6.0,
+      "iterations_q10_q90": [
+        5.0,
+        8.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 63.27029127267758,
+      "effective_snr_db_q10_q90": [
+        51.1738809683644,
+        69.10916296752129
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 81.25105575562745,
+      "total_snr_db_q10_q90": [
+        80.06076483093771,
+        82.31553123223722
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.0008119705709315537,
+      "defect_nrmse_q25_q75": [
+        0.00010785929796532697,
+        0.0008062211438049679
+      ],
+      "online_seconds_mean": 0.038300574594759385,
+      "online_seconds_q25_q75": [
+        0.0370293439773377,
+        0.03887038500397466
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 10000000000.0,
+      "method": "pie",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.515,
+      "support_wilson95": [
+        0.44610849192745716,
+        0.5833261482812249
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.47625442989106714,
+      "defect_nrmse_q10_q90": [
+        6.843766409469251e-05,
+        1.0418843796807737
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.280109889280518
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.386422786770537,
+      "amplitude_relative_error_q10_q90": [
+        3.097967942755802e-05,
+        0.8376034401384798
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.1493265667041953,
+      "phase_rmse_rad_q10_q90": [
+        4.75084080551788e-05,
+        2.0790502476522925
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0018588378006782567,
+      "relative_intensity_residual_q10_q90": [
+        8.496876160200561e-05,
+        0.01401789050394644
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 3.486450874945149,
+      "wall_seconds_q10_q90": [
+        3.0153439331101253,
+        3.8509200999280435
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0014970204792916775,
+      "setup_seconds_q10_q90": [
+        0.001248404267244041,
+        0.0018595544970594347
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 3.4848979579401202,
+      "online_seconds_q10_q90": [
+        3.012935712188482,
+        3.849016646412201
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 3.486101354006678,
+      "algorithm_total_seconds_q10_q90": [
+        3.0150206377729774,
+        3.8505878796800967
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        403.8,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 63.27029127267758,
+      "effective_snr_db_q10_q90": [
+        51.1738809683644,
+        69.10916296752129
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 81.25105575562745,
+      "total_snr_db_q10_q90": [
+        80.06076483093771,
+        82.31553123223722
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.45881909527711584,
+      "defect_nrmse_q25_q75": [
+        0.0002714379970273453,
+        0.7376795018364335
+      ],
+      "online_seconds_mean": 3.444618744106847,
+      "online_seconds_q25_q75": [
+        3.239010156248696,
+        3.6813967500056606
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 10000000000.0,
+      "method": "htwf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.27,
+      "support_wilson95": [
+        0.21323449814685846,
+        0.33543435198668425
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.7133691406832322,
+      "defect_nrmse_q10_q90": [
+        0.00696639803187333,
+        1.2796399434058507
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.123712670526404
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.4327884629234116,
+      "amplitude_relative_error_q10_q90": [
+        0.003169151575885524,
+        0.7775767639335396
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.15882301114215164,
+      "phase_rmse_rad_q10_q90": [
+        0.002496385181017735,
+        1.8868956862683521
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0038764715641393067,
+      "relative_intensity_residual_q10_q90": [
+        0.00023258047994969324,
+        0.017167820039713906
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 8.739459916425403,
+      "wall_seconds_q10_q90": [
+        8.07745796670206,
+        9.076368679816369
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0014588125050067902,
+      "setup_seconds_q10_q90": [
+        0.0012266208534128964,
+        0.0017649916349910199
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 8.737579541513696,
+      "online_seconds_q10_q90": [
+        8.07508855360793,
+        9.073892325046472
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 8.738943187519908,
+      "algorithm_total_seconds_q10_q90": [
+        8.076796141185332,
+        9.075817137816921
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        931.4000000000001,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 63.27029127267758,
+      "effective_snr_db_q10_q90": [
+        51.1738809683644,
+        69.10916296752129
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 81.25105575562745,
+      "total_snr_db_q10_q90": [
+        80.06076483093771,
+        82.31553123223722
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.6912433529511596,
+      "defect_nrmse_q25_q75": [
+        0.42437964876614953,
+        1.0071515801081923
+      ],
+      "online_seconds_mean": 8.617794163777143,
+      "online_seconds_q25_q75": [
+        8.41124096873682,
+        8.911891625000862
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 10000000000.0,
+      "method": "htaf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.4,
+      "support_wilson95": [
+        0.33460578566807336,
+        0.46916327960737997
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.6388669517092596,
+      "defect_nrmse_q10_q90": [
+        0.00010366465787445419,
+        1.327094777267485
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.674245758392353
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.4905721624252545,
+      "amplitude_relative_error_q10_q90": [
+        5.580038936774856e-05,
+        0.8357378847530824
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.4505658303432215,
+      "phase_rmse_rad_q10_q90": [
+        8.060204636395929e-05,
+        2.07896401695011
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.004085971793667873,
+      "relative_intensity_residual_q10_q90": [
+        9.666948248718823e-05,
+        0.021661435355458794
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 6.4950869790045545,
+      "wall_seconds_q10_q90": [
+        5.560981750534848,
+        7.32683620029129
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0014641040470451117,
+      "setup_seconds_q10_q90": [
+        0.0012539837276563047,
+        0.001811516680754721
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 6.4932630830444396,
+      "online_seconds_q10_q90": [
+        5.5592002627905455,
+        7.325092546246014
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 6.494740312569775,
+      "algorithm_total_seconds_q10_q90": [
+        5.560610512539279,
+        7.326450416678562
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        558.7,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 63.27029127267758,
+      "effective_snr_db_q10_q90": [
+        51.1738809683644,
+        69.10916296752129
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 81.25105575562745,
+      "total_snr_db_q10_q90": [
+        80.06076483093771,
+        82.31553123223722
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.5925549282986746,
+      "defect_nrmse_q25_q75": [
+        0.058227771529388364,
+        0.8673276862125117
+      ],
+      "online_seconds_mean": 6.447922107893391,
+      "online_seconds_q25_q75": [
+        5.919301781279501,
+        6.993743197701406
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000000000.0,
+      "method": "joint",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.995,
+      "support_wilson95": [
+        0.9722262956021069,
+        0.9991168312843989
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.0005931917876017838,
+      "defect_nrmse_q10_q90": [
+        9.815906022141587e-05,
+        0.009817562911825421
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        0.0
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.0002707979357834884,
+      "amplitude_relative_error_q10_q90": [
+        4.7757429727292776e-05,
+        0.005806517986673138
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.00033111035393022814,
+      "phase_rmse_rad_q10_q90": [
+        4.321291438780614e-05,
+        0.005336505642978629
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 2.925349485288694e-05,
+      "relative_intensity_residual_q10_q90": [
+        2.4619821556287467e-05,
+        3.7100727847793484e-05
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.0008699369500391185,
+      "wall_seconds_q10_q90": [
+        0.0007811706396751106,
+        0.001111495669465512
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0012816250091418624,
+      "setup_seconds_q10_q90": [
+        0.0012059170985594392,
+        0.0017168329795822501
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.000563082518056035,
+      "online_seconds_q10_q90": [
+        0.0005247752065770328,
+        0.0008088042843155562
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.0019019575556740165,
+      "algorithm_total_seconds_q10_q90": [
+        0.001748120691627264,
+        0.0023364002001471816
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1.0,
+      "iterations_q10_q90": [
+        1.0,
+        1.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 73.21028196144101,
+      "effective_snr_db_q10_q90": [
+        61.17462362513479,
+        79.10926180704871
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 91.25021582106811,
+      "total_snr_db_q10_q90": [
+        90.0639346700385,
+        92.3250852002119
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.005616959813799369,
+      "defect_nrmse_q25_q75": [
+        0.00015828058579175566,
+        0.002784912273380194
+      ],
+      "online_seconds_mean": 0.0006663779745576903,
+      "online_seconds_q25_q75": [
+        0.0005366980622056872,
+        0.000656572578009218
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000000000.0,
+      "method": "full_linear",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 1.0,
+      "support_wilson95": [
+        0.9811546736227335,
+        1.0
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 7.802837647608035e-05,
+      "defect_nrmse_q10_q90": [
+        1.930891053582721e-05,
+        0.000738946490851246
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        0.0
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 4.014239958529932e-05,
+      "amplitude_relative_error_q10_q90": [
+        5.954520044940249e-06,
+        0.0004358562141705392
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 5.152783809408727e-05,
+      "phase_rmse_rad_q10_q90": [
+        1.0279937419562032e-05,
+        0.0005252309152894243
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 2.7313335332451234e-05,
+      "relative_intensity_residual_q10_q90": [
+        2.392882697804896e-05,
+        3.136502885458765e-05
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 0.05983652104623616,
+      "wall_seconds_q10_q90": [
+        0.05671399516286328,
+        0.06440666246926412
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.02092614595312625,
+      "setup_seconds_q10_q90": [
+        0.01874914572108537,
+        0.023242641950491815
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 0.03804570803185925,
+      "online_seconds_q10_q90": [
+        0.03668952905572951,
+        0.040672266273759305
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 0.05907066649524495,
+      "algorithm_total_seconds_q10_q90": [
+        0.05619414170505479,
+        0.06400713715702296
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 6.0,
+      "iterations_q10_q90": [
+        5.0,
+        8.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 73.21028196144101,
+      "effective_snr_db_q10_q90": [
+        61.17462362513479,
+        79.10926180704871
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 91.25021582106811,
+      "total_snr_db_q10_q90": [
+        90.0639346700385,
+        92.3250852002119
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.0002578966691231755,
+      "defect_nrmse_q25_q75": [
+        3.3597978641512084e-05,
+        0.0002577630640982595
+      ],
+      "online_seconds_mean": 0.03858381563331932,
+      "online_seconds_q25_q75": [
+        0.037316562462365255,
+        0.03919382329331711
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000000000.0,
+      "method": "pie",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.515,
+      "support_wilson95": [
+        0.44610849192745716,
+        0.5833261482812249
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.47624603287215334,
+      "defect_nrmse_q10_q90": [
+        2.4343075692073307e-05,
+        1.0419266696892469
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 0.0,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.280109889280518
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.3868916179527453,
+      "amplitude_relative_error_q10_q90": [
+        1.3159638751973385e-05,
+        0.8375712182002836
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.1275229812481717,
+      "phase_rmse_rad_q10_q90": [
+        1.420561355132129e-05,
+        2.036910129027785
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0018565376755818558,
+      "relative_intensity_residual_q10_q90": [
+        2.73566056061832e-05,
+        0.014022983509447058
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 3.499756458506454,
+      "wall_seconds_q10_q90": [
+        3.0570802586618813,
+        3.924944857636001
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.001509437512140721,
+      "setup_seconds_q10_q90": [
+        0.0012579298461787402,
+        0.0018975756247527897
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 3.4979199999943376,
+      "online_seconds_q10_q90": [
+        3.0552903375355527,
+        3.923309983627405
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 3.4994290620088577,
+      "algorithm_total_seconds_q10_q90": [
+        3.056708575040102,
+        3.9246257372084075
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        410.6,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 73.21028196144101,
+      "effective_snr_db_q10_q90": [
+        61.17462362513479,
+        79.10926180704871
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 91.25021582106811,
+      "total_snr_db_q10_q90": [
+        90.0639346700385,
+        92.3250852002119
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.4585146092710989,
+      "defect_nrmse_q25_q75": [
+        0.0001775750089455956,
+        0.7376795347639239
+      ],
+      "online_seconds_mean": 3.494430329166935,
+      "online_seconds_q25_q75": [
+        3.293916343274759,
+        3.7346600519667845
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000000000.0,
+      "method": "htwf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.27,
+      "support_wilson95": [
+        0.21323449814685846,
+        0.33543435198668425
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.713326382204075,
+      "defect_nrmse_q10_q90": [
+        0.007001211803631698,
+        1.2796039176308296
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.4142135623730951,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.123712670526404
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.4328306558115707,
+      "amplitude_relative_error_q10_q90": [
+        0.003337950380139244,
+        0.7775793040762146
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.15897370875716543,
+      "phase_rmse_rad_q10_q90": [
+        0.002349323680619534,
+        1.8868454280011926
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.003874512755665761,
+      "relative_intensity_residual_q10_q90": [
+        0.00021669263167447235,
+        0.01716302812085911
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 8.77301654202165,
+      "wall_seconds_q10_q90": [
+        8.092725429288112,
+        9.125545991666149
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.0014517295639961958,
+      "setup_seconds_q10_q90": [
+        0.0012276410358026623,
+        0.0017427881131879986
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 8.771230083482806,
+      "online_seconds_q10_q90": [
+        8.090832962840796,
+        9.12360362118343
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 8.772580416989513,
+      "algorithm_total_seconds_q10_q90": [
+        8.092312391428276,
+        9.124898304161615
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        937.5,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 73.21028196144101,
+      "effective_snr_db_q10_q90": [
+        61.17462362513479,
+        79.10926180704871
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 91.25021582106811,
+      "total_snr_db_q10_q90": [
+        90.0639346700385,
+        92.3250852002119
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.6912381279833193,
+      "defect_nrmse_q25_q75": [
+        0.42440028870349605,
+        1.0071188563363496
+      ],
+      "online_seconds_mean": 8.664911340618856,
+      "online_seconds_q25_q75": [
+        8.444039979251102,
+        8.965084395487793
+      ]
+    },
+    {
+      "suite": "poisson",
+      "sparsity": 2,
+      "photons": 100000000000.0,
+      "method": "htaf",
+      "trials": 200,
+      "failures": 0,
+      "support_success_rate": 0.405,
+      "support_wilson95": [
+        0.3393777128250677,
+        0.47420289918661307
+      ],
+      "support_applicable_trials": 200,
+      "defect_nrmse_median": 0.638864192790175,
+      "defect_nrmse_q10_q90": [
+        4.38799049559607e-05,
+        1.3270774193948824
+      ],
+      "defect_nrmse_available": 200,
+      "localization_rmse_median": 1.2071067811865475,
+      "localization_rmse_q10_q90": [
+        0.0,
+        7.674245758392353
+      ],
+      "localization_rmse_available": 200,
+      "amplitude_relative_error_median": 0.4906474898048903,
+      "amplitude_relative_error_q10_q90": [
+        2.171975031641238e-05,
+        0.8357083100781562
+      ],
+      "amplitude_relative_error_available": 200,
+      "phase_rmse_rad_median": 0.3717894545403163,
+      "phase_rmse_rad_q10_q90": [
+        4.569562126245077e-05,
+        2.0782244635066376
+      ],
+      "phase_rmse_rad_available": 200,
+      "relative_intensity_residual_median": 0.0040869495520435084,
+      "relative_intensity_residual_q10_q90": [
+        3.106427578734558e-05,
+        0.0216630748889107
+      ],
+      "relative_intensity_residual_available": 200,
+      "wall_seconds_median": 6.517076208547223,
+      "wall_seconds_q10_q90": [
+        5.581426362739876,
+        7.380734850268345
+      ],
+      "wall_seconds_available": 200,
+      "setup_seconds_median": 0.001498166413512081,
+      "setup_seconds_q10_q90": [
+        0.0012479458586312831,
+        0.0018765291199088097
+      ],
+      "setup_seconds_available": 200,
+      "online_seconds_median": 6.515167020494118,
+      "online_seconds_q10_q90": [
+        5.57979083340615,
+        7.3786960791680025
+      ],
+      "online_seconds_available": 200,
+      "algorithm_total_seconds_median": 6.51672068744665,
+      "algorithm_total_seconds_q10_q90": [
+        5.58108757926384,
+        7.380229820858221
+      ],
+      "algorithm_total_seconds_available": 200,
+      "iterations_median": 1200.0,
+      "iterations_q10_q90": [
+        563.6,
+        1200.0
+      ],
+      "iterations_available": 200,
+      "effective_snr_db_median": 73.21028196144101,
+      "effective_snr_db_q10_q90": [
+        61.17462362513479,
+        79.10926180704871
+      ],
+      "effective_snr_db_available": 200,
+      "total_snr_db_median": 91.25021582106811,
+      "total_snr_db_q10_q90": [
+        90.0639346700385,
+        92.3250852002119
+      ],
+      "total_snr_db_available": 200,
+      "defect_nrmse_mean": 0.5924485951144333,
+      "defect_nrmse_q25_q75": [
+        0.058266150112289264,
+        0.8673322888368031
+      ],
+      "online_seconds_mean": 6.459976722308784,
+      "online_seconds_q25_q75": [
+        5.952722551533952,
+        6.984144729212858
+      ]
+    }
+  ],
+  "summary_verification": "Every retained recorded aggregate was recomputed from the per-trial CSV and matched within floating-point tolerance."
+}

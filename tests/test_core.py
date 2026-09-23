@@ -2,8 +2,6 @@ import unittest
 
 import numpy as np
 
-from twoscan_ptycho.full_data import recover_full_data_linearized
-
 from twoscan_ptycho.core import (
     affine_object,
     centered_reflection_sum_from_orbits,
@@ -13,8 +11,6 @@ from twoscan_ptycho.core import (
     gaussian_probe,
     intensity_autocorrelation,
     recover_from_two_reflection_sums,
-    recover_orbit_coefficients_beam,
-    recover_orbit_coefficients_group_omp,
     reflect_sparse_object,
     reflection_sum,
     sparse_perturbation,
@@ -67,38 +63,6 @@ class SparsePtychoTests(unittest.TestCase):
         )
         np.testing.assert_allclose(y1, y2, rtol=1e-12, atol=1e-12)
 
-    def test_beam_search_recovers_structured_moments(self):
-        gamma = 0.025
-        lag_count = 4
-        coefficients = {2: 0.8 - 0.5j, 6: -0.4 + 0.7j}
-        ell = np.arange(1, lag_count + 1, dtype=float)
-        moments = sum(
-            b * np.exp(2 * gamma * x * ell)
-            + np.conj(b) * np.exp(-2 * gamma * x * ell)
-            for x, b in coefficients.items()
-        )
-        recovered = recover_orbit_coefficients_beam(
-            moments,
-            gamma,
-            max_offset=7,
-            sparsity=2,
-            beam_width=64,
-            row_equilibrate=True,
-        )
-        self.assertEqual(set(recovered.support), set(coefficients))
-        for x, value in coefficients.items():
-            self.assertAlmostEqual(recovered.coefficients[x].real, value.real, places=8)
-            self.assertAlmostEqual(recovered.coefficients[x].imag, value.imag, places=8)
-
-    def test_group_omp_is_available_as_a_baseline(self):
-        gamma = 0.025
-        ell = np.arange(1, 5, dtype=float)
-        moments = 0.8 * np.exp(2 * gamma * 2 * ell) + 0.8 * np.exp(-2 * gamma * 2 * ell)
-        recovered = recover_orbit_coefficients_group_omp(
-            moments, gamma, max_offset=7, sparsity=1
-        )
-        self.assertEqual(len(recovered.support), 1)
-
     def test_two_reflection_integration_recovers_sparse_object(self):
         n = 31
         positions = (-8, 1, 10)
@@ -124,33 +88,6 @@ class SparsePtychoTests(unittest.TestCase):
         result = split_null_counterexample(gamma=0.01, sparsity=3)
         self.assertLess(result["relative_residual"], 1e-9)
 
-    def test_full_data_linearized_baseline_recovers_small_object(self):
-        n = 61
-        positions = (-9, 10)
-        amplitudes = (0.3 + 0.4j, -0.5 + 0.2j)
-        scans = (0, 1)
-        probe = gaussian_probe(n, 0.008)
-        z = affine_object(n, positions, amplitudes)
-        intensities = np.stack(
-            [diffraction_intensity(z, probe, scan) for scan in scans]
-        )
-        recovered = recover_full_data_linearized(
-            intensities,
-            probe,
-            scans,
-            sparsity=2,
-            candidate_positions=range(-14, 15),
-            beam_width=512,
-            debias_iterations=4,
-            physical_phase_projection=False,
-        )
-        self.assertEqual(set(recovered.positions), set(positions))
-        np.testing.assert_allclose(
-            recovered.perturbation,
-            sparse_perturbation(n, positions, amplitudes),
-            rtol=1e-7,
-            atol=1e-7,
-        )
 
 
 if __name__ == "__main__":

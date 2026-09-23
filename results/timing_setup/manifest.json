@@ -1,0 +1,67 @@
+{
+  "suite": "timing_setup",
+  "rows": 90,
+  "recorded_sources": {
+    "experiments/run_experiments.py": "5df84f9f0a3c679db8883244f32537726f1d7e09fed355616a9a4fbcdd78daf6",
+    "src/twoscan_ptycho/__init__.py": "038033ee7edd079bdeea9f516b6bd69f07b75b8a2deaca0821c8f9b28d35e9b7",
+    "src/twoscan_ptycho/case2d.py": "c89efce0adeeffb05561a1c1022d29804ce609b437e1a5a67d821c1be6c9e6a2",
+    "src/twoscan_ptycho/core.py": "17b00679c7a2917d6b598589ba748768b2a31a48d047a55a926b5174a85701e6",
+    "src/twoscan_ptycho/full_data.py": "9defd806cf915efa73cbb8b5f560ba0802585a36959fbff9f32001d942e7ee4a",
+    "src/twoscan_ptycho/iterative.py": "152f7707f04a8257e2f015079d49c6fc0befcc34c3ae3f7ca61d636a82462e46",
+    "src/twoscan_ptycho/reconstruction.py": "61db4a257c6143c2859ace319c672ff1117e1d4b9b691b16d6d1a6d6cbc1a882",
+    "src/twoscan_ptycho/baselines.py": "600697b3ce6a10720710f24bd0483e710153b9680bb73f281b6b6e3c8b078cb6",
+    "experiments/setup_studies.py": "9fbbcf7eb365b4c1849ec2a10ce8a107344b411c3350fcde6b6b7ca859359d5c"
+  },
+  "distribution_source_hashes": {
+    "src/twoscan_ptycho/__init__.py": "fa16a13d3fe6ed69cab3b8c78f8fe5629991b7eaad2e1f340a15293478fb78e1",
+    "src/twoscan_ptycho/baselines.py": "ac10035e2c10cc387e7b4d9a2a50f71872e36a3353cf78351fdc3b83de89039d",
+    "src/twoscan_ptycho/case2d.py": "4ec360c338a6f940133eb81a87a1de7b2dc878ffe0ab893e2d141f489315ad91",
+    "src/twoscan_ptycho/core.py": "fc92546fbbe9df15bea3fa027c83c10c912d0d87ce4116d320bab628e13d114d",
+    "src/twoscan_ptycho/reconstruction.py": "fb5990204dd2b04d632af18db4a43fe14ed44d066c77cbf6213b9a883682050e",
+    "experiments/__init__.py": "ce2aeda1ea5e7ee0e4991b8db0220667ababe9c6090dc811455407681edd0a4f",
+    "experiments/_shared.py": "155e8ae14a28f6697d6dff6e6c179b1484c99e697bd42c220009f68d02d7f431",
+    "experiments/run_case2d.py": "cec6c910957249c4482848d054db98802904dc703e22c378d8ac5304234c0e57",
+    "experiments/run_experiments.py": "6c7f1f8535551e1edfd092c67a9d10dffd8ae40c14f095e7829f88d90dffe5e9",
+    "experiments/run_timing_setup.py": "334ac9801d857ea8f052fc347f137c57b3e837699f5771c545ab93d2d1c66f78",
+    "experiments/run_validation.py": "c3a53ef40cf6189cac2abf0c066f8973a584d3c6fb2e3945853275aefb43524c",
+    "experiments/verify_results.py": "e17f20d825f47024d19e898a4e2f392224ead034e41ac41d1044423076d98617"
+  },
+  "source_hash_interpretation": "recorded_sources contains SHA-256 values recorded when the measurements were computed, indexed by neutral component identifiers; these are not hashes of the distributed files. distribution_source_hashes authenticates the distributed implementation. Numerical CSV cells retain the recorded values.",
+  "workers": 1,
+  "hardware": {
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy": "2.2.6",
+    "cpu_count": 10,
+    "blas_threads": 1,
+    "machdep.cpu.brand_string": "Apple M4",
+    "hw.physicalcpu": "10",
+    "hw.memsize": "25769803776"
+  },
+  "settings": {
+    "scope": "joint_dictionary_and_global_solver_cold_setup",
+    "sparsities": [
+      1,
+      2,
+      3
+    ],
+    "repetitions_per_sparsity": 30,
+    "namespace": 19371011,
+    "trial_start": 0,
+    "object_effective_snr_db": "60",
+    "setup_cache_disabled": true,
+    "warmup_per_sparsity": 1,
+    "online_scope": "IFFT/background subtraction plus solve_intensities on the newly built solver; its SVD factors are reused.",
+    "cold_setup_scope": "Direct build_joint_dictionary plus GlobalSupportSolver construction, including legal-support enumeration and SVD.",
+    "excluded": "Object/noise generation, file I/O, metric calculation, and one warmup per sparsity.",
+    "cold_definition": "Fresh dictionary and solver every repetition; not an OS cache flush or new-process startup.",
+    "concurrency_isolation_user_confirmed": true,
+    "workers": 1,
+    "blas_threads_requested": 1,
+    "warmup_namespace": "stable_seed(namespace,'setup-warmup')"
+  },
+  "data_sha256": {
+    "summary.json": "88efb1b234087f76ea174d673c25e416c17f29444888933a0545079bdaaa9576",
+    "trials.csv": "c83752e45c0eef989e5edac516b9dc7d90a5b05bd3390b7c3961555ffce75ca1"
+  }
+}

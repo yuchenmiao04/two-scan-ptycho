@@ -1,0 +1,2 @@
+# Primary experiments: Python 3.10, NumPy version recorded in the manifests.
+numpy==2.2.6

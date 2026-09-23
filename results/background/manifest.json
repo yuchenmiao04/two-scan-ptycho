@@ -1,0 +1,6855 @@
+{
+  "suite": "background",
+  "rows": 1000,
+  "recorded_sources": {
+    "experiments/run_experiments.py": "5df84f9f0a3c679db8883244f32537726f1d7e09fed355616a9a4fbcdd78daf6",
+    "src/twoscan_ptycho/__init__.py": "038033ee7edd079bdeea9f516b6bd69f07b75b8a2deaca0821c8f9b28d35e9b7",
+    "src/twoscan_ptycho/case2d.py": "c89efce0adeeffb05561a1c1022d29804ce609b437e1a5a67d821c1be6c9e6a2",
+    "src/twoscan_ptycho/core.py": "17b00679c7a2917d6b598589ba748768b2a31a48d047a55a926b5174a85701e6",
+    "src/twoscan_ptycho/full_data.py": "9defd806cf915efa73cbb8b5f560ba0802585a36959fbff9f32001d942e7ee4a",
+    "src/twoscan_ptycho/iterative.py": "152f7707f04a8257e2f015079d49c6fc0befcc34c3ae3f7ca61d636a82462e46",
+    "src/twoscan_ptycho/reconstruction.py": "61db4a257c6143c2859ace319c672ff1117e1d4b9b691b16d6d1a6d6cbc1a882",
+    "src/twoscan_ptycho/baselines.py": "600697b3ce6a10720710f24bd0483e710153b9680bb73f281b6b6e3c8b078cb6"
+  },
+  "distribution_source_hashes": {
+    "src/twoscan_ptycho/__init__.py": "fa16a13d3fe6ed69cab3b8c78f8fe5629991b7eaad2e1f340a15293478fb78e1",
+    "src/twoscan_ptycho/baselines.py": "ac10035e2c10cc387e7b4d9a2a50f71872e36a3353cf78351fdc3b83de89039d",
+    "src/twoscan_ptycho/case2d.py": "4ec360c338a6f940133eb81a87a1de7b2dc878ffe0ab893e2d141f489315ad91",
+    "src/twoscan_ptycho/core.py": "fc92546fbbe9df15bea3fa027c83c10c912d0d87ce4116d320bab628e13d114d",
+    "src/twoscan_ptycho/reconstruction.py": "fb5990204dd2b04d632af18db4a43fe14ed44d066c77cbf6213b9a883682050e",
+    "experiments/__init__.py": "ce2aeda1ea5e7ee0e4991b8db0220667ababe9c6090dc811455407681edd0a4f",
+    "experiments/_shared.py": "155e8ae14a28f6697d6dff6e6c179b1484c99e697bd42c220009f68d02d7f431",
+    "experiments/run_case2d.py": "cec6c910957249c4482848d054db98802904dc703e22c378d8ac5304234c0e57",
+    "experiments/run_experiments.py": "6c7f1f8535551e1edfd092c67a9d10dffd8ae40c14f095e7829f88d90dffe5e9",
+    "experiments/run_timing_setup.py": "334ac9801d857ea8f052fc347f137c57b3e837699f5771c545ab93d2d1c66f78",
+    "experiments/run_validation.py": "c3a53ef40cf6189cac2abf0c066f8973a584d3c6fb2e3945853275aefb43524c",
+    "experiments/verify_results.py": "e17f20d825f47024d19e898a4e2f392224ead034e41ac41d1044423076d98617"
+  },
+  "source_hash_interpretation": "recorded_sources contains SHA-256 values recorded when the measurements were computed, indexed by neutral component identifiers; these are not hashes of the distributed files. distribution_source_hashes authenticates the distributed implementation. Numerical CSV cells retain the recorded values.",
+  "created_utc": "2026-09-20T02:21:52.526748+00:00",
+  "workers": 6,
+  "timing_is_isolated": false,
+  "hardware": {
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "python": "3.10.11 (v3.10.11:7d4cc5aa85, Apr  4 2023, 19:05:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy": "2.2.6",
+    "cpu_count": 10,
+    "blas_threads": 1,
+    "machdep.cpu.brand_string": "Apple M4",
+    "hw.physicalcpu": "10",
+    "hw.memsize": "25769803776"
+  },
+  "recorded_run_hash": "057cc4b75824b7bf7b14ec6435f67f7e24a42e8c5ac46adc2c708c67c0522def",
+  "jobs": [
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 0,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000000"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 1,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000001"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 2,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000002"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 3,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000003"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 4,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000004"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 5,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000005"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 6,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000006"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 7,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000007"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 8,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000008"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 9,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000009"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 10,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000010"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 11,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000011"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 12,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000012"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 13,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000013"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 14,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000014"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 15,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000015"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 16,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000016"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 17,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000017"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 18,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000018"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 19,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000019"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 20,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000020"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 21,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000021"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 22,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000022"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 23,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000023"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 24,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000024"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 25,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000025"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 26,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000026"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 27,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000027"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 28,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000028"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 29,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000029"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 30,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000030"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 31,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000031"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 32,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000032"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 33,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000033"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 34,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000034"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 35,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000035"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 36,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000036"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 37,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000037"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 38,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000038"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 39,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000039"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 40,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000040"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 41,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000041"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 42,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000042"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 43,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000043"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 44,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000044"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 45,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000045"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 46,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000046"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 47,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000047"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 48,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000048"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 49,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000049"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 50,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000050"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 51,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000051"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 52,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000052"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 53,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000053"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 54,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000054"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 55,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000055"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 56,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000056"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 57,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000057"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 58,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000058"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 59,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000059"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 60,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000060"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 61,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000061"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 62,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000062"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 63,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000063"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 64,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000064"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 65,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000065"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 66,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000066"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 67,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000067"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 68,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000068"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 69,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000069"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 70,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000070"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 71,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000071"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 72,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000072"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 73,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000073"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 74,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000074"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 75,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000075"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 76,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000076"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 77,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000077"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 78,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000078"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 79,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000079"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 80,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000080"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 81,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000081"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 82,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000082"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 83,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000083"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 84,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000084"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 85,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000085"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 86,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000086"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 87,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000087"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 88,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000088"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 89,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000089"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 90,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000090"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 91,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000091"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 92,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000092"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 93,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000093"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 94,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000094"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 95,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000095"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 96,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000096"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 97,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000097"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 98,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000098"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 99,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0,
+      "id": "000099"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 0,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000100"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 1,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000101"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 2,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000102"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 3,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000103"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 4,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000104"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 5,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000105"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 6,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000106"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 7,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000107"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 8,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000108"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 9,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000109"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 10,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000110"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 11,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000111"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 12,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000112"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 13,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000113"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 14,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000114"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 15,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000115"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 16,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000116"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 17,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000117"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 18,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000118"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 19,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000119"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 20,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000120"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 21,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000121"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 22,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000122"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 23,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000123"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 24,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000124"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 25,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000125"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 26,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000126"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 27,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000127"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 28,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000128"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 29,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000129"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 30,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000130"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 31,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000131"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 32,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000132"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 33,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000133"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 34,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000134"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 35,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000135"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 36,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000136"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 37,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000137"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 38,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000138"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 39,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000139"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 40,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000140"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 41,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000141"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 42,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000142"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 43,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000143"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 44,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000144"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 45,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000145"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 46,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000146"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 47,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000147"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 48,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000148"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 49,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000149"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 50,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000150"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 51,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000151"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 52,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000152"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 53,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000153"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 54,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000154"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 55,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000155"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 56,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000156"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 57,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000157"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 58,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000158"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 59,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000159"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 60,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000160"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 61,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000161"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 62,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000162"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 63,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000163"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 64,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000164"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 65,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000165"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 66,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000166"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 67,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000167"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 68,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000168"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 69,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000169"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 70,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000170"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 71,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000171"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 72,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000172"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 73,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000173"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 74,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000174"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 75,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000175"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 76,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000176"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 77,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000177"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 78,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000178"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 79,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000179"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 80,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000180"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 81,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000181"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 82,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000182"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 83,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000183"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 84,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000184"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 85,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000185"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 86,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000186"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 87,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000187"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 88,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000188"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 89,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000189"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 90,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000190"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 91,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000191"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 92,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000192"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 93,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000193"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 94,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000194"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 95,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000195"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 96,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000196"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 97,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000197"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 98,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000198"
+    },
+    {
+      "suite": "background",
+      "namespace": 20260920,
+      "trial": 99,
+      "baseline_configs": {
+        "pie": {
+          "iterations": 1200,
+          "restarts": 32,
+          "pie_relaxation": 0.5,
+          "threshold_after": 200
+        },
+        "htwf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "htaf": {
+          "iterations": 1200,
+          "restarts": 32,
+          "learning_rate": 0.5,
+          "threshold_after": 200
+        },
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "sparsity": 2,
+      "snr": 60,
+      "stress": "background",
+      "value": 0.001,
+      "id": "000199"
+    }
+  ],
+  "expected_jobs": 200,
+  "expected_method_trials": 1000,
+  "metadata": {
+    "warmups": 0,
+    "frozen_settings": "results/baseline_tuning/frozen.json"
+  },
+  "data_sha256": {
+    "summary.json": "b41f60b591b5183fed33dcfbf8457cd31e18a3dc0cb53d6f6fde3eb35e60e007",
+    "trials.csv": "c1bd02165004e79176189dbf603ce0fa024cc60cb9426b0efd97ed18f7c75694"
+  }
+}

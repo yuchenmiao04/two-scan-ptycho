@@ -1,5 +1,5 @@
 """Two-scan sparse affine ptychography."""
 
-from .core import recover_from_two_intensities
+from .reconstruction import GlobalSupportSolver, build_joint_dictionary, recover_two_scan_spectral
 
-__all__ = ["recover_from_two_intensities"]
+__all__ = ["GlobalSupportSolver", "build_joint_dictionary", "recover_two_scan_spectral"]
