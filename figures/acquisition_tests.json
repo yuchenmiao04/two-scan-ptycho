@@ -1,0 +1,2483 @@
+{
+  "caption": "All support panels show pointwise 95% Wilson intervals. (a,b) N=2 Poisson and Poisson plus two-electron rms read noise per pixel: all seven total two-frame photon budgets 1e5..1e11, five methods, 200 paired trials per budget within each noise family (7000 records each). Poisson and mixed do not reuse identical shot-noise draws; their difference is not a paired read-noise-only effect. (d) Full fixed-separation sweep at 60 dB, N=2: separations 2,4,5,6,8, five methods, 100 trials each (2500 displayed records from the complete 26500-row mismatch suite). Shading marks separation at most 2N=4, outside the sufficient strict-separation condition. (c) Fixed 2D synthetic common-signature, nonnegative-strength case with known phase and exact blank calibration: six budgets 6e7..2e10, 200 noise realizations each, calibrated and +2% assumed-gamma reconstructions (2400 records), not general complex 2D recovery. Photon axes display log10 of total expected photons over the same two frames; the small legend in (c) is separate from the five-method benchmark legend.",
+  "figure_inches": [
+    3.5,
+    2.63
+  ],
+  "conditions": [
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.295,
+        "successes": 59,
+        "wilson95": [
+          0.23613943856849148,
+          0.36158714524618774
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7070670599052842,
+          "q25": 0.27158509656418833,
+          "q75": 1.003973768788059
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.665,
+        "successes": 133,
+        "wilson95": [
+          0.5970219120796653,
+          0.7267591302158368
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.09457638884479937,
+          "q25": 0.038943353177203724,
+          "q75": 0.6844066736286937
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.475,
+        "successes": 95,
+        "wilson95": [
+          0.4069162264657108,
+          0.5440260398531525
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.5749036618413347,
+          "q25": 0.05189213890281789,
+          "q75": 0.7449975117558957
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.255,
+        "successes": 51,
+        "wilson95": [
+          0.1996049517203135,
+          0.3196292582045472
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7495118274442432,
+          "q25": 0.4660174466055008,
+          "q75": 1.0449816838154455
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.39,
+        "successes": 78,
+        "wilson95": [
+          0.3250834313746962,
+          0.4590625404283025
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6247401869467992,
+          "q25": 0.0948474162407241,
+          "q75": 0.810624936084715
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.445,
+        "successes": 89,
+        "wilson95": [
+          0.3778060100295335,
+          0.5142669758719658
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.5807420618013412,
+          "q25": 0.04624698768428117,
+          "q75": 0.8238396834050209
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.88,
+        "successes": 176,
+        "wilson95": [
+          0.8276574790170326,
+          0.9180200729362449
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.027513739758447515,
+          "q25": 0.009740142605682595,
+          "q75": 0.09972055111087398
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.475,
+        "successes": 95,
+        "wilson95": [
+          0.4069162264657108,
+          0.5440260398531525
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.4924171422052239,
+          "q25": 0.01457517490045137,
+          "q75": 0.7473631781395853
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.275,
+        "successes": 55,
+        "wilson95": [
+          0.21779700329307355,
+          0.34068339357669647
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7098851203203769,
+          "q25": 0.4232938712772221,
+          "q75": 1.0120673724883926
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.375,
+        "successes": 75,
+        "wilson95": [
+          0.31085436858409826,
+          0.44385696301021843
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.652046273564056,
+          "q25": 0.09471304647575086,
+          "q75": 0.8704688661489745
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.61,
+        "successes": 122,
+        "wilson95": [
+          0.5409374595716976,
+          0.6749165686253038
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.06760843542907966,
+          "q25": 0.016454922023730195,
+          "q75": 0.6829898795507902
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.975,
+        "successes": 195,
+        "wilson95": [
+          0.942821659593358,
+          0.9892752803482386
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.008979063047563903,
+          "q25": 0.0033384700920629346,
+          "q75": 0.024484457946353292
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.475,
+        "successes": 95,
+        "wilson95": [
+          0.4069162264657108,
+          0.5440260398531525
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.5006720326512527,
+          "q25": 0.004573644811943105,
+          "q75": 0.7376466893450865
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.28,
+        "successes": 56,
+        "wilson95": [
+          0.22236889773949026,
+          0.3459230458665071
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7125339173871816,
+          "q25": 0.44202464037553135,
+          "q75": 1.016496639779838
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.39,
+        "successes": 78,
+        "wilson95": [
+          0.3250834313746962,
+          0.4590625404283025
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6479790047962339,
+          "q25": 0.08871321135519104,
+          "q75": 0.8670353102239411
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.77,
+        "successes": 154,
+        "wilson95": [
+          0.7069169563469642,
+          0.8229065674093119
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.01977431047342449,
+          "q25": 0.004881433187453077,
+          "q75": 0.21099837842759997
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 200,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.002474898526618934,
+          "q25": 0.00104464435815844,
+          "q75": 0.00821209586921035
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.48,
+        "successes": 96,
+        "wilson95": [
+          0.411791663783233,
+          0.5489621492718576
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.49558325164641914,
+          "q25": 0.0016025662079859019,
+          "q75": 0.7376793653466547
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.275,
+        "successes": 55,
+        "wilson95": [
+          0.21779700329307355,
+          0.34068339357669647
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7139426719157386,
+          "q25": 0.44201901241507374,
+          "q75": 1.0075701517176292
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.39,
+        "successes": 78,
+        "wilson95": [
+          0.3250834313746962,
+          0.4590625404283025
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6519311707748243,
+          "q25": 0.058089800194037464,
+          "q75": 0.8656886214757811
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.895,
+        "successes": 179,
+        "wilson95": [
+          0.8448196800887696,
+          0.9302925120731899
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.005573571667128707,
+          "q25": 0.0015479873480762638,
+          "q75": 0.030037046439139223
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 200,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0007703198807152737,
+          "q25": 0.00034656718935190676,
+          "q75": 0.0026276039301650683
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.495,
+        "successes": 99,
+        "wilson95": [
+          0.4264584535990475,
+          0.5637299996647251
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.47627449846733383,
+          "q25": 0.0005858630667099753,
+          "q75": 0.737679501671558
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.27,
+        "successes": 54,
+        "wilson95": [
+          0.21323449814685846,
+          0.33543435198668425
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7134857748440673,
+          "q25": 0.4243071191461794,
+          "q75": 1.0071538240462259
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.4,
+        "successes": 80,
+        "wilson95": [
+          0.33460578566807336,
+          0.46916327960737997
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6479843930172687,
+          "q25": 0.05816679335826407,
+          "q75": 0.8656937229556863
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.945,
+        "successes": 189,
+        "wilson95": [
+          0.9042130012276914,
+          0.9690146582965411
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0018779404567235906,
+          "q25": 0.0004989331346546354,
+          "q75": 0.009061774840005523
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 200,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.00024690989751140663,
+          "q25": 0.00010785929796532697,
+          "q75": 0.0008062211438049679
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.515,
+        "successes": 103,
+        "wilson95": [
+          0.44610849192745716,
+          0.5833261482812249
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.47625442989106714,
+          "q25": 0.0002714379970273453,
+          "q75": 0.7376795018364335
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.27,
+        "successes": 54,
+        "wilson95": [
+          0.21323449814685846,
+          0.33543435198668425
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7133691406832322,
+          "q25": 0.42437964876614953,
+          "q75": 1.0071515801081923
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.4,
+        "successes": 80,
+        "wilson95": [
+          0.33460578566807336,
+          0.46916327960737997
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6388669517092596,
+          "q25": 0.058227771529388364,
+          "q75": 0.8673276862125117
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.995,
+        "successes": 199,
+        "wilson95": [
+          0.9722262956021069,
+          0.9991168312843989
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0005931917876017838,
+          "q25": 0.00015828058579175566,
+          "q75": 0.002784912273380194
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 200,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 7.802837647608035e-05,
+          "q25": 3.3597978641512084e-05,
+          "q75": 0.0002577630640982595
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.515,
+        "successes": 103,
+        "wilson95": [
+          0.44610849192745716,
+          0.5833261482812249
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.47624603287215334,
+          "q25": 0.0001775750089455956,
+          "q75": 0.7376795347639239
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.27,
+        "successes": 54,
+        "wilson95": [
+          0.21323449814685846,
+          0.33543435198668425
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.713326382204075,
+          "q25": 0.42440028870349605,
+          "q75": 1.0071188563363496
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.405,
+        "successes": 81,
+        "wilson95": [
+          0.3393777128250677,
+          0.47420289918661307
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.638864192790175,
+          "q25": 0.058266150112289264,
+          "q75": 0.8673322888368031
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.27,
+        "successes": 54,
+        "wilson95": [
+          0.21323449814685846,
+          0.33543435198668425
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7340233456561287,
+          "q25": 0.3549169629388815,
+          "q75": 0.9666571983406582
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.65,
+        "successes": 130,
+        "wilson95": [
+          0.5816346433604008,
+          0.7127117587264192
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.13667030900349197,
+          "q25": 0.04356757793861757,
+          "q75": 0.702976912032556
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.45,
+        "successes": 90,
+        "wilson95": [
+          0.3826406840224836,
+          0.5192438486152432
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.572403772072912,
+          "q25": 0.063353581428646,
+          "q75": 0.7767376650966169
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.27,
+        "successes": 54,
+        "wilson95": [
+          0.21323449814685846,
+          0.33543435198668425
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7126083245722284,
+          "q25": 0.436473478680519,
+          "q75": 1.0419441184859726
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.335,
+        "successes": 67,
+        "wilson95": [
+          0.2732408697841632,
+          0.40297808792033485
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6546283372260936,
+          "q25": 0.14890566441382777,
+          "q75": 0.896783886063691
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.41,
+        "successes": 82,
+        "wilson95": [
+          0.34415674908482885,
+          0.4792354096630791
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.5934717517733278,
+          "q25": 0.056077174537234376,
+          "q75": 0.8332026721977621
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.87,
+        "successes": 174,
+        "wilson95": [
+          0.8163364812775159,
+          0.9097179772033067
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.029547113714055315,
+          "q25": 0.010860186714402233,
+          "q75": 0.09657146617417922
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.465,
+        "successes": 93,
+        "wilson95": [
+          0.3971856415700402,
+          0.5341335312763685
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.5148196770186834,
+          "q25": 0.017436335317710813,
+          "q75": 0.7505131219005575
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.265,
+        "successes": 53,
+        "wilson95": [
+          0.2086815414710911,
+          0.3301757619262242
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7123034431558118,
+          "q25": 0.4625731569616235,
+          "q75": 1.0210488950765635
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.385,
+        "successes": 77,
+        "wilson95": [
+          0.32033309726923215,
+          0.45400132779753916
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6303360907549518,
+          "q25": 0.048056507704752734,
+          "q75": 0.8773961260380891
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.595,
+        "successes": 119,
+        "wilson95": [
+          0.525797100813387,
+          0.6606222871749323
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.07281731957321563,
+          "q25": 0.017793964744664305,
+          "q75": 0.6891357407421467
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.965,
+        "successes": 193,
+        "wilson95": [
+          0.9295293884777092,
+          0.9829444579914328
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.00928010679982481,
+          "q25": 0.003687975741584118,
+          "q75": 0.028790449517417865
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.48,
+        "successes": 96,
+        "wilson95": [
+          0.411791663783233,
+          0.5489621492718576
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.49618990104511507,
+          "q25": 0.005297058574920056,
+          "q75": 0.7457518815392314
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.27,
+        "successes": 54,
+        "wilson95": [
+          0.21323449814685846,
+          0.33543435198668425
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7147047061767938,
+          "q25": 0.4617957480385321,
+          "q75": 1.0099260639553995
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.38,
+        "successes": 76,
+        "wilson95": [
+          0.31559005848673627,
+          0.44893281984380773
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6389039998353974,
+          "q25": 0.08631478216883356,
+          "q75": 0.848709095126762
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.77,
+        "successes": 154,
+        "wilson95": [
+          0.7069169563469642,
+          0.8229065674093119
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.020550756837031225,
+          "q25": 0.005213962563231341,
+          "q75": 0.1623473260647138
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 200,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0028250295797457104,
+          "q25": 0.0012624106103433445,
+          "q75": 0.008579880719883023
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.48,
+        "successes": 96,
+        "wilson95": [
+          0.411791663783233,
+          0.5489621492718576
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.4960400590871312,
+          "q25": 0.001635633324287436,
+          "q75": 0.7376799597694611
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.275,
+        "successes": 55,
+        "wilson95": [
+          0.21779700329307355,
+          0.34068339357669647
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7128540870316348,
+          "q25": 0.44201931202563116,
+          "q75": 1.0063288082742878
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.385,
+        "successes": 77,
+        "wilson95": [
+          0.32033309726923215,
+          0.45400132779753916
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6480041913150125,
+          "q25": 0.05859369232552873,
+          "q75": 0.8656579981653357
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.89,
+        "successes": 178,
+        "wilson95": [
+          0.839073090026985,
+          0.926227555398747
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.006818890274907778,
+          "q25": 0.0015651414020477375,
+          "q75": 0.023288006706636548
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 200,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0009095733607247952,
+          "q25": 0.00043298264970376924,
+          "q75": 0.002582374262206604
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.49,
+        "successes": 98,
+        "wilson95": [
+          0.42156278331213176,
+          0.5588141232154135
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.4762563253516142,
+          "q25": 0.0005325816262159885,
+          "q75": 0.7376789851081264
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.27,
+        "successes": 54,
+        "wilson95": [
+          0.21323449814685846,
+          0.33543435198668425
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7131489507765321,
+          "q25": 0.4242840600666573,
+          "q75": 1.0068444986081047
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 1000000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.39,
+        "successes": 78,
+        "wilson95": [
+          0.3250834313746962,
+          0.4590625404283025
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.647978163910454,
+          "q25": 0.05836614064485202,
+          "q75": 0.8672775861844684
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.945,
+        "successes": 189,
+        "wilson95": [
+          0.9042130012276914,
+          0.9690146582965411
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0020662748399827664,
+          "q25": 0.0004996811690139985,
+          "q75": 0.006714327772306632
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 200,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0002819626105577377,
+          "q25": 0.0001335788026968198,
+          "q75": 0.0008332902983152107
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.51,
+        "successes": 102,
+        "wilson95": [
+          0.44118587678458643,
+          0.5784372166878682
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.4762455948528682,
+          "q25": 0.00024540317582701006,
+          "q75": 0.737679527692879
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.27,
+        "successes": 54,
+        "wilson95": [
+          0.21323449814685846,
+          0.33543435198668425
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7132473381668153,
+          "q25": 0.42438463896270345,
+          "q75": 1.0070623009485788
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 10000000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.395,
+        "successes": 79,
+        "wilson95": [
+          0.32984101013207967,
+          0.46411650840714636
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6388648213133347,
+          "q25": 0.05829831440032232,
+          "q75": 0.8673204259874572
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000000,
+        "method": "joint"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.995,
+        "successes": 199,
+        "wilson95": [
+          0.9722262956021069,
+          0.9991168312843989
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.00065810134854635,
+          "q25": 0.00015704475511810122,
+          "q75": 0.0019638178684440923
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000000,
+        "method": "full_linear"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 200,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 9.060810532027984e-05,
+          "q25": 4.353830599697398e-05,
+          "q75": 0.0002660183485651441
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000000,
+        "method": "pie"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.515,
+        "successes": 103,
+        "wilson95": [
+          0.44610849192745716,
+          0.5833261482812249
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.4762432560910824,
+          "q25": 0.00016446516123877952,
+          "q75": 0.7376794886222462
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000000,
+        "method": "htwf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.27,
+        "successes": 54,
+        "wilson95": [
+          0.21323449814685846,
+          0.33543435198668425
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7132878600522873,
+          "q25": 0.4244019489771019,
+          "q75": 1.0070899932886554
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "photons": 100000000000,
+        "method": "htaf"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.41,
+        "successes": 82,
+        "wilson95": [
+          0.34415674908482885,
+          0.4792354096630791
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6388634805132065,
+          "q25": 0.058288508451532516,
+          "q75": 0.8673312013057086
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 2,
+        "method": "joint"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.0,
+        "successes": 0,
+        "wilson95": [
+          3.469446951953614e-18,
+          0.03699349820698568
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 4.8685830634555565,
+          "q25": 2.3269754647764556,
+          "q75": 6.565950468224111
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 2,
+        "method": "full_linear"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.99,
+        "successes": 99,
+        "wilson95": [
+          0.9455138038212946,
+          0.9982325679358593
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0004291648337027276,
+          "q25": 0.00023008431326544416,
+          "q75": 0.0009903800508515724
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 2,
+        "method": "pie"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.94,
+        "successes": 94,
+        "wilson95": [
+          0.8752318455410406,
+          0.9722138760368118
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0005447736158399833,
+          "q25": 0.0002591961405525948,
+          "q75": 0.0012994193323776298
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 2,
+        "method": "htwf"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.5,
+        "successes": 50,
+        "wilson95": [
+          0.4038315303659956,
+          0.5961684696340044
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.29400958492666585,
+          "q25": 0.00016194368899639445,
+          "q75": 1.4016415758640535
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 2,
+        "method": "htaf"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.84,
+        "successes": 84,
+        "wilson95": [
+          0.7557973061072976,
+          0.8990471151119521
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0009204494738938212,
+          "q25": 0.0002667814089161082,
+          "q75": 0.003955443563356385
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 4,
+        "method": "joint"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.0,
+        "successes": 0,
+        "wilson95": [
+          3.469446951953614e-18,
+          0.03699349820698568
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 4.617592870328547,
+          "q25": 3.1663268499842556,
+          "q75": 5.669921514157955
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 4,
+        "method": "full_linear"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.99,
+        "successes": 99,
+        "wilson95": [
+          0.9455138038212946,
+          0.9982325679358593
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0004201849434519367,
+          "q25": 0.00024692921457163564,
+          "q75": 0.0008463092053694511
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 4,
+        "method": "pie"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.96,
+        "successes": 96,
+        "wilson95": [
+          0.9016292856411208,
+          0.9843366960084523
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.00043852506909207645,
+          "q25": 0.00024785483700277963,
+          "q75": 0.0009009815045567028
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 4,
+        "method": "htwf"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.41,
+        "successes": 41,
+        "wilson95": [
+          0.3186731302113651,
+          0.5079856994658921
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 1.3568783651848717,
+          "q25": 0.00016516010825409807,
+          "q75": 1.4177558095428533
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 4,
+        "method": "htaf"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.78,
+        "successes": 78,
+        "wilson95": [
+          0.6892964648501421,
+          0.8499871761539459
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0006532749831240928,
+          "q25": 0.0002717433402644922,
+          "q75": 0.005404623340084679
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 5,
+        "method": "joint"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 100,
+        "wilson95": [
+          0.9630065017930143,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0007448646442503783,
+          "q25": 0.0004549506663896534,
+          "q75": 0.001410438657519717
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 5,
+        "method": "full_linear"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 100,
+        "wilson95": [
+          0.9630065017930143,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.00041629415773506253,
+          "q25": 0.00021088485078322322,
+          "q75": 0.0006398549900048891
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 5,
+        "method": "pie"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.91,
+        "successes": 91,
+        "wilson95": [
+          0.837737871472837,
+          0.9519274599974348
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.00047257370256042434,
+          "q25": 0.00022949515666521154,
+          "q75": 0.0010979126429472063
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 5,
+        "method": "htwf"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.5,
+        "successes": 50,
+        "wilson95": [
+          0.4038315303659956,
+          0.5961684696340044
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.540699923755726,
+          "q25": 0.0001746764910885393,
+          "q75": 1.4358113576678817
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 5,
+        "method": "htaf"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.84,
+        "successes": 84,
+        "wilson95": [
+          0.7557973061072976,
+          0.8990471151119521
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0005118998357357863,
+          "q25": 0.00023398079504555156,
+          "q75": 0.0018272301555689718
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 6,
+        "method": "joint"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 100,
+        "wilson95": [
+          0.9630065017930143,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.00046482131856714817,
+          "q25": 0.00022559567528623425,
+          "q75": 0.0007448689358086772
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 6,
+        "method": "full_linear"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 100,
+        "wilson95": [
+          0.9630065017930143,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.00045939457245596036,
+          "q25": 0.00022085814326540246,
+          "q75": 0.000983897318444212
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 6,
+        "method": "pie"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.92,
+        "successes": 92,
+        "wilson95": [
+          0.8500189229905127,
+          0.9589065385156194
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0005051018564291208,
+          "q25": 0.00026115531855033645,
+          "q75": 0.0011964802473647608
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 6,
+        "method": "htwf"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.43,
+        "successes": 43,
+        "wilson95": [
+          0.33733298524110106,
+          0.5278461045078768
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 1.0113005718511943,
+          "q25": 0.0004682456803561373,
+          "q75": 1.4065405864046934
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 6,
+        "method": "htaf"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.84,
+        "successes": 84,
+        "wilson95": [
+          0.7557973061072976,
+          0.8990471151119521
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0006857168208045928,
+          "q25": 0.00030255156310879,
+          "q75": 0.0018056978873403412
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 8,
+        "method": "joint"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 100,
+        "wilson95": [
+          0.9630065017930143,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.00023807772854203476,
+          "q25": 0.00014714640075111905,
+          "q75": 0.00033905189584427305
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 8,
+        "method": "full_linear"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 100,
+        "wilson95": [
+          0.9630065017930143,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0005305469617116079,
+          "q25": 0.0003251815881370745,
+          "q75": 0.0009135976559395406
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 8,
+        "method": "pie"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.92,
+        "successes": 92,
+        "wilson95": [
+          0.8500189229905127,
+          0.9589065385156194
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0005858089239160225,
+          "q25": 0.0003132787711873455,
+          "q75": 0.0010909202575967699
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 8,
+        "method": "htwf"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.5,
+        "successes": 50,
+        "wilson95": [
+          0.4038315303659956,
+          0.5961684696340044
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.27833676322664264,
+          "q25": 0.0012998908314024512,
+          "q75": 1.268170768464779
+        }
+      }
+    },
+    {
+      "condition": {
+        "sparsity": 2,
+        "snr": 60,
+        "value": 8,
+        "method": "htaf"
+      },
+      "trials": 100,
+      "physical_exact_support": {
+        "rate": 0.88,
+        "successes": 88,
+        "wilson95": [
+          0.8018790057328857,
+          0.9300059356298052
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0006272582020838054,
+          "q25": 0.0003545878006392895,
+          "q75": 0.0022453568270633896
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 60000000,
+        "method": "calibrated"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.04,
+        "successes": 8,
+        "wilson95": [
+          0.020405632066152306,
+          0.07693206820093293
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 1.1810327433907417,
+          "q25": 0.8558267489985363,
+          "q75": 1.3607286904401197
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 60000000,
+        "method": "gamma_plus_2pct"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.06,
+        "successes": 12,
+        "wilson95": [
+          0.03465219425433187,
+          0.1019316929576627
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 1.1048577072471713,
+          "q25": 0.8088506731974714,
+          "q75": 1.3226475332434902
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 200000000,
+        "method": "calibrated"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.21,
+        "successes": 42,
+        "wilson95": [
+          0.15928412069979,
+          0.2716461685990246
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7636939615093656,
+          "q25": 0.6543732068936331,
+          "q75": 1.2229234438023664
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 200000000,
+        "method": "gamma_plus_2pct"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.2,
+        "successes": 40,
+        "wilson95": [
+          0.15045200926098115,
+          0.2608551865653788
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.7504487451161167,
+          "q25": 0.658401638339331,
+          "q75": 1.1504326886361596
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 600000000,
+        "method": "calibrated"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.505,
+        "successes": 101,
+        "wilson95": [
+          0.43627000033527485,
+          0.5735415464009526
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.09772585693718044,
+          "q25": 0.037795882772602915,
+          "q75": 0.75278102828259
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 600000000,
+        "method": "gamma_plus_2pct"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.415,
+        "successes": 83,
+        "wilson95": [
+          0.34894285449757567,
+          0.4842608509865596
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.6845960084613301,
+          "q25": 0.06622529500665811,
+          "q75": 0.7564959577556125
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 2000000000,
+        "method": "calibrated"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.915,
+        "successes": 183,
+        "wilson95": [
+          0.8681041292843443,
+          0.9462542498225244
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.02240885279687391,
+          "q25": 0.013946645830035553,
+          "q75": 0.03362706901933733
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 2000000000,
+        "method": "gamma_plus_2pct"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.78,
+        "successes": 156,
+        "wilson95": [
+          0.7176120008170632,
+          0.8318346164116674
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.06639055071422756,
+          "q25": 0.04390040900987895,
+          "q75": 0.10003088231013689
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 6000000000,
+        "method": "calibrated"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.99,
+        "successes": 198,
+        "wilson95": [
+          0.9642782382838231,
+          0.9972533418664555
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.011826905587097496,
+          "q25": 0.008122738270497178,
+          "q75": 0.017984043931879426
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 6000000000,
+        "method": "gamma_plus_2pct"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.96,
+        "successes": 192,
+        "wilson95": [
+          0.923067931799067,
+          0.9795943679338476
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.05561437339002193,
+          "q25": 0.04590141894471761,
+          "q75": 0.06691549143936198
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 20000000000,
+        "method": "calibrated"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 1.0,
+        "successes": 200,
+        "wilson95": [
+          0.9811546736227335,
+          1.0
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0064357340892140505,
+          "q25": 0.004028798625953353,
+          "q75": 0.009611101730988038
+        }
+      }
+    },
+    {
+      "condition": {
+        "total_photons_two_frames": 20000000000,
+        "method": "gamma_plus_2pct"
+      },
+      "trials": 200,
+      "physical_exact_support": {
+        "rate": 0.995,
+        "successes": 199,
+        "wilson95": [
+          0.9722262956021069,
+          0.9991168312843989
+        ]
+      },
+      "metrics": {
+        "defect_nrmse": {
+          "median": 0.0558953929925729,
+          "q25": 0.04993039946620193,
+          "q75": 0.060766901341058846
+        }
+      }
+    }
+  ]
+}

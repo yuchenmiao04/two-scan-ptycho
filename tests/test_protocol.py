@@ -7,11 +7,59 @@ import numpy as np
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from experiments.run_experiments import (
     SEEDS, calculate_metrics, formal_jobs, make_instance,
-    validate_frozen_sources,
+    validate_frozen_sources, fractional_frames, recover,
 )
 
 
 class ProtocolTests(unittest.TestCase):
+    def test_complete_model_stress_grid_keeps_acquisition_namespace(self):
+        jobs = formal_jobs("model_stress", 100, {})
+        self.assertEqual(len(jobs), 5300)
+        self.assertTrue(all(job["suite"] == "mismatch" for job in jobs))
+        self.assertEqual({job["stress"] for job in jobs}, {
+            "background", "probe", "position", "scale", "truncation", "quantization",
+            "cluster", "boundary", "offgrid", "sparsity", "weak_defect",
+        })
+        self.assertEqual({job["namespace"] for job in jobs}, {SEEDS["formal"]})
+
+    def test_offgrid_integer_limit_and_continuous_metric(self):
+        from twoscan_ptycho.core import affine_object, diffraction_intensity, gaussian_probe
+        probe = gaussian_probe(33, .05)
+        positions, amplitudes = (-5, 4), (.3+.2j, -.4+.1j)
+        expected = np.array([diffraction_intensity(affine_object(33, positions, amplitudes), probe, r)
+                             for r in (0, 1)])
+        np.testing.assert_allclose(fractional_frames(33, probe, (0, 1), positions, amplitudes),
+                                   expected, atol=2e-13, rtol=2e-13)
+        instance = make_instance(dict(suite="mismatch", namespace=SEEDS["formal"], trial=1,
+                                      sparsity=2, snr="inf", stress="offgrid", value=.1))
+        metrics = calculate_metrics(instance, instance["truth"], instance["positions"])
+        self.assertIsNone(metrics["defect_nrmse"])
+        self.assertIsNone(metrics["support_exact"])
+        self.assertAlmostEqual(metrics["localization_rmse"], .1)
+
+    def test_unknown_sparsity_uses_discrepancy_and_keeps_legal_truth(self):
+        jobs = formal_jobs("unknown_sparsity", 1, {})
+        self.assertEqual(len(jobs), 5)
+        self.assertEqual({job["selection"] for job in jobs}, {"discrepancy"})
+        instance = make_instance(jobs[-1])
+        self.assertEqual(instance["upper"], 3)
+        self.assertEqual(len(instance["positions"]), 2)
+        self.assertGreater(instance["positions"][1] - instance["positions"][0], 6)
+        _, support, _, diagnostics = recover("joint", instance, 1, {}, selection="discrepancy")
+        self.assertEqual(set(support), set(instance["positions"]))
+        self.assertEqual(diagnostics["selection"], "discrepancy")
+
+    def test_beam_ablation_retains_separate_search_scope(self):
+        jobs = formal_jobs("beam_ablation", 1, {})
+        self.assertEqual(len(jobs), 20)
+        self.assertEqual({job["beam_width"] for job in jobs}, {1, 8, 32, 128, 256})
+        self.assertTrue(all(job["methods"] == ("joint", "beam") for job in jobs))
+        instance = make_instance(dict(suite="beam_ablation", namespace=SEEDS["formal"],
+                                      trial=0, sparsity=1, snr="inf"))
+        _, _, status, diagnostics = recover("beam", instance, 1, {}, beam_width=1)
+        self.assertEqual(status, "beam_heuristic")
+        self.assertEqual(diagnostics["comparison_scope"], "beam_ablation_with_distinct_search_space")
+
     def test_pairing_does_not_depend_on_method_or_noise_level(self):
         base=dict(suite="gaussian",namespace=SEEDS["formal"],trial=9,sparsity=3,snr=20)
         a=make_instance(base)

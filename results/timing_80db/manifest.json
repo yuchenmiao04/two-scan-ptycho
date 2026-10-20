@@ -1,0 +1,612 @@
+{
+  "recorded_run_hash": "7f415b74a37b20226c6b1103d1d22a2461b697b39fc4725ec924a07802325e84",
+  "hardware": {
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "python": "3.10.11",
+    "numpy": "2.2.6",
+    "cpu_count": 10,
+    "blas_threads": 1,
+    "machdep.cpu.brand_string": "Apple M4",
+    "hw.physicalcpu": "10",
+    "hw.memsize": "25769803776"
+  },
+  "workers": 1,
+  "expected_jobs": 30,
+  "expected_method_trials": 60,
+  "timing_is_isolated": true,
+  "recorded_sources": {
+    "experiments/run_experiments.py": "5df84f9f0a3c679db8883244f32537726f1d7e09fed355616a9a4fbcdd78daf6",
+    "src/twoscan_ptycho/__init__.py": "038033ee7edd079bdeea9f516b6bd69f07b75b8a2deaca0821c8f9b28d35e9b7",
+    "src/twoscan_ptycho/case2d.py": "c89efce0adeeffb05561a1c1022d29804ce609b437e1a5a67d821c1be6c9e6a2",
+    "src/twoscan_ptycho/core.py": "17b00679c7a2917d6b598589ba748768b2a31a48d047a55a926b5174a85701e6",
+    "src/twoscan_ptycho/full_data.py": "9defd806cf915efa73cbb8b5f560ba0802585a36959fbff9f32001d942e7ee4a",
+    "src/twoscan_ptycho/iterative.py": "152f7707f04a8257e2f015079d49c6fc0befcc34c3ae3f7ca61d636a82462e46",
+    "src/twoscan_ptycho/reconstruction.py": "61db4a257c6143c2859ace319c672ff1117e1d4b9b691b16d6d1a6d6cbc1a882",
+    "src/twoscan_ptycho/baselines.py": "600697b3ce6a10720710f24bd0483e710153b9680bb73f281b6b6e3c8b078cb6"
+  },
+  "metadata": {
+    "frozen_path": "results/baseline_tuning/frozen.json",
+    "frozen_sha256": "16b312c385c2d29ba302dbbc1131e0d24d85153a138615aac1f60897dff7967e",
+    "wrapper_sha256": "d43511a118fb5e81e975c9c6a009147a1b1ab9eee9e8c638c9fd12002218dac4",
+    "warmups": 1,
+    "scope": "paired joint LS and full-linear, N=2, target defect-intensity SNR=80 dB",
+    "timing_definition": "Online excludes dictionary/SVD setup; full-linear setup plus online is also reported. Cached joint setup attributes are not fresh per-trial setup measurements."
+  },
+  "jobs": [
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 0,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000000"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 1,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000001"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 2,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000002"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 3,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000003"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 4,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000004"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 5,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000005"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 6,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000006"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 7,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000007"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 8,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000008"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 9,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000009"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 10,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000010"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 11,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000011"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 12,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000012"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 13,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000013"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 14,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000014"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 15,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000015"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 16,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000016"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 17,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000017"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 18,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000018"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 19,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000019"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 20,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000020"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 21,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000021"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 22,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000022"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 23,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000023"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 24,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000024"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 25,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000025"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 26,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000026"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 27,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000027"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 28,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000028"
+    },
+    {
+      "suite": "timing",
+      "namespace": 19371011,
+      "trial": 29,
+      "sparsity": 2,
+      "snr": 80,
+      "methods": [
+        "joint",
+        "full_linear"
+      ],
+      "baseline_configs": {
+        "full_linear": {
+          "iterations": 12,
+          "restarts": 1
+        }
+      },
+      "id": "000029"
+    }
+  ],
+  "recorded_quantiles_sha256": "0d5d7fe96bd1cb8be23fb5b3552311a1eecc97ae53e7a9aac22254302762b067",
+  "scope": "Paired serial N=2, 80-dB joint and full-linear online timing only.",
+  "recorded_source_file_sha256": {
+    "manifest.json": "de452fff435904fbd7fc3291e3b8c7bbfedd55d40c891c4b890c7ab16dd67fa5",
+    "summary.json": "1c23acd5a312045291dbd051b1d8b36196a02a44db76820b576d076b95ab28db",
+    "trials.csv": "26e8cb838169c12c92e9c4a0a3c345fc61aabb5c8b1c495f2e3e0f3852c82429"
+  },
+  "source_hash_interpretation": "recorded_sources and recorded_source_file_sha256 describe the original acquisition records under neutral component names. These hashes are not claims that the distributed source bytes generated the recorded trials. distribution_source_hashes authenticates the distributed implementation. Numerical cells, seeds, failed trials, and numeric arrays retain their recorded values; private calendar and local-machine metadata are omitted.",
+  "distribution_source_hashes": {
+    "src/twoscan_ptycho/__init__.py": "fa16a13d3fe6ed69cab3b8c78f8fe5629991b7eaad2e1f340a15293478fb78e1",
+    "src/twoscan_ptycho/baselines.py": "ac10035e2c10cc387e7b4d9a2a50f71872e36a3353cf78351fdc3b83de89039d",
+    "src/twoscan_ptycho/beam.py": "9ec2f05a5451b592de97fd6b1e8e8fc3d96d0046bfe23f2e3800b22f3b98f2c5",
+    "src/twoscan_ptycho/case2d.py": "4ec360c338a6f940133eb81a87a1de7b2dc878ffe0ab893e2d141f489315ad91",
+    "src/twoscan_ptycho/core.py": "fc92546fbbe9df15bea3fa027c83c10c912d0d87ce4116d320bab628e13d114d",
+    "src/twoscan_ptycho/reconstruction.py": "fb5990204dd2b04d632af18db4a43fe14ed44d066c77cbf6213b9a883682050e",
+    "experiments/__init__.py": "ce2aeda1ea5e7ee0e4991b8db0220667ababe9c6090dc811455407681edd0a4f",
+    "experiments/_shared.py": "5c32c2131cfa9528aa5395102cd50cfd6552c5c1440aca18b66f72a58a2c2630",
+    "experiments/check_stability.py": "9081a54bdd925e2c0a12bb5dfe33c19c0953ac2187c2eee620f329236975d618",
+    "experiments/plot_figures.py": "9fcd64b8587f91938a271fd26cfa917472dc4286ce09e084c500af8a88741db0",
+    "experiments/run_calibration.py": "210bdefa8f2a9dfe0f01429b8ed50378618b1a932e2855e47f0b09a21d859b40",
+    "experiments/run_case2d.py": "cec6c910957249c4482848d054db98802904dc703e22c378d8ac5304234c0e57",
+    "experiments/run_conditioning.py": "61b20e8cb966a8b6be86c67001415ae2217bb4bf6c9bff02c4a8068dd6361f74",
+    "experiments/run_experiments.py": "d6ae0d088171b8f1e5e37255c4a0991650642cca46fbf76c383aef2cba90715c",
+    "experiments/run_timing_80db.py": "c1589259c6c1bc797cb8fc9319c00d3216b0d8f611121d229451e43fa28f6159",
+    "experiments/run_timing_setup.py": "42c0603fd07cc994934bcc176d14582c23c85062dcfe2752b78972bb9a7fcc95",
+    "experiments/run_validation.py": "745f44834d677c0eb1830131700c2736aa48e34c4d51747c5a5a2afcc7ff3ecd",
+    "experiments/verify_results.py": "62e7342015220a950d7ff84fd172031e7fef8d1ae302a54c4b6a54df1d85565b"
+  },
+  "suite": "timing_80db",
+  "rows": 60,
+  "data_sha256": {
+    "paired_quantiles.json": "3412a2b57a2d2ebc721a92ba595e69ca95cc9fb8a56090eeec96096dd8b192d9",
+    "summary.json": "b50e721056f2d096dbbda4726d42e371860c0982c8f60aacdaa7862028124e22",
+    "trials.csv": "8d9ae6f8fc3494f3b8f3d259d1048f4d743179bbb3897e1c5afe650dcef5501f"
+  }
+}

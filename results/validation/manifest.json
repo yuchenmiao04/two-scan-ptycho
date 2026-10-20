@@ -1,36 +1,17 @@
 {
   "suite": "validation",
-  "rows": 1200,
+  "seed": 20260920,
   "recorded_sources": {
-    "experiments/auxiliary_suites.py": "e73e7b70f5764085e8aae42a4a533f6fa413b83b980260434762f1b722bffe69",
+    "experiments/run_auxiliary.py": "e73e7b70f5764085e8aae42a4a533f6fa413b83b980260434762f1b722bffe69",
     "src/twoscan_ptycho/reconstruction.py": "61db4a257c6143c2859ace319c672ff1117e1d4b9b691b16d6d1a6d6cbc1a882",
     "src/twoscan_ptycho/core.py": "17b00679c7a2917d6b598589ba748768b2a31a48d047a55a926b5174a85701e6",
     "src/twoscan_ptycho/case2d.py": "c89efce0adeeffb05561a1c1022d29804ce609b437e1a5a67d821c1be6c9e6a2"
   },
-  "distribution_source_hashes": {
-    "src/twoscan_ptycho/__init__.py": "fa16a13d3fe6ed69cab3b8c78f8fe5629991b7eaad2e1f340a15293478fb78e1",
-    "src/twoscan_ptycho/baselines.py": "ac10035e2c10cc387e7b4d9a2a50f71872e36a3353cf78351fdc3b83de89039d",
-    "src/twoscan_ptycho/case2d.py": "4ec360c338a6f940133eb81a87a1de7b2dc878ffe0ab893e2d141f489315ad91",
-    "src/twoscan_ptycho/core.py": "fc92546fbbe9df15bea3fa027c83c10c912d0d87ce4116d320bab628e13d114d",
-    "src/twoscan_ptycho/reconstruction.py": "fb5990204dd2b04d632af18db4a43fe14ed44d066c77cbf6213b9a883682050e",
-    "experiments/__init__.py": "ce2aeda1ea5e7ee0e4991b8db0220667ababe9c6090dc811455407681edd0a4f",
-    "experiments/_shared.py": "155e8ae14a28f6697d6dff6e6c179b1484c99e697bd42c220009f68d02d7f431",
-    "experiments/run_case2d.py": "cec6c910957249c4482848d054db98802904dc703e22c378d8ac5304234c0e57",
-    "experiments/run_experiments.py": "6c7f1f8535551e1edfd092c67a9d10dffd8ae40c14f095e7829f88d90dffe5e9",
-    "experiments/run_timing_setup.py": "334ac9801d857ea8f052fc347f137c57b3e837699f5771c545ab93d2d1c66f78",
-    "experiments/run_validation.py": "c3a53ef40cf6189cac2abf0c066f8973a584d3c6fb2e3945853275aefb43524c",
-    "experiments/verify_results.py": "e17f20d825f47024d19e898a4e2f392224ead034e41ac41d1044423076d98617"
-  },
-  "source_hash_interpretation": "recorded_sources contains SHA-256 values recorded when the measurements were computed, indexed by neutral component identifiers; these are not hashes of the distributed files. distribution_source_hashes authenticates the distributed implementation. Numerical CSV cells retain the recorded values.",
-  "created_utc": "2026-09-19T17:08:16.484403+00:00",
-  "seed": 20260920,
-  "smoke": false,
-  "runtime_interpretation": "Diagnostic wall times from this suite are not controlled serial benchmark runtimes.",
-  "hardware": {
+  "machine": {
     "cpu": "Apple M4",
     "logical_cpu_count": 10,
     "platform": "macOS-15.5-arm64-arm-64bit",
-    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "python": "3.12.14",
     "numpy": "2.3.5",
     "blas_thread_environment": {
       "OPENBLAS_NUM_THREADS": "1",
@@ -59,6 +40,7 @@
     "gamma": "5/B^2",
     "strict_separation": ">2N",
     "amplitudes": "magnitude uniform[0.5,1.5], phase uniform[-pi,pi]",
+    "quarter_pixel_center": 0.25,
     "noise": "none",
     "spectral_tolerances": {
       "rank_rtol": 1e-11,
@@ -68,15 +50,41 @@
       "channel_zero_rtol": 1.4210854715202004e-14,
       "solve_rcond": null,
       "max_condition": 100000000000000.0
-    },
-    "methods": [
-      "joint_global",
-      "spectral_algebraic"
-    ]
+    }
   },
+  "smoke": false,
+  "runtime_interpretation": "Diagnostic wall times from this suite are not controlled serial benchmark runtimes.",
+  "recorded_source_file_sha256": {
+    "manifest.json": "e66d85776ff9f6a44ac0ad6b432029e97b1c30fc4c35deada42f48496a704845",
+    "summary.json": "3a51bbb148438dec4be0f4703cd5ee2fdc6e73db0e70ee4d5b537720ef45105c",
+    "trials.csv": "f07268564f9e166ec68a67083845767da6ceb99beb81149c5b36b600af9f351d",
+    "raw_data.npz": "4af39e59aaa478d112fb777f0b0af4ca56a72dfebbcbe29344064a1aa406b209"
+  },
+  "source_hash_interpretation": "recorded_sources and recorded_source_file_sha256 describe the original acquisition records under neutral component names. These hashes are not claims that the distributed source bytes generated the recorded trials. distribution_source_hashes authenticates the distributed implementation. Numerical cells, seeds, failed trials, and numeric arrays retain their recorded values; private calendar and local-machine metadata are omitted.",
+  "distribution_source_hashes": {
+    "src/twoscan_ptycho/__init__.py": "fa16a13d3fe6ed69cab3b8c78f8fe5629991b7eaad2e1f340a15293478fb78e1",
+    "src/twoscan_ptycho/baselines.py": "ac10035e2c10cc387e7b4d9a2a50f71872e36a3353cf78351fdc3b83de89039d",
+    "src/twoscan_ptycho/beam.py": "9ec2f05a5451b592de97fd6b1e8e8fc3d96d0046bfe23f2e3800b22f3b98f2c5",
+    "src/twoscan_ptycho/case2d.py": "4ec360c338a6f940133eb81a87a1de7b2dc878ffe0ab893e2d141f489315ad91",
+    "src/twoscan_ptycho/core.py": "fc92546fbbe9df15bea3fa027c83c10c912d0d87ce4116d320bab628e13d114d",
+    "src/twoscan_ptycho/reconstruction.py": "fb5990204dd2b04d632af18db4a43fe14ed44d066c77cbf6213b9a883682050e",
+    "experiments/__init__.py": "ce2aeda1ea5e7ee0e4991b8db0220667ababe9c6090dc811455407681edd0a4f",
+    "experiments/_shared.py": "5c32c2131cfa9528aa5395102cd50cfd6552c5c1440aca18b66f72a58a2c2630",
+    "experiments/check_stability.py": "9081a54bdd925e2c0a12bb5dfe33c19c0953ac2187c2eee620f329236975d618",
+    "experiments/plot_figures.py": "9fcd64b8587f91938a271fd26cfa917472dc4286ce09e084c500af8a88741db0",
+    "experiments/run_calibration.py": "210bdefa8f2a9dfe0f01429b8ed50378618b1a932e2855e47f0b09a21d859b40",
+    "experiments/run_case2d.py": "cec6c910957249c4482848d054db98802904dc703e22c378d8ac5304234c0e57",
+    "experiments/run_conditioning.py": "61b20e8cb966a8b6be86c67001415ae2217bb4bf6c9bff02c4a8068dd6361f74",
+    "experiments/run_experiments.py": "d6ae0d088171b8f1e5e37255c4a0991650642cca46fbf76c383aef2cba90715c",
+    "experiments/run_timing_80db.py": "c1589259c6c1bc797cb8fc9319c00d3216b0d8f611121d229451e43fa28f6159",
+    "experiments/run_timing_setup.py": "42c0603fd07cc994934bcc176d14582c23c85062dcfe2752b78972bb9a7fcc95",
+    "experiments/run_validation.py": "745f44834d677c0eb1830131700c2736aa48e34c4d51747c5a5a2afcc7ff3ecd",
+    "experiments/verify_results.py": "62e7342015220a950d7ff84fd172031e7fef8d1ae302a54c4b6a54df1d85565b"
+  },
+  "rows": 1800,
   "data_sha256": {
-    "raw_data.npz": "b9ccea4ab4497007782fd9effaae5ae97ac33e171de8d2c69ef028e3a34c7e99",
-    "summary.json": "f77a5bb2961b93ae0690ba1ff3e4b3909cc995fa87b5c2802f75b3b8dc0eedee",
-    "trials.csv": "fec48e5c7d79a9c10efa70ed92532df6f1290f8f63924aaae4cb14d0c54f4dd3"
+    "raw_data.npz": "4af39e59aaa478d112fb777f0b0af4ca56a72dfebbcbe29344064a1aa406b209",
+    "summary.json": "2c05039e74624ce3b4d560860e8d59abc8c49b4ee10fe5db626c31a4df51e7ba",
+    "trials.csv": "9bf73ef3f389c56858318e21ad5ad416ade3fbb8c0f5e1b83f921621fd5e9fa5"
   }
 }

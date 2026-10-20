@@ -15,7 +15,6 @@ import json
 import platform
 import subprocess
 import sys
-from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
@@ -60,7 +59,7 @@ def _machine():
         cpu = subprocess.check_output(["sysctl", "-n", "machdep.cpu.brand_string"], text=True).strip()
     return {
         "cpu": cpu, "logical_cpu_count": os.cpu_count(), "platform": platform.platform(),
-        "python": sys.version, "numpy": np.__version__,
+        "python": platform.python_version(), "numpy": np.__version__,
         "blas_thread_environment": {name: os.environ[name] for name in (
             "OPENBLAS_NUM_THREADS", "OMP_NUM_THREADS", "MKL_NUM_THREADS", "VECLIB_MAXIMUM_THREADS",
         )},
@@ -72,7 +71,7 @@ def _manifest(output, suite, args, settings):
         raise ValueError(f"Refusing to overwrite or mix an existing run: {output}")
     output.mkdir(parents=True, exist_ok=True)
     value = {
-        "suite": suite, "seed": args.seed, "created_utc": datetime.now(timezone.utc).isoformat(),
+        "suite": suite, "seed": args.seed,
         "source_sha256": _source_hashes(), "machine": _machine(), "settings": settings,
         "smoke": args.smoke,
         "runtime_interpretation": "Diagnostic wall times are not controlled serial benchmark runtimes.",

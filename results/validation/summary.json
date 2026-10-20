@@ -1,6 +1,36 @@
 {
-  "suite": "validation",
-  "rows": 1200,
+  "settings": {
+    "n": 257,
+    "scans": [
+      0,
+      1
+    ],
+    "sparsities": [
+      1,
+      2,
+      3
+    ],
+    "candidate_counts": [
+      21,
+      21,
+      27
+    ],
+    "trials_per_N": 200,
+    "gamma": "5/B^2",
+    "strict_separation": ">2N",
+    "amplitudes": "magnitude uniform[0.5,1.5], phase uniform[-pi,pi]",
+    "quarter_pixel_center": 0.25,
+    "noise": "none",
+    "spectral_tolerances": {
+      "rank_rtol": 1e-11,
+      "verify_rtol": 2e-07,
+      "root_rtol": 2e-07,
+      "merge_rtol": 2e-06,
+      "channel_zero_rtol": 1.4210854715202004e-14,
+      "solve_rcond": null,
+      "max_condition": 100000000000000.0
+    }
+  },
   "aggregate": [
     {
       "N": 1,
@@ -71,6 +101,40 @@
       }
     },
     {
+      "N": 1,
+      "method": "quarter_pixel_single_global",
+      "trials": 200,
+      "algorithm_pass_rate": 1.0,
+      "exact_support_rate": 1.0,
+      "status_counts": {
+        "ok_global_ls": 200
+      },
+      "nrmse_all_returned_estimates": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 1.4514830227993903e-16,
+        "median": 3.0032937822935193e-15,
+        "mean": 2.0297212941034407e-13,
+        "max": 6.8679653262795074e-12
+      },
+      "nrmse_when_algorithm_passed": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 1.4514830227993903e-16,
+        "median": 3.0032937822935193e-15,
+        "mean": 2.0297212941034407e-13,
+        "max": 6.8679653262795074e-12
+      },
+      "identity_error": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 8.457087802365844e-17,
+        "median": 3.792945331339768e-15,
+        "mean": 2.2152976645704583e-13,
+        "max": 7.424802848786068e-12
+      }
+    },
+    {
       "N": 2,
       "method": "joint_global",
       "trials": 200,
@@ -136,6 +200,40 @@
         "median": 8.946254708549664e-16,
         "mean": 4.425648815343222e-15,
         "max": 2.37758765054165e-13
+      }
+    },
+    {
+      "N": 2,
+      "method": "quarter_pixel_single_global",
+      "trials": 200,
+      "algorithm_pass_rate": 1.0,
+      "exact_support_rate": 1.0,
+      "status_counts": {
+        "ok_global_ls": 200
+      },
+      "nrmse_all_returned_estimates": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 6.940491695054023e-16,
+        "median": 2.0769326940879997e-14,
+        "mean": 1.8282117939009116e-13,
+        "max": 3.934294178234404e-12
+      },
+      "nrmse_when_algorithm_passed": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 6.940491695054023e-16,
+        "median": 2.0769326940879997e-14,
+        "mean": 1.8282117939009116e-13,
+        "max": 3.934294178234404e-12
+      },
+      "identity_error": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 1.4467556645326956e-16,
+        "median": 7.296579695622458e-16,
+        "mean": 5.355384219121635e-15,
+        "max": 2.299592625136271e-13
       }
     },
     {
@@ -207,8 +305,43 @@
         "mean": 8.851868571320729e-16,
         "max": 6.1982098234884165e-15
       }
+    },
+    {
+      "N": 3,
+      "method": "quarter_pixel_single_global",
+      "trials": 200,
+      "algorithm_pass_rate": 1.0,
+      "exact_support_rate": 1.0,
+      "status_counts": {
+        "ok_global_ls": 200
+      },
+      "nrmse_all_returned_estimates": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 7.800616693136506e-15,
+        "median": 3.505340689424101e-13,
+        "mean": 1.0292949991449293e-12,
+        "max": 1.3747330282603569e-11
+      },
+      "nrmse_when_algorithm_passed": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 7.800616693136506e-15,
+        "median": 3.505340689424101e-13,
+        "mean": 1.0292949991449293e-12,
+        "max": 1.3747330282603569e-11
+      },
+      "identity_error": {
+        "count": 200,
+        "nonfinite_count": 0,
+        "min": 1.8948877753690732e-16,
+        "median": 7.873103745683035e-16,
+        "mean": 1.0546419290120022e-15,
+        "max": 4.531841549770111e-15
+      }
     }
   ],
-  "summary_verification": "Every retained recorded aggregate was recomputed from the per-trial CSV and matched within floating-point tolerance.",
-  "failure_interpretation": "Spectral failures return a zero object; their NRMSE is retained and reported separately from passed estimates. Tolerances are fixed before all trials."
+  "failure_interpretation": "Spectral failures return a zero object; their NRMSE is retained and reported separately from passed estimates. Tolerances are fixed before all trials.",
+  "suite": "validation",
+  "rows": 1800
 }

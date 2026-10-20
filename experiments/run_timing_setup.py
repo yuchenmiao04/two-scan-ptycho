@@ -174,7 +174,7 @@ def main():
     parser.add_argument("--trial-start", type=int, default=0)
     parser.add_argument("--namespace", type=int, default=SEEDS["timing"])
     parser.add_argument("--sparsities", nargs="+", type=int, choices=(1, 2, 3), default=[1, 2, 3])
-    parser.add_argument("--snr", choices=("60",), default="60")
+    parser.add_argument("--snr", choices=("40", "60", "80", "inf"), default="60")
     parser.add_argument("--workers", type=int, choices=(1,), default=1)
     parser.add_argument(
         "--confirm-isolated", action="store_true",

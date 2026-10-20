@@ -1,0 +1,1647 @@
+{
+  "rows": 3000,
+  "aggregate": [
+    {
+      "snr": "40",
+      "calibration": "exact",
+      "calibration_total_photons": "",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 148,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.0001090305024943706,
+        "median": 0.0032892069006517956,
+        "max": 0.017545524631590183,
+        "q10_q90": [
+          0.0007462573788340714,
+          0.007208026732710531
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.0004914573480856397,
+        "median": 0.017640220460842786,
+        "max": 20.251761202425698,
+        "q10_q90": [
+          0.003401631250966368,
+          1.3604326956515687
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 33.02552014605279,
+        "median": 996.3062287786884,
+        "max": 5314.568528413092,
+        "q10_q90": [
+          226.04259849300118,
+          2183.323259348544
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 31.14669709493783,
+        "median": 944.9683996211581,
+        "max": 4744.3888905365875,
+        "q10_q90": [
+          208.3504500477955,
+          1911.8871235405982
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 59.026911326230376,
+        "median": 35766.55546260456,
+        "max": 1266263.515078045,
+        "q10_q90": [
+          691.9457386805684,
+          262691.6773707784
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 54.766093286458464,
+        "median": 30755.909564902977,
+        "max": 1256547.1762105378,
+        "q10_q90": [
+          633.8050807876862,
+          252847.14706907023
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "40",
+      "calibration": "poisson",
+      "calibration_total_photons": "1000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 90,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.005427514684759883,
+        "median": 0.02163883305197147,
+        "max": 0.0523270903871016,
+        "q10_q90": [
+          0.013226366369326385,
+          0.03407850713148653
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.012095404102338858,
+        "median": 0.6473367287770098,
+        "max": 19.067401053559983,
+        "q10_q90": [
+          0.03586884938222571,
+          1.6325351677565358
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1644.003205192874,
+        "median": 6554.438441956685,
+        "max": 15849.962517166014,
+        "q10_q90": [
+          4006.288322956383,
+          10322.436364781694
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1007.4532140543034,
+        "median": 4386.669116097211,
+        "max": 13203.909890666497,
+        "q10_q90": [
+          2862.809190812999,
+          6906.205632255263
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 389.2843519505994,
+        "median": 11854.028210145896,
+        "max": 558087.919186051,
+        "q10_q90": [
+          2858.2273015781716,
+          153427.35312522808
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 236.44941300557906,
+        "median": 7807.702768309268,
+        "max": 379897.42786484305,
+        "q10_q90": [
+          1913.216698741003,
+          109485.51564369026
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "40",
+      "calibration": "poisson",
+      "calibration_total_photons": "100000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 139,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.001121474479152258,
+        "median": 0.004031538672706085,
+        "max": 0.018513031858666977,
+        "q10_q90": [
+          0.0019269991169286143,
+          0.00740790153403477
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.00145414990339864,
+        "median": 0.03853692235830623,
+        "max": 20.179972827849284,
+        "q10_q90": [
+          0.005959743177372888,
+          1.4580530102637994
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 339.6964808672623,
+        "median": 1221.1597544633912,
+        "max": 5607.628073111844,
+        "q10_q90": [
+          583.6912304502837,
+          2243.8656683699346
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 243.99329927265873,
+        "median": 1024.2107231514462,
+        "max": 4855.837067450736,
+        "q10_q90": [
+          470.07670987870546,
+          2062.423700083156
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 56.87549402767255,
+        "median": 28499.113307748128,
+        "max": 697314.3664258148,
+        "q10_q90": [
+          628.8302345429672,
+          244274.1806646299
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 50.186751949053765,
+        "median": 24349.73746759244,
+        "max": 671460.3926654797,
+        "q10_q90": [
+          506.7273950278672,
+          214233.59453176244
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "40",
+      "calibration": "poisson",
+      "calibration_total_photons": "10000000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 148,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.00018943526224474643,
+        "median": 0.0032797893789301867,
+        "max": 0.01758360428704352,
+        "q10_q90": [
+          0.000747401691280304,
+          0.0071621577435945745
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.0005376964350678383,
+        "median": 0.020467496675008776,
+        "max": 20.299034362533543,
+        "q10_q90": [
+          0.0033607707117910266,
+          1.3602102322299165
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 57.380255309377155,
+        "median": 993.4536458204566,
+        "max": 5326.102919244629,
+        "q10_q90": [
+          226.3892126319976,
+          2169.429466423887
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 46.52535628244881,
+        "median": 944.1830677938747,
+        "max": 4741.4964494831775,
+        "q10_q90": [
+          211.7335025857424,
+          1909.7094112036339
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 58.572818201572424,
+        "median": 37884.59907686467,
+        "max": 1369269.929048416,
+        "q10_q90": [
+          697.1134685835848,
+          273311.79444158485
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 54.56635910193938,
+        "median": 34013.39858688423,
+        "max": 1355312.1033425697,
+        "q10_q90": [
+          639.5759666790124,
+          264626.2266579698
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "40",
+      "calibration": "poisson",
+      "calibration_total_photons": "1000000000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 148,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.00010693788345404414,
+        "median": 0.0032890488676305613,
+        "max": 0.017545539092037783,
+        "q10_q90": [
+          0.0007431927865164646,
+          0.007224204464559778
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.0004757764246739857,
+        "median": 0.017648793771965317,
+        "max": 20.2452662444467,
+        "q10_q90": [
+          0.0034084688963418367,
+          1.3605232317261895
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 32.39166236595238,
+        "median": 996.2583603142944,
+        "max": 5314.572908506668,
+        "q10_q90": [
+          225.1143283941838,
+          2188.223521173278
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 30.70507658022937,
+        "median": 945.3903842004323,
+        "max": 4744.585654024793,
+        "q10_q90": [
+          209.13788190799875,
+          1910.29292859744
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 59.09925709791976,
+        "median": 35683.69854557668,
+        "max": 1290366.2899045728,
+        "q10_q90": [
+          699.6133682432985,
+          259991.83682308884
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 54.853322769231255,
+        "median": 31862.32373038973,
+        "max": 1281298.199162795,
+        "q10_q90": [
+          634.1771232993954,
+          246068.54315980492
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "60",
+      "calibration": "exact",
+      "calibration_total_photons": "",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 188,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.0903050249182769e-05,
+        "median": 0.00032892069006512095,
+        "max": 0.0017545524631590234,
+        "q10_q90": [
+          7.462573788238124e-05,
+          0.0007208026732708352
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 4.914573480830901e-05,
+        "median": 0.0017640220460885035,
+        "max": 5.4437489024692605,
+        "q10_q90": [
+          0.0003401631250854775,
+          0.07680699018479575
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 3.302552014528254,
+        "median": 99.6306228778511,
+        "max": 531.4568528413108,
+        "q10_q90": [
+          22.604259848989372,
+          218.3323259347884
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 3.114669709452527,
+        "median": 94.49683996206377,
+        "max": 482.8244153721514,
+        "q10_q90": [
+          20.835045004805078,
+          200.90929633137597
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 27.509698852019838,
+        "median": 38228.47008462962,
+        "max": 1266263.5150596115,
+        "q10_q90": [
+          947.08223379669,
+          262691.6773649658
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 23.860448741226655,
+        "median": 35312.26784062655,
+        "max": 1256547.176192024,
+        "q10_q90": [
+          884.7245372933561,
+          252847.14706566767
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "60",
+      "calibration": "poisson",
+      "calibration_total_photons": "1000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 92,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.005419111080286208,
+        "median": 0.02039097360368958,
+        "max": 0.05177870929750598,
+        "q10_q90": [
+          0.012083830510549926,
+          0.03323149537369303
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.011844936806020015,
+        "median": 0.6466740693750536,
+        "max": 19.710172260191705,
+        "q10_q90": [
+          0.0335131679061189,
+          1.6345310233063293
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1641.457739451678,
+        "median": 6176.459744199114,
+        "max": 15683.856975067005,
+        "q10_q90": [
+          3660.212315248743,
+          10065.875097695933
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 977.1399648299445,
+        "median": 4124.3698339436505,
+        "max": 12866.944595211633,
+        "q10_q90": [
+          2568.4340145206515,
+          6803.323977109874
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 338.28344909729344,
+        "median": 12265.049694231699,
+        "max": 506520.85410045687,
+        "q10_q90": [
+          2127.8430100912046,
+          157632.70147873956
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 208.0926094237803,
+        "median": 8431.830068957508,
+        "max": 318345.7127165085,
+        "q10_q90": [
+          1514.0721854056474,
+          106612.96432357773
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "60",
+      "calibration": "poisson",
+      "calibration_total_photons": "100000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 155,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.0007566400445040213,
+        "median": 0.0019637089465693756,
+        "max": 0.0038698770365596467,
+        "q10_q90": [
+          0.001280895793913167,
+          0.003049469270595771
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.0011355895772556996,
+        "median": 0.02261314380624911,
+        "max": 5.799852790396044,
+        "q10_q90": [
+          0.0029387953638157914,
+          1.1650492396036203
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 229.18752515488063,
+        "median": 594.8106987699103,
+        "max": 1172.192176590642,
+        "q10_q90": [
+          387.98546167443106,
+          923.6893027804708
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 179.70419816627137,
+        "median": 426.04383001109665,
+        "max": 1003.9645948125288,
+        "q10_q90": [
+          285.0608405092009,
+          685.7642239296584
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 84.93983117326437,
+        "median": 24934.993590313017,
+        "max": 634266.9737975828,
+        "q10_q90": [
+          538.8561053158694,
+          196535.09696191826
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 61.24656940701217,
+        "median": 18997.173942105037,
+        "max": 371425.6951842665,
+        "q10_q90": [
+          372.68146954489146,
+          134777.6646177412
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "60",
+      "calibration": "poisson",
+      "calibration_total_photons": "10000000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 187,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 7.828063129245557e-05,
+        "median": 0.00039788818387573375,
+        "max": 0.0018149893360160218,
+        "q10_q90": [
+          0.0002041503284512601,
+          0.0008127000100236244
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.00016234917218344459,
+        "median": 0.0035114295729982824,
+        "max": 5.377909907845039,
+        "q10_q90": [
+          0.0006044664634030905,
+          0.13567443498766799
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 23.71133312834363,
+        "median": 120.52099120741798,
+        "max": 549.763281927119,
+        "q10_q90": [
+          61.837473283574866,
+          246.16818174453792
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 22.183222168876945,
+        "median": 105.29185547839732,
+        "max": 500.28862600437213,
+        "q10_q90": [
+          52.050533751318994,
+          217.3631575015178
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 50.851601612817994,
+        "median": 31368.003215855475,
+        "max": 822618.1002633366,
+        "q10_q90": [
+          694.2634375294559,
+          197271.40318827334
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 40.80947743194242,
+        "median": 27559.674413427987,
+        "max": 765160.9091667624,
+        "q10_q90": [
+          571.5994075601648,
+          182987.52997119003
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "60",
+      "calibration": "poisson",
+      "calibration_total_photons": "1000000000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 190,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.5232832057510364e-05,
+        "median": 0.000329226778148752,
+        "max": 0.001754663074491189,
+        "q10_q90": [
+          7.794535072190856e-05,
+          0.0007287020698324269
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 3.992856592439644e-05,
+        "median": 0.001875826344343732,
+        "max": 5.445849768585995,
+        "q10_q90": [
+          0.0003435904545973069,
+          0.05083400592403326
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 4.6140501097178905,
+        "median": 99.72333746634843,
+        "max": 531.4903571973878,
+        "q10_q90": [
+          23.609776087113335,
+          220.72506626266107
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 4.07122485895719,
+        "median": 94.73228771713839,
+        "max": 482.5520624669669,
+        "q10_q90": [
+          21.937601854557105,
+          203.17595058834837
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 27.056070462996125,
+        "median": 36589.186896973595,
+        "max": 1318594.9870976896,
+        "q10_q90": [
+          1021.1119615491978,
+          241116.3508826596
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 23.508578543514126,
+        "median": 32640.77961456407,
+        "max": 1314312.555794374,
+        "q10_q90": [
+          953.6403097825352,
+          234411.09883649534
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "inf",
+      "calibration": "exact",
+      "calibration_total_photons": "",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 200,
+      "sufficient_amplitude_count": 200,
+      "sufficient_and_exact_count": 200,
+      "triangle_sufficient_amplitude_count": 200,
+      "triangle_sufficient_and_exact_count": 200,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 5.757191532588119e-16,
+        "median": 2.4056981351751457e-14,
+        "max": 2.3702033646132304e-12,
+        "q10_q90": [
+          2.927651878147491e-15,
+          4.0190818759524095e-13
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 4.5472861250588675e-10,
+        "median": 7.767560712330852e-10,
+        "max": 1.38966500675033e-09,
+        "q10_q90": [
+          6.19918037576801e-10,
+          1.0194097743404645e-09
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 4.148177116096183e-10,
+        "median": 7.074934776236199e-10,
+        "max": 1.2971740383119252e-09,
+        "q10_q90": [
+          5.555813588960433e-10,
+          9.034199056039996e-10
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 368.65732314912464,
+        "median": 33706.33965714055,
+        "max": 1366310.2303662861,
+        "q10_q90": [
+          2052.1469551750856,
+          254594.3748143343
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 290.97250546444167,
+        "median": 30281.28678318383,
+        "max": 1366310.2303662861,
+        "q10_q90": [
+          1871.055131435726,
+          253219.2251483713
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "inf",
+      "calibration": "poisson",
+      "calibration_total_photons": "1000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 91,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.005422639237480825,
+        "median": 0.020387096295945442,
+        "max": 0.05176070988065529,
+        "q10_q90": [
+          0.011980880506525474,
+          0.03315290362950189
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.011818662104732442,
+        "median": 0.6522488930598977,
+        "max": 19.782034572195826,
+        "q10_q90": [
+          0.03389777219666207,
+          1.6333675849219946
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1642.5264241210461,
+        "median": 6175.285301248865,
+        "max": 15678.404921832174,
+        "q10_q90": [
+          3629.02858818006,
+          10042.069527954274
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 975.7420714905054,
+        "median": 4110.048841953665,
+        "max": 12840.733219771135,
+        "q10_q90": [
+          2561.4555234202207,
+          6811.397381995954
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 226.79791628468055,
+        "median": 11910.892600249235,
+        "max": 506160.78141686285,
+        "q10_q90": [
+          2117.1872002721684,
+          158525.47566500012
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 180.1619212364674,
+        "median": 7725.883888026297,
+        "max": 317196.18318674905,
+        "q10_q90": [
+          1508.1385535922489,
+          107777.27804480196
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "inf",
+      "calibration": "poisson",
+      "calibration_total_photons": "100000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 154,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.0007416629027098803,
+        "median": 0.0019015120205569214,
+        "max": 0.004024572237899305,
+        "q10_q90": [
+          0.0012254307987448656,
+          0.0029940780290814302
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 0.0006401387733438857,
+        "median": 0.02287046463614554,
+        "max": 5.854949017006283,
+        "q10_q90": [
+          0.0026208099971957656,
+          1.16505102528365
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 224.65092405026562,
+        "median": 575.9711466624353,
+        "max": 1219.0496097993384,
+        "q10_q90": [
+          371.18502259156037,
+          906.9112038017819
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 148.11596397753172,
+        "median": 405.33376738923926,
+        "max": 1001.3299502946289,
+        "q10_q90": [
+          268.69880829610884,
+          644.2975283278156
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 86.87907221375265,
+        "median": 23577.709302691685,
+        "max": 577005.0940258078,
+        "q10_q90": [
+          530.0735791558093,
+          204420.62531060522
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 61.38520291158792,
+        "median": 18033.293822068124,
+        "max": 343622.35597741924,
+        "q10_q90": [
+          374.624979814837,
+          138512.29505171694
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "inf",
+      "calibration": "poisson",
+      "calibration_total_photons": "10000000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 197,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 5.534600377823092e-05,
+        "median": 0.0002001529568758373,
+        "max": 0.0004491104827630144,
+        "q10_q90": [
+          0.00011962237485501713,
+          0.0003179237368315886
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.874586839864932e-05,
+        "median": 0.002481186512774159,
+        "max": 1.2967443063004327,
+        "q10_q90": [
+          0.0004435053748007005,
+          0.03342420251773053
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 16.764396393347383,
+        "median": 60.62666279958026,
+        "max": 136.03631054584227,
+        "q10_q90": [
+          36.23381586173119,
+          96.29962749352757
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 11.908831906063961,
+        "median": 45.36300805396461,
+        "max": 113.0079983884192,
+        "q10_q90": [
+          26.313146291402784,
+          71.99242655184842
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 52.1595062137416,
+        "median": 22550.796932707533,
+        "max": 930746.3803152578,
+        "q10_q90": [
+          1804.3714017921604,
+          138909.06925219065
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 42.80524753088769,
+        "median": 16620.713515142117,
+        "max": 915967.2590566397,
+        "q10_q90": [
+          1356.8920171737905,
+          94616.79148709009
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    },
+    {
+      "snr": "inf",
+      "calibration": "poisson",
+      "calibration_total_photons": "1000000000000.0",
+      "trials": 200,
+      "checked": 200,
+      "unavailable": 0,
+      "status_counts": {
+        "checked": 200
+      },
+      "original_status_counts": {
+        "ok_global_ls": 200
+      },
+      "original_rank_drop_rows": 0,
+      "bound_violations": 0,
+      "triangle_bound_violations": 0,
+      "actual_exact_supports": 200,
+      "sufficient_amplitude_count": 0,
+      "sufficient_and_exact_count": 0,
+      "triangle_sufficient_amplitude_count": 0,
+      "triangle_sufficient_and_exact_count": 0,
+      "actual_raw_error_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 6.51766425484131e-06,
+        "median": 2.0308174637603497e-05,
+        "max": 4.704434329322385e-05,
+        "q10_q90": [
+          1.2074296158614554e-05,
+          3.0066559928372514e-05
+        ]
+      },
+      "coefficient_error_from_original_nrmse": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 6.312007176284339e-06,
+        "median": 0.00029987036985458304,
+        "max": 0.023956359595427225,
+        "q10_q90": [
+          3.5402524008342974e-05,
+          0.004061014894999254
+        ]
+      },
+      "theorem_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.974211319117634,
+        "median": 6.151379799963421,
+        "max": 14.249809655498982,
+        "q10_q90": [
+          3.6573243442248775,
+          9.107210898970573
+        ]
+      },
+      "triangle_bound": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4442140885337165,
+        "median": 4.371215187279265,
+        "max": 11.394100429243323,
+        "q10_q90": [
+          2.6857055025229415,
+          6.758663745599743
+        ]
+      },
+      "theorem_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 353.07503387705026,
+        "median": 22276.398096318102,
+        "max": 374430.80925699696,
+        "q10_q90": [
+          1727.3651903403734,
+          171483.2102554472
+        ]
+      },
+      "triangle_bound_over_error": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 262.7905551440706,
+        "median": 16002.030688301562,
+        "max": 229659.55774751503,
+        "q10_q90": [
+          1407.222283813887,
+          113726.43960617046
+        ]
+      },
+      "noiseless_identity_roundoff_norm": {
+        "total_rows": 200,
+        "finite_count": 200,
+        "unavailable_or_infinite_count": 0,
+        "min": 1.4335613410130932e-15,
+        "median": 2.5352715101517342e-15,
+        "max": 4.58784216916991e-15,
+        "q10_q90": [
+          2.0433426802715e-15,
+          3.3654809811465764e-15
+        ]
+      }
+    }
+  ],
+  "interpretation": "A floating-point consistency check using actual combined raw error, the saved original estimator's residual and NRMSE, and a numerically enumerated restricted gain. It is not an interval-arithmetic certificate, not a new proof of the theorem, and not a deployable certificate because epsilon uses simulated ground truth.",
+  "operator": {
+    "n": 257,
+    "gamma": 0.05,
+    "scan_centers": [
+      0,
+      1
+    ],
+    "candidate_positions": [
+      -10,
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      -2,
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "upper_sparsity": 2,
+    "strict_separation": ">4",
+    "positive_lags_per_frame": 4,
+    "row_order": "scan0 real lags, scan0 imaginary lags, scan1 real lags, scan1 imaginary lags",
+    "coefficient_norm": "physical complex Euclidean norm = stacked real/imag Euclidean norm",
+    "support_count_including_empty": 158,
+    "nonempty_union_count": 5894,
+    "beta_numerical": 6.6028030451718355e-06,
+    "current_vs_archived_matrix_max_difference": 0.0
+  },
+  "formulas": {
+    "epsilon": "norm(b - A v(truth))",
+    "rho": "max(0, reported_raw_residual - epsilon)",
+    "theorem_bound": "(2 epsilon + rho)/beta_num",
+    "triangle_bound": "(epsilon + reported_raw_residual)/beta_num",
+    "lhs": "saved_defect_nrmse * norm(saved_truth)"
+  },
+  "estimator_policy": "Original estimates/results are not changed. No reconstruction solver or baseline was rerun.",
+  "all_rows_accounted_for": true,
+  "rank_drops_do_not_imply_row_deletion": true,
+  "suite": "stability_check"
+}

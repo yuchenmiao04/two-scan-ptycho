@@ -10,7 +10,7 @@ from collections import Counter
 from pathlib import Path
 import numpy as np
 
-from twoscan_ptycho.core import affine_object, diffraction_intensity
+from twoscan_ptycho.core import affine_object, centered_grid, diffraction_intensity
 from twoscan_ptycho.reconstruction import (
     GlobalSupportSolver, SpectralConfig, build_joint_dictionary, extract_raw_data,
     recover_two_scan_spectral,
@@ -20,14 +20,17 @@ def run_validation(args):
     output = Path(args.output)
     output.mkdir(parents=True, exist_ok=True)
     trials = 3 if args.smoke else args.trials
-    settings = {"n": 257, "scans": [0, 1], "sparsities": [1, 2, 3], "candidate_counts": [21, 21, 27], "trials_per_N": trials, "gamma": "5/B^2", "strict_separation": ">2N", "amplitudes": "magnitude uniform[0.5,1.5], phase uniform[-pi,pi]", "noise": "none", "spectral_tolerances": vars(SpectralConfig())}
+    settings = {"n": 257, "scans": [0, 1], "sparsities": [1, 2, 3], "candidate_counts": [21, 21, 27], "trials_per_N": trials, "gamma": "5/B^2", "strict_separation": ">2N", "amplitudes": "magnitude uniform[0.5,1.5], phase uniform[-pi,pi]", "quarter_pixel_center": .25, "noise": "none", "spectral_tolerances": vars(SpectralConfig())}
     _manifest(output, "validation", args, settings)
     rows, archived, aggregate = [], {}, []
     for count, bound in ((1, 10), (2, 10), (3, 13)):
         gamma = 5 / bound ** 2
         model = build_joint_dictionary(257, gamma, (0, 1), range(-bound, bound + 1), count)
         joint = GlobalSupportSolver(model, count)
-        stored_frames, stored_support, stored_amplitudes = [], [], []
+        quarter_probe = np.exp(-gamma * (centered_grid(257) - .25) ** 2)
+        quarter_model = build_joint_dictionary(257, gamma, (0,), range(-bound, bound + 1), count, probe=quarter_probe)
+        quarter = GlobalSupportSolver(quarter_model, count)
+        stored_frames, stored_quarter, stored_support, stored_amplitudes = [], [], [], []
         for trial in range(trials):
             seed = args.seed + 10_000_019 + count * 100_003 + trial * 1_009
             rng = np.random.default_rng(seed)
@@ -35,11 +38,15 @@ def run_validation(args):
             amplitudes = rng.uniform(.5, 1.5, count) * np.exp(1j * rng.uniform(-np.pi, np.pi, count))
             z = affine_object(257, support, amplitudes)
             frames = np.array([diffraction_intensity(z, model.probes[i], r) for i, r in enumerate(model.scans)])
+            quarter_frame = diffraction_intensity(z, quarter_probe, 0)[None, :]
             raw = extract_raw_data(frames, model)
+            qraw = extract_raw_data(quarter_frame, quarter_model)
             identity = np.linalg.norm(raw - model.matrix @ _coefficient_vector(model, support, amplitudes)) / max(np.linalg.norm(raw), np.finfo(float).tiny)
+            qidentity = np.linalg.norm(qraw - quarter_model.matrix @ _coefficient_vector(quarter_model, support, amplitudes)) / max(np.linalg.norm(qraw), np.finfo(float).tiny)
             results = {
                 "joint_global": joint.solve_intensities(frames),
                 "spectral_algebraic": recover_two_scan_spectral(frames, model.probes[0], gamma, model.scans, count),
+                "quarter_pixel_single_global": quarter.solve_intensities(quarter_frame),
             }
             for name, result in results.items():
                 rows.append({
@@ -48,15 +55,17 @@ def run_validation(args):
                     "status": result.status, "algorithm_passed": int(result.status.startswith("ok_")),
                     "support_exact": int(set(result.support) == set(support)),
                     "perturbation_nrmse": float(np.linalg.norm(result.u - (z - 1)) / np.linalg.norm(z - 1)),
-                    "raw_clean_lag_identity_relative_error": identity,
+                    "raw_clean_lag_identity_relative_error": qidentity if name.startswith("quarter") else identity,
                     "raw_residual": result.residual, "runtime_seconds_diagnostic": result.timings["total_online"],
                     "true_support": _support_string(support), "estimated_support": _support_string(result.support),
                     "amplitudes_real": _support_string(amplitudes.real.tolist()), "amplitudes_imag": _support_string(amplitudes.imag.tolist()),
                 })
             stored_frames.append(frames)
+            stored_quarter.append(quarter_frame[0])
             stored_support.append(support)
             stored_amplitudes.append(amplitudes)
         archived[f"N{count}_clean_intensities"] = np.asarray(stored_frames)
+        archived[f"N{count}_quarter_intensities"] = np.asarray(stored_quarter)
         archived[f"N{count}_supports"] = np.asarray(stored_support)
         archived[f"N{count}_amplitudes"] = np.asarray(stored_amplitudes)
         for method in results:
@@ -77,7 +86,6 @@ def run_validation(args):
     summary = {"settings": settings, "aggregate": aggregate, "failure_interpretation": "Spectral failures return a zero object; their NRMSE is retained and reported separately from passed estimates. Tolerances are fixed before all trials."}
     _write_json(output / "summary.json", summary)
     return summary
-
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

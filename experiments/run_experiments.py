@@ -21,7 +21,7 @@ import subprocess
 import sys
 import time
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from datetime import datetime, timezone
+from dataclasses import asdict
 from functools import lru_cache
 from pathlib import Path
 
@@ -33,6 +33,7 @@ from twoscan_ptycho.core import (
     sparse_perturbation,
 )
 from twoscan_ptycho.reconstruction import build_joint_dictionary, GlobalSupportSolver, extract_raw_data
+from twoscan_ptycho.beam import recover_from_two_intensities
 
 ROOT = Path(__file__).resolve().parents[1]
 METHODS = ("joint", "full_linear", "pie", "htwf", "htaf")
@@ -73,7 +74,7 @@ def validate_frozen_sources(frozen):
 
 
 def hardware():
-    info = {"platform": platform.platform(), "python": sys.version, "numpy": np.__version__,
+    info = {"platform": platform.platform(), "python": platform.python_version(), "numpy": np.__version__,
             "cpu_count": os.cpu_count(), "blas_threads": 1}
     if sys.platform == "darwin":
         for key in ("machdep.cpu.brand_string", "hw.physicalcpu", "hw.memsize"):
@@ -93,16 +94,39 @@ def joint_solver(n, gamma, scans, candidates, upper, separation, margin):
     return GlobalSupportSolver(model, upper)
 
 
+def fractional_frames(n, probe, scans, positions, amplitudes):
+    """Off-grid point-scatterer Fourier model, agreeing with core on integer sites.
+
+    It is a continuous point perturbation of the sampled blank field, NOT an
+    assertion that an off-grid object satisfies the on-grid theorem.
+    """
+    gamma = -math.log(float(probe[n // 2 + 1]))
+    frequencies = np.fft.fftfreq(n) * n
+    background = np.fft.fft(probe)
+    frames = []
+    for scan in scans:
+        x = np.asarray(positions) - scan
+        atoms = np.exp(-2j * np.pi * frequencies[:, None] * (x[None, :] + n // 2) / n)
+        field = background + np.sum(atoms * (np.asarray(amplitudes) * np.exp(-gamma*x**2))[None,:],axis=1)
+        frames.append(np.abs(field)**2)
+    return np.asarray(frames)
+
+
 def make_instance(job):
     sparsity = job.get("sparsity", 2)
     bound, gamma = configuration(sparsity)
     n, scans = 257, (0, 1)
     stress, value = job.get("stress", "none"), job.get("value", 0)
-    if stress not in ("none", "cluster", "background"):
-        raise ValueError(f"Unsupported experimental condition: {stress}")
-    upper = sparsity
+    upper = int(value) if stress == "sparsity" else (3 if job["suite"]=="unknown_sparsity" else sparsity)
     spacing = 2 * sparsity
+    if stress == "sparsity" or job["suite"]=="unknown_sparsity":
+        # All three declared bounds see the same truth, which is admissible even
+        # for the largest tested upper bound (N_upper=3).
+        spacing = 6
     candidates = tuple(range(-bound, bound + 1))
+    if stress == "boundary":
+        n, bound, gamma = 33, 16, .012
+        candidates = tuple(range(-16, 11))
     rng = np.random.default_rng(stable_seed(job["namespace"], "object", sparsity, job["trial"], stress))
     positions = sample_separated_positions(n, sparsity, spacing, scans, 2*sparsity,
                                            rng, location_bound=min(bound, n//2-2*sparsity-1))
@@ -110,15 +134,35 @@ def make_instance(job):
         distance = int(value)
         positions = (-distance // 2, -distance // 2 + distance)
         spacing = 0   # Allow the true clustered support; clean-lag identity may fail.
+    if stress == "boundary":
+        positions = (-n // 2 + 1 + int(value), 5)
     amplitudes = rng.uniform(.5, 1.5, sparsity) * np.exp(1j*rng.uniform(-np.pi, np.pi, sparsity))
+    if stress == "weak_defect":
+        amplitudes[-1] *= float(value)
     probe = gaussian_probe(n, gamma)
+    assumed_gamma = gamma * (1.0 + float(value)) if stress == "probe" else gamma
+    assumed_probe = gaussian_probe(n, assumed_gamma)
+    true_probe = probe.copy()
+    if stress == "truncation" and value:
+        # Radius in amplitude-Gaussian standard deviations: exp(-q²/(2 sigma²)).
+        radius = float(value) / np.sqrt(2*gamma)
+        true_probe[np.abs(centered_grid(n)) > radius] = 0.0
     z = affine_object(n, positions, amplitudes)
     if stress == "background":
         q = centered_grid(n)
         z += float(value) * (np.cos(2*np.pi*q/n) + .5j*np.sin(4*np.pi*q/n))
     physical_positions = np.asarray(positions, dtype=float)
-    clean = np.asarray([diffraction_intensity(z, probe, r) for r in scans])
-    true_blank = np.broadcast_to(np.abs(np.fft.fft(probe))**2, clean.shape)
+    if stress == "offgrid":
+        physical_positions += np.array([1., -1.]) * float(value)
+        clean = fractional_frames(n, true_probe, scans, physical_positions, amplitudes)
+    elif stress == "position":
+        q = centered_grid(n)
+        probes = (true_probe, np.exp(-gamma*(q-float(value))**2))
+        clean = np.asarray([diffraction_intensity(z, wave, r) for wave, r in zip(probes, scans)])
+    else:
+        clean = np.asarray([diffraction_intensity(z, true_probe, r) for r in scans])
+    true_blank = (np.abs(np.fft.fft(np.asarray(probes),axis=1))**2 if stress=="position"
+                  else np.broadcast_to(np.abs(np.fft.fft(true_probe))**2, clean.shape))
     defect_intensity = clean-true_blank
     noise_rng = np.random.default_rng(stable_seed(job["namespace"], "noise", sparsity, job["trial"], stress))
     sigma = 0.0
@@ -138,15 +182,20 @@ def make_instance(job):
         if snr != "inf":
             sigma = np.linalg.norm(defect_intensity)/np.sqrt(clean.size)*10**(-float(snr)/20)
         measured = clean + sigma*noise_rng.standard_normal(clean.shape)
+    if stress == "scale":
+        measured = measured*(1+float(value))
+    if stress == "quantization" and value:
+        step = np.max(clean)/(2**int(value)-1)
+        measured = np.clip(np.round(measured/step),0,2**int(value)-1)*step
     truth = sparse_perturbation(n, positions, amplitudes)
     error_norm = float(np.linalg.norm(measured-clean))
     effective_snr = 20*np.log10(np.linalg.norm(defect_intensity)/error_norm) if error_norm else None
     total_snr = 20*np.log10(np.linalg.norm(clean)/error_norm) if error_norm else None
     return dict(n=n, scans=scans, candidates=candidates, upper=upper, spacing=spacing,
-                gamma=gamma, probe=probe, positions=positions,
+                gamma=assumed_gamma, probe=assumed_probe, positions=positions,
                 physical_positions=physical_positions, amplitudes=amplitudes, truth=truth,
                 clean=clean, measured=measured, sigma=sigma, effective_snr=effective_snr,
-                total_snr=total_snr, margin=True)
+                total_snr=total_snr, margin=stress!="boundary", offgrid=stress=="offgrid" and value!=0)
 
 
 def calculate_metrics(instance, estimate, support):
@@ -164,18 +213,17 @@ def calculate_metrics(instance, estimate, support):
         phase = float(np.sqrt(np.mean(np.angle(recovered*np.conj(instance["amplitudes"]))**2)))
     predicted = np.asarray([diffraction_intensity(1+estimate, instance["probe"], r) for r in instance["scans"]])
     data_residual = float(np.linalg.norm(predicted-instance["measured"])/max(np.linalg.norm(instance["measured"]), 1e-300))
-    return {"support_exact": int(exact),
+    return {"support_exact": None if instance["offgrid"] else int(exact),
             "grid_support_exact":int(exact),
-            "support_metric":"exact_integer_support",
-            "defect_nrmse": nrmse,
+            "support_metric":"nearest_grid_bins_only" if instance["offgrid"] else "exact_integer_support",
+            "defect_nrmse": None if instance["offgrid"] else nrmse,
             "grid_proxy_nrmse": nrmse, "localization_rmse": loc, "amplitude_relative_error": amp,
             "phase_rmse_rad": phase, "relative_intensity_residual": data_residual,
             "estimated_support": ";".join(map(str,support)), "estimated_sparsity": len(support)}
 
 
-def recover(method, instance, seed, config):
-    if method not in METHODS:
-        raise ValueError(f"Unknown reconstruction method: {method}")
+def recover(method, instance, seed, config, beam_width=64, selection="residual"):
+    start = time.perf_counter()
     if method == "joint":
         solver = joint_solver(instance["n"], instance["gamma"], instance["scans"], instance["candidates"],
                               instance["upper"], instance["spacing"], instance["margin"])
@@ -186,12 +234,22 @@ def recover(method, instance, seed, config):
         # Sigma is a specified acquisition parameter, not estimated from truth.
         m = len(b)
         epsilon = instance["sigma"]/np.sqrt(2*instance["n"])*np.sqrt(m+2*np.sqrt(m*np.log(100))+2*np.log(100))
-        result = solver.solve(b)
+        result = solver.solve(b, noise_bound=epsilon if selection=="discrepancy" else None, selection=selection)
         return result.u, result.support, result.status, {"iterations": 1, "restarts": 1,
             "legal_support_count": result.candidate_count, "raw_lag_residual": result.residual,
             "setup_seconds": solver.precompute_seconds+solver.dictionary.build_seconds,
             "online_seconds": result.timings["total_online"]+extraction_seconds,
-            "noise_bound": epsilon, "selection": "residual"}
+            "noise_bound": epsilon, "selection": selection}
+    if method == "beam":
+        answer = recover_from_two_intensities(*instance["measured"], instance["probe"], instance["gamma"],
+                *instance["scans"], instance["upper"], max(abs(x-r) for x in instance["candidates"] for r in instance["scans"]),
+                solver="beam", beam_width=beam_width, row_scaling="noise")
+        support=answer.result.positions
+        feasible=all(p in instance["candidates"] for p in support) and all(
+            min(abs(p-q),instance["n"]-abs(p-q))>instance["spacing"] for p,q in itertools.combinations(support,2))
+        return answer.result.perturbation, support, "beam_heuristic", {
+            "iterations": 1, "restarts": 1, "beam_width":beam_width, "online_seconds":time.perf_counter()-start,
+            "admissible_for_joint_class":feasible,"comparison_scope":"beam_ablation_with_distinct_search_space"}
     from twoscan_ptycho.baselines import BaselineConfig, recover_baseline
     answer = recover_baseline(method, instance["measured"], instance["probe"], instance["scans"],
                               instance["candidates"], instance["upper"], instance["spacing"],
@@ -207,16 +265,15 @@ def perform_job(job):
     for method in job.get("methods", METHODS):
         config = job.get("baseline_configs",{}).get(method,{})
         start = time.perf_counter()
-        row = {key:job[key] for key in ("id","suite","trial","sparsity","snr","photons","stress","value","config_id") if key in job}
-        if job["suite"] == "mismatch":
-            row["suite"] = "separation" if job["stress"] == "cluster" else "background"
+        row = {key:job[key] for key in ("id","suite","trial","sparsity","snr","photons","stress","value","config_id","beam_width") if key in job}
+        row["suite"] = job.get("reported_suite", job["suite"])
         row.update(method=method, true_support=";".join(map(str,instance["positions"])),
                    effective_snr_db=instance["effective_snr"], total_snr_db=instance["total_snr"],
                    coefficient_min=float(np.min(np.abs(instance["amplitudes"]))),
                    n=instance["n"],gamma=instance["gamma"],candidate_sites=len(instance["candidates"]))
         try:
             estimate, support, status, diagnostics = recover(method,instance,stable_seed(job["namespace"],job["trial"],method),
-                    config)
+                    config,job.get("beam_width",64),job.get("selection","residual"))
             if not np.all(np.isfinite(estimate)):
                 raise FloatingPointError("Nonfinite estimate")
             row.update(calculate_metrics(instance,estimate,support))
@@ -226,7 +283,7 @@ def perform_job(job):
                        online_seconds=float(diagnostics.get("online_seconds",0)))
             row["algorithm_total_seconds"]=row["setup_seconds"]+row["online_seconds"]
         except Exception as error:
-            row.update(status=f"{type(error).__name__}: {error}",failed=1,support_exact=0,
+            row.update(status=f"{type(error).__name__}: {error}",failed=1,support_exact=None if instance["offgrid"] else 0,
                        defect_nrmse=None,grid_proxy_nrmse=None,localization_rmse=None,
                        amplitude_relative_error=None,phase_rmse_rad=None,relative_intensity_residual=None,
                        estimated_support="",estimated_sparsity=0,iterations=0,restarts=config.get("restarts",1))
@@ -244,7 +301,7 @@ def wilson(successes,total):
 
 
 def summarize(rows):
-    keys=("suite","sparsity","snr","photons","stress","value","method","config_id")
+    keys=("suite","sparsity","snr","photons","stress","value","method","config_id","beam_width")
     groups={}
     for row in rows:
         key=tuple(row.get(k) for k in keys)
@@ -264,9 +321,7 @@ def summarize(rows):
                       "algorithm_total_seconds","iterations","effective_snr_db","total_snr_db"):
             array=np.array([v[field] for v in values if v.get(field) is not None],float)
             if len(array):
-                item[field+"_mean"]=float(np.mean(array))
                 item[field+"_median"]=float(np.median(array))
-                item[field+"_q25_q75"]=[float(x) for x in np.quantile(array,[.25,.75])]
                 item[field+"_q10_q90"]=[float(x) for x in np.quantile(array,[.1,.9])]
                 item[field+"_available"]=len(array)
         result.append(item)
@@ -287,7 +342,7 @@ def execute(jobs,output,workers,resume=True,metadata=None):
         if not resume:
             raise RuntimeError("Existing run: use resume or a fresh output directory")
     else:
-        dump_json(manifest_path,{"run_hash":digest,"created_utc":datetime.now(timezone.utc).isoformat(),
+        dump_json(manifest_path,{"run_hash":digest,
                     "hardware":hardware(),"workers":workers,"expected_jobs":len(jobs),
                     "expected_method_trials":sum(len(j.get("methods",METHODS)) for j in jobs),
                     "timing_is_isolated":workers==1 and all(j["suite"]=="timing" for j in jobs),
@@ -314,7 +369,7 @@ def execute(jobs,output,workers,resume=True,metadata=None):
     fields.remove("diagnostics") if "diagnostics" in fields else None
     with (output/"trials.csv").open("w",newline="") as handle:
         writer=csv.DictWriter(handle,fieldnames=fields,extrasaction="ignore"); writer.writeheader(); writer.writerows(rows)
-    summary={"completed_utc":datetime.now(timezone.utc).isoformat(),"run_hash":digest,
+    summary={"run_hash":digest,
              "jobs_completed":len(jobs),"method_trials":len(rows),"failures":sum(r["failed"] for r in rows),
              "aggregate":summarize(rows)}
     dump_json(output/"summary.json",summary)
@@ -322,23 +377,41 @@ def execute(jobs,output,workers,resume=True,metadata=None):
 
 
 def formal_jobs(suite,trials,configs):
+    requested_suite = suite
+    if suite in ("model_stress", "separation", "background"):
+        suite = "mismatch"
     conditions=[]
     if suite=="gaussian":
         conditions=[dict(sparsity=n,snr=snr) for n in (1,2,3) for snr in (0,10,20,30,40,60,80,"inf")]
     elif suite in ("poisson","mixed"):
         conditions=[dict(sparsity=2,photons=p) for p in (1e5,1e6,1e7,1e8,1e9,1e10,1e11)]
-    elif suite=="separation":
-        conditions=[dict(sparsity=2,snr=60,stress="cluster",value=v) for v in (2,4,5,6,8)]
-    elif suite=="background":
-        conditions=[dict(sparsity=2,snr=60,stress="background",value=v) for v in (0,.001)]
+    elif suite=="mismatch":
+        axes={"background":(0,.001,.005,.01,.02),"probe":(0,.02,.05,.1),
+              "position":(0,.02,.05,.1,.25),"scale":(0,.001,.01,.05,.1),
+              "truncation":(0,1.5,2,3,4),"quantization":(0,8,12,16,20),
+              "cluster":(2,4,5,6,8),"boundary":(0,1,2,3,4,6),
+              "offgrid":(0,.05,.1,.25,.4),"sparsity":(1,2,3),"weak_defect":(1,.3,.1,.03,.01)}
+        conditions=[dict(sparsity=2,snr=60,stress=k,value=v) for k,values in axes.items() for v in values]
+    elif suite=="beam_ablation":
+        conditions=[dict(sparsity=2,snr=snr,beam_width=w,methods=("joint","beam"))
+                    for snr in (20,40,60,"inf") for w in (1,8,32,128,256)]
     elif suite=="timing":
         conditions=[dict(sparsity=n,snr=snr) for n in (1,2,3) for snr in (20,60,"inf")]
+    elif suite=="unknown_sparsity":
+        conditions=[dict(sparsity=2,snr=snr,methods=("joint",),selection="discrepancy")
+                    for snr in (20,40,60,80,"inf")]
     else:
         raise ValueError(suite)
-    # Keep the acquisition namespace and internal suite identity for exact pairing.
-    acquisition_suite = "mismatch" if suite in ("separation", "background") else suite
-    return [dict(suite=acquisition_suite,namespace=SEEDS["timing" if suite=="timing" else "formal"],trial=t,
+    if requested_suite == "separation":
+        conditions = [c for c in conditions if c.get("stress") == "cluster"]
+    elif requested_suite == "background":
+        conditions = [c for c in conditions if c.get("stress") == "background" and c.get("value") in (0, .001)]
+    jobs = [dict(suite=suite,namespace=SEEDS["timing" if suite=="timing" else "formal"],trial=t,
                  baseline_configs=configs,**c) for c in conditions for t in range(trials)]
+    if requested_suite in ("separation", "background"):
+        for job in jobs:
+            job["reported_suite"] = requested_suite
+    return jobs
 
 
 def tune(output,workers,trials):
@@ -367,7 +440,7 @@ def tune(output,workers,trials):
             scores.append({"config":config,"score_mean_log1p_nrmse":score,"runtime_median":float(np.median([r["wall_seconds"] for r in group]))})
         best=min(range(len(scores)),key=lambda i:(scores[i]["score_mean_log1p_nrmse"],scores[i]["runtime_median"]))
         candidates[method]={"selected":scores[best]["config"],"validation":scores}
-    frozen={"created_utc":datetime.now(timezone.utc).isoformat(),"seed":SEEDS["tuning"],
+    frozen={"seed":SEEDS["tuning"],
             "selection_criterion":"Minimum mean log(1+min(defect NRMSE,100)); numerical failures assigned log(101).",
             "baseline_configs":{m:c["selected"] for m,c in candidates.items()},"validation":candidates,
             "distribution_source_hashes":json.loads((Path(output)/"manifest.json").read_text())["source_hashes"]}
@@ -377,7 +450,7 @@ def tune(output,workers,trials):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("suite",choices=("tune","gaussian","poisson","mixed","separation","background","timing","smoke"))
+    parser.add_argument("suite",choices=("tune","gaussian","poisson","mixed","model_stress","mismatch","separation","background","beam_ablation","unknown_sparsity","timing","smoke"))
     parser.add_argument("--workers",type=int,default=6)
     parser.add_argument("--trials",type=int)
     parser.add_argument("--frozen",type=Path,default=ROOT/"results/baseline_tuning/frozen.json")
@@ -398,12 +471,12 @@ def main():
         parser.error("Frozen settings not found; supply --frozen from independent baseline tuning")
     frozen=json.loads(args.frozen.read_text())
     validate_frozen_sources(frozen)
-    defaults={"gaussian":200,"poisson":200,"mixed":200,"separation":100,"background":100,"timing":30}
+    defaults={"gaussian":200,"poisson":200,"mixed":200,"model_stress":100,"mismatch":100,"separation":100,"background":100,"beam_ablation":100,"unknown_sparsity":200,"timing":30}
     if args.suite=="timing" and args.workers!=1:
         parser.error("Timing must run alone with --workers 1")
     jobs=formal_jobs(args.suite,args.trials or defaults[args.suite],frozen["baseline_configs"])
     if args.suite=="timing":
-        # Explicit excluded warm-up; the first retained trial still records
+        # Explicit unreported warm-up, and the first retained trial still records
         # dictionary setup separately through diagnostics.
         warm=dict(jobs[0],trial=1000000,id="warmup")
         perform_job(warm)

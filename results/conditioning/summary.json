@@ -1,0 +1,1299 @@
+{
+  "settings": {
+    "n": 257,
+    "scans": [
+      0,
+      1
+    ],
+    "N": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "width_factors": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "base_gamma": "5/B^2",
+    "B": "max(10,ceil((N-1)*(2N+2)/2)+5)",
+    "support_pairs_per_point": 100,
+    "support_pairs_shared_across_widths": true,
+    "normalization": "raw dictionary without row or column normalization"
+  },
+  "aggregate": [
+    {
+      "N": 1,
+      "width_factor": 0.25,
+      "gamma": 0.0125,
+      "B": 10,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 0.0004984989800969518,
+        "median": 0.03903066656369049,
+        "mean": 0.050243875759661834,
+        "max": 0.3469322366249945
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 2.600994361241051,
+        "median": 76.83667973071225,
+        "mean": 183.6330925866822,
+        "max": 6734.149012578211
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 0.4151394106793211,
+        "median": 1.8855597415059653,
+        "mean": 1.9424848645236938,
+        "max": 3.8282827221834093
+      }
+    },
+    {
+      "N": 1,
+      "width_factor": 0.5,
+      "gamma": 0.025,
+      "B": 10,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 0.0015173596882727305,
+        "median": 0.045165145872175815,
+        "mean": 0.07052091399403373,
+        "max": 0.5226066606269559
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.4954617265264016,
+        "median": 45.42626766651511,
+        "mean": 81.23002203003912,
+        "max": 739.9690856111512
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 0.17477530257556914,
+        "median": 1.6573070555814067,
+        "mean": 1.6766827019305603,
+        "max": 2.869213576178356
+      }
+    },
+    {
+      "N": 1,
+      "width_factor": 1.0,
+      "gamma": 0.05,
+      "B": 10,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.887453379903925e-05,
+        "median": 0.01890700487363323,
+        "mean": 0.07377037769091188,
+        "max": 0.7101520867624326
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.0748750827660236,
+        "median": 50.91350180635337,
+        "mean": 606.2364833519683,
+        "max": 9408.827797719923
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 0.03135799539796236,
+        "median": 1.706832968631805,
+        "mean": 1.824203039308418,
+        "max": 3.973535520059285
+      }
+    },
+    {
+      "N": 1,
+      "width_factor": 2.0,
+      "gamma": 0.1,
+      "B": 10,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.513973155001396e-08,
+        "median": 0.0006259303644727482,
+        "mean": 0.07060332267789915,
+        "max": 0.8306730806273627
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.0018334473356603,
+        "median": 112.41513378359711,
+        "mean": 236707.4250692057,
+        "max": 7860266.034948892
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 0.0007955270049485177,
+        "median": 2.050565164125481,
+        "mean": 2.588854221216181,
+        "max": 6.8954372452194415
+      }
+    },
+    {
+      "N": 1,
+      "width_factor": 4.0,
+      "gamma": 0.2,
+      "B": 10,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 7.362648134484071e-16,
+        "median": 2.356182474533757e-06,
+        "mean": 0.06269224591192242,
+        "max": 0.8726124518721267
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.0000009712487505,
+        "median": 2233.784492566571,
+        "mean": 315447903111.3808,
+        "max": 28296984412527.445
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 4.21807768073306e-07,
+        "median": 3.346904851714098,
+        "mean": 4.45383891536601,
+        "max": 13.451740155567368
+      }
+    },
+    {
+      "N": 2,
+      "width_factor": 0.25,
+      "gamma": 0.0125,
+      "B": 10,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 0.00011627382166163573,
+        "median": 0.0017314703155326783,
+        "mean": 0.0027395678919645535,
+        "max": 0.01505919524629336
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 223.3086877659167,
+        "median": 3352.551050674094,
+        "mean": 5454.118213051956,
+        "max": 53724.8541532314
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 2.348905619513005,
+        "median": 3.5253737780296213,
+        "mean": 3.516929399793435,
+        "max": 4.730175245186603
+      }
+    },
+    {
+      "N": 2,
+      "width_factor": 0.5,
+      "gamma": 0.025,
+      "B": 10,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 0.000556768152653276,
+        "median": 0.00496063529123868,
+        "mean": 0.0064601267761732065,
+        "max": 0.028711044831849906
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 113.84369034161439,
+        "median": 949.3358044350719,
+        "mean": 1602.7173898633887,
+        "max": 9836.744474393563
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 2.056308965335388,
+        "median": 2.9772954735015533,
+        "mean": 2.9680206621177843,
+        "max": 3.9928513900225333
+      }
+    },
+    {
+      "N": 2,
+      "width_factor": 1.0,
+      "gamma": 0.05,
+      "B": 10,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 4.193699542171234e-05,
+        "median": 0.0020001844266294136,
+        "mean": 0.006249590118475105,
+        "max": 0.04629149252015219
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 41.68785294712334,
+        "median": 1265.61039835448,
+        "mean": 6668.744271104192,
+        "max": 104137.11221619815
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.6200095281982958,
+        "median": 3.1013230353323635,
+        "mean": 3.1330275204607294,
+        "max": 5.017605530263439
+      }
+    },
+    {
+      "N": 2,
+      "width_factor": 2.0,
+      "gamma": 0.1,
+      "B": 10,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 7.966980274210089e-08,
+        "median": 1.847102167009422e-05,
+        "mean": 0.0030056860262339968,
+        "max": 0.09424470362454768
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 20.57368563802999,
+        "median": 39962.609293838905,
+        "mean": 2082322.0063075682,
+        "max": 41398463.57620931
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.3133120996129102,
+        "median": 4.595805713966137,
+        "mean": 4.567884212618415,
+        "max": 7.616984223421477
+      }
+    },
+    {
+      "N": 2,
+      "width_factor": 4.0,
+      "gamma": 0.2,
+      "B": 10,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.629978696485448e-14,
+        "median": 5.842868951394595e-10,
+        "mean": 0.001112389801017344,
+        "max": 0.0834447318953863
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 10.33289836410473,
+        "median": 176192834.0972006,
+        "mean": 1142747885643.9832,
+        "max": 31657253862361.68
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.0142221576263764,
+        "median": 8.240144843506805,
+        "mean": 7.994459271323667,
+        "max": 13.500473238885485
+      }
+    },
+    {
+      "N": 3,
+      "width_factor": 0.25,
+      "gamma": 0.0073964497041420114,
+      "B": 13,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 3.761833426627265e-06,
+        "median": 2.396104556568955e-05,
+        "mean": 8.570699187364054e-05,
+        "max": 0.0028890816137999886
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 2521.3031262325903,
+        "median": 381327.3648691089,
+        "mean": 434691.3779919754,
+        "max": 2314129.914896004
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 3.4016250623111848,
+        "median": 5.581297361772489,
+        "mean": 5.50086244633788,
+        "max": 6.364387736525273
+      }
+    },
+    {
+      "N": 3,
+      "width_factor": 0.5,
+      "gamma": 0.014792899408284023,
+      "B": 13,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 2.413561370297767e-05,
+        "median": 0.00011579401539543784,
+        "mean": 0.0004521641772340738,
+        "max": 0.010423293425314863
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 491.4642375157522,
+        "median": 57451.581828950555,
+        "mean": 75606.31433972134,
+        "max": 282868.54554518935
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 2.6914919209176063,
+        "median": 4.759300813617905,
+        "mean": 4.695642098949509,
+        "max": 5.451584657405247
+      }
+    },
+    {
+      "N": 3,
+      "width_factor": 1.0,
+      "gamma": 0.029585798816568046,
+      "B": 13,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 8.893219610308652e-06,
+        "median": 0.00011488006482048337,
+        "mean": 0.0005202595496124514,
+        "max": 0.02086816165130284
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 154.1263686513586,
+        "median": 45850.34294174221,
+        "mean": 79488.79475491734,
+        "max": 668425.3483130878
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 2.187876946181848,
+        "median": 4.661316072093532,
+        "mean": 4.598110243445483,
+        "max": 5.825052911035477
+      }
+    },
+    {
+      "N": 3,
+      "width_factor": 2.0,
+      "gamma": 0.05917159763313609,
+      "B": 13,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 3.920546290801705e-08,
+        "median": 2.2564406819804125e-06,
+        "mean": 3.813408747732257e-05,
+        "max": 0.0017247865416217148
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1724.7281214389018,
+        "median": 1866956.0127179902,
+        "mean": 6735731.45944737,
+        "max": 94011024.4506534
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 3.2367206445311574,
+        "median": 6.270752888241542,
+        "mean": 6.183546057833926,
+        "max": 7.973178785273565
+      }
+    },
+    {
+      "N": 3,
+      "width_factor": 4.0,
+      "gamma": 0.11834319526627218,
+      "B": 13,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.1228669448171571e-13,
+        "median": 7.106906147635766e-11,
+        "mean": 2.5792375571724573e-07,
+        "max": 2.4109168630288243e-05
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 136138.0996077764,
+        "median": 32374324543.22652,
+        "mean": 1093558668861.8052,
+        "max": 15355164757346.484
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.133979683865049,
+        "median": 10.51019224680337,
+        "mean": 10.490718647355656,
+        "max": 13.18625448068287
+      }
+    },
+    {
+      "N": 4,
+      "width_factor": 0.25,
+      "gamma": 0.003125,
+      "B": 20,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 3.1588543581883724e-09,
+        "median": 3.145991816593019e-08,
+        "mean": 7.295374766130469e-07,
+        "max": 2.1146142942341463e-05
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 448923.7025896357,
+        "median": 377516073.72216713,
+        "mean": 503832773.5468712,
+        "max": 4339251904.516508
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.652172536192761,
+        "median": 8.576925366563007,
+        "mean": 8.416284371981632,
+        "max": 9.637414862750997
+      }
+    },
+    {
+      "N": 4,
+      "width_factor": 0.5,
+      "gamma": 0.00625,
+      "B": 20,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 6.58419290291431e-09,
+        "median": 6.643315771861046e-07,
+        "mean": 5.269124070096083e-06,
+        "max": 0.00016858096541903775
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 45461.1682959064,
+        "median": 13709310.013069924,
+        "mean": 55688299.19101897,
+        "max": 1470629802.834884
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 4.657640592364442,
+        "median": 7.136968447935962,
+        "mean": 7.074221392250407,
+        "max": 9.16750336285671
+      }
+    },
+    {
+      "N": 4,
+      "width_factor": 1.0,
+      "gamma": 0.0125,
+      "B": 20,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.487396667326083e-07,
+        "median": 2.6296222126269788e-06,
+        "mean": 1.0574052852230556e-05,
+        "max": 0.00022230384741483262
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 28342.93275163131,
+        "median": 2790629.8560965564,
+        "mean": 6076734.61412017,
+        "max": 55686408.085518286
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 4.452444786347287,
+        "median": 6.445612351297695,
+        "mean": 6.400690140867595,
+        "max": 7.745749205698196
+      }
+    },
+    {
+      "N": 4,
+      "width_factor": 2.0,
+      "gamma": 0.025,
+      "B": 20,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.8031413117610172e-09,
+        "median": 8.026465426030974e-08,
+        "mean": 5.869839449714414e-07,
+        "max": 2.9049494171264435e-05
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 177719.78926950245,
+        "median": 68784423.74075095,
+        "mean": 250117270.7643042,
+        "max": 3673376595.151268
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.249735789606271,
+        "median": 7.8374484298235245,
+        "mean": 7.807315120926478,
+        "max": 9.56506545456693
+      }
+    },
+    {
+      "N": 4,
+      "width_factor": 4.0,
+      "gamma": 0.05,
+      "B": 20,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.033732812963148e-15,
+        "median": 6.444120077489187e-13,
+        "mean": 1.3953284442074497e-10,
+        "max": 7.396209703059429e-09
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 467180280.64982206,
+        "median": 3064524950038.282,
+        "mean": 48225708808408.4,
+        "max": 993304947865086.1
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 8.669484503227402,
+        "median": 12.486222307906129,
+        "mean": 12.482899261267073,
+        "max": 14.997082598791122
+      }
+    },
+    {
+      "N": 5,
+      "width_factor": 0.25,
+      "gamma": 0.0014863258026159335,
+      "B": 29,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.1559952444819175e-12,
+        "median": 8.971598212373452e-12,
+        "mean": 4.5985667591562406e-08,
+        "max": 3.566734084682177e-06
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 3660440.446134388,
+        "median": 1763499133355.9268,
+        "mean": 2352320624044.57,
+        "max": 14666928373592.93
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 6.5635333454537275,
+        "median": 12.246367567725557,
+        "mean": 11.868495722325957,
+        "max": 13.166339171097883
+      }
+    },
+    {
+      "N": 5,
+      "width_factor": 0.5,
+      "gamma": 0.002972651605231867,
+      "B": 29,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.8468155734672575e-10,
+        "median": 1.1417099182937926e-09,
+        "mean": 2.3313193125025502e-07,
+        "max": 1.4838533083683603e-05
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 693262.4177033964,
+        "median": 11657788608.319172,
+        "mean": 12819585292.337818,
+        "max": 57926702350.960945
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.840897657394167,
+        "median": 10.066605354380128,
+        "mean": 9.793516346145084,
+        "max": 10.762878805703531
+      }
+    },
+    {
+      "N": 5,
+      "width_factor": 1.0,
+      "gamma": 0.005945303210463734,
+      "B": 29,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.155662999097641e-10,
+        "median": 7.971104973844939e-09,
+        "mean": 7.789451511869222e-07,
+        "max": 4.472712727561106e-05
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 182309.63337096164,
+        "median": 1292074533.699885,
+        "mean": 1955878223.586593,
+        "max": 20708711538.527145
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.260809617691254,
+        "median": 9.111260111889957,
+        "mean": 8.846200619805622,
+        "max": 10.316153078656116
+      }
+    },
+    {
+      "N": 5,
+      "width_factor": 2.0,
+      "gamma": 0.011890606420927468,
+      "B": 29,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 6.950009690156581e-11,
+        "median": 7.58691994634556e-10,
+        "mean": 1.6582821032625667e-08,
+        "max": 6.541801624517049e-07
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 8932219.268138407,
+        "median": 10645008550.307682,
+        "mean": 17944989309.49285,
+        "max": 111600117906.9132
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 6.950959375592161,
+        "median": 10.027131804054843,
+        "mean": 9.84636854315345,
+        "max": 11.047664653439327
+      }
+    },
+    {
+      "N": 5,
+      "width_factor": 4.0,
+      "gamma": 0.023781212841854936,
+      "B": 29,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 3.602569045466431e-16,
+        "median": 9.29007610974413e-15,
+        "mean": 3.7152379950269723e-13,
+        "max": 1.3050281697471943e-11
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 458326493926.6236,
+        "median": 565291778884033.2,
+        "mean": 1909455331136507.8,
+        "max": 1.5521540781577388e+16
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 11.661174962707516,
+        "median": 14.752229945712012,
+        "mean": 14.579564135855021,
+        "max": 16.1909348303064
+      }
+    },
+    {
+      "N": 6,
+      "width_factor": 0.25,
+      "gamma": 0.00078125,
+      "B": 40,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.9885704834813565e-16,
+        "median": 7.205129213403713e-16,
+        "mean": 1.8220069375451839e-13,
+        "max": 3.4000614672769406e-12
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 4327959582508.245,
+        "median": 2.6507275516482944e+16,
+        "mean": 2.7462145270389216e+16,
+        "max": 1.0176168418331314e+17
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 12.63628319637402,
+        "median": 16.423347319182604,
+        "mean": 15.83355848100447,
+        "max": 17.007584286054602
+      }
+    },
+    {
+      "N": 6,
+      "width_factor": 0.5,
+      "gamma": 0.0015625,
+      "B": 40,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.2974360638717463e-13,
+        "median": 5.190713394906743e-13,
+        "mean": 2.35313231504345e-11,
+        "max": 2.502147775903856e-10
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 55588246767.27525,
+        "median": 29768705614678.71,
+        "mean": 31416450972903.01,
+        "max": 126625266147266.84
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 10.744982976767375,
+        "median": 13.473759214477525,
+        "mean": 13.030015267158182,
+        "max": 14.102520371190986
+      }
+    },
+    {
+      "N": 6,
+      "width_factor": 1.0,
+      "gamma": 0.003125,
+      "B": 40,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 2.1833597471530333e-12,
+        "median": 2.425797392078498e-11,
+        "mean": 2.613050699263608e-10,
+        "max": 3.3937826440873807e-09
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 2509405338.878065,
+        "median": 511184889356.74084,
+        "mean": 866192644695.6758,
+        "max": 5922563941623.917
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 9.399570817639793,
+        "median": 11.708509144499395,
+        "mean": 11.48858864602777,
+        "max": 12.772509758182396
+      }
+    },
+    {
+      "N": 6,
+      "width_factor": 2.0,
+      "gamma": 0.00625,
+      "B": 40,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.154943574197631e-13,
+        "median": 6.9073628781666306e-12,
+        "mean": 3.937690147557981e-11,
+        "max": 6.954354332812143e-10
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 12989416935.43397,
+        "median": 1352808563750.2385,
+        "mean": 2283004698469.426,
+        "max": 18335855725681.383
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 10.11358965704633,
+        "median": 12.13119540220398,
+        "mean": 11.997665625583448,
+        "max": 13.263301183086872
+      }
+    },
+    {
+      "N": 6,
+      "width_factor": 4.0,
+      "gamma": 0.0125,
+      "B": 40,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 6.3316444651427235e-18,
+        "median": 1.5727512638940622e-16,
+        "mean": 2.536909137286349e-15,
+        "max": 1.616447932699505e-13
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 37110246661219.555,
+        "median": 3.180059836564931e+16,
+        "mean": 8.574671082453957e+16,
+        "max": 1.0641264445398597e+18
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 13.569493840989864,
+        "median": 16.50242724923366,
+        "mean": 16.45338227577353,
+        "max": 18.026993235950776
+      }
+    },
+    {
+      "N": 7,
+      "width_factor": 0.25,
+      "gamma": 0.00044499822000712,
+      "B": 53,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.0005010368801724e-16,
+        "median": 1.8909695783990188e-16,
+        "mean": 2.0121060225943044e-16,
+        "max": 4.4228554799798595e-16
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 4.434713198225223e+16,
+        "median": 1.2024174078512285e+17,
+        "mean": 1.219331501054841e+17,
+        "max": 2.2599900528888797e+17
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 16.646865538382908,
+        "median": 17.080055253459555,
+        "mean": 17.066087960350497,
+        "max": 17.354106527649623
+      }
+    },
+    {
+      "N": 7,
+      "width_factor": 0.5,
+      "gamma": 0.00088999644001424,
+      "B": 53,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.583610140532071e-17,
+        "median": 2.173459486064614e-16,
+        "mean": 1.4111397351227611e-14,
+        "max": 2.5017695727522273e-13
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 70974270041971.8,
+        "median": 8.686882812164526e+16,
+        "mean": 8.686073497982195e+16,
+        "max": 3.2488251427059264e+17
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 13.851100934577621,
+        "median": 16.938841284150914,
+        "mean": 16.470444499115693,
+        "max": 17.511726337506417
+      }
+    },
+    {
+      "N": 7,
+      "width_factor": 1.0,
+      "gamma": 0.00177999288002848,
+      "B": 53,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 8.99257652672892e-16,
+        "median": 2.0120592586911865e-14,
+        "mean": 1.846146029156649e-12,
+        "max": 7.105218752416676e-11
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 175913132962.89383,
+        "median": 723291865442350.9,
+        "mean": 1241919224769260.2,
+        "max": 1.742509616343984e+16
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 11.245298263336982,
+        "median": 14.859270725146065,
+        "mean": 14.463596855584075,
+        "max": 16.24117518350669
+      }
+    },
+    {
+      "N": 7,
+      "width_factor": 2.0,
+      "gamma": 0.00355998576005696,
+      "B": 53,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.3915420709320715e-15,
+        "median": 1.8935112553580574e-14,
+        "mean": 5.091660796675822e-13,
+        "max": 1.4689949249648246e-11
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 812881849674.199,
+        "median": 623321755135493.6,
+        "mean": 920385669902355.4,
+        "max": 8994309491380433.0
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 11.910027426573912,
+        "median": 14.794559027002386,
+        "mean": 14.46867380140402,
+        "max": 15.953967827426517
+      }
+    },
+    {
+      "N": 7,
+      "width_factor": 4.0,
+      "gamma": 0.00711997152011392,
+      "B": 53,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 7.457138646030544e-20,
+        "median": 1.1202096051214472e-18,
+        "mean": 1.0987258863398068e-17,
+        "max": 1.6759503970728023e-16
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 6.148744977193733e+16,
+        "median": 8.399881445058102e+18,
+        "mean": 1.314218616994985e+19,
+        "max": 1.1190943866524577e+20
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 16.788786480799683,
+        "median": 18.92427167976433,
+        "mean": 18.70115805827887,
+        "max": 20.048866717335876
+      }
+    },
+    {
+      "N": 8,
+      "width_factor": 0.25,
+      "gamma": 0.0002703287197231834,
+      "B": 68,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 6.254088317501422e-17,
+        "median": 1.255665418126688e-16,
+        "mean": 1.2821568267290182e-16,
+        "max": 2.600035572277299e-16
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 9.434542709684936e+16,
+        "median": 2.053878743715708e+17,
+        "mean": 2.1857849807932966e+17,
+        "max": 4.1099850643155456e+17
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 16.974720854848233,
+        "median": 17.312566420883144,
+        "mean": 17.3213718514729,
+        "max": 17.613840243652923
+      }
+    },
+    {
+      "N": 8,
+      "width_factor": 0.5,
+      "gamma": 0.0005406574394463668,
+      "B": 68,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.9978626662257634e-17,
+        "median": 6.668433246304876e-17,
+        "mean": 1.1193876565003426e-16,
+        "max": 3.3436869711051163e-15
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 6176921844490813.0,
+        "median": 3.0380274772409146e+17,
+        "mean": 3.7567649663368154e+17,
+        "max": 1.0677676479493092e+18
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 15.790772106320517,
+        "median": 17.482186192254183,
+        "mean": 17.487365100099154,
+        "max": 18.028476758130857
+      }
+    },
+    {
+      "N": 8,
+      "width_factor": 1.0,
+      "gamma": 0.0010813148788927337,
+      "B": 68,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.1173409232297835e-17,
+        "median": 6.67026449004478e-17,
+        "mean": 3.2700843522397486e-15,
+        "max": 2.7061131311507053e-13
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 62297803648458.51,
+        "median": 2.5454952746697715e+17,
+        "mean": 3.475944858366883e+17,
+        "max": 1.594016017389854e+18
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 13.794472735581014,
+        "median": 17.405721998968488,
+        "mean": 17.151497049320685,
+        "max": 18.2024926810683
+      }
+    },
+    {
+      "N": 8,
+      "width_factor": 2.0,
+      "gamma": 0.0021626297577854673,
+      "B": 68,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 5.5051651037147194e-18,
+        "median": 9.776246202561706e-17,
+        "mean": 2.990575045031686e-15,
+        "max": 6.302317888874103e-14
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 204610259816626.25,
+        "median": 1.3800223428437448e+17,
+        "mean": 3.667739523877494e+17,
+        "max": 2.584593943334542e+18
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 14.310927406844522,
+        "median": 17.139874453476203,
+        "mean": 16.928819052536042,
+        "max": 18.412392322276713
+      }
+    },
+    {
+      "N": 8,
+      "width_factor": 4.0,
+      "gamma": 0.004325259515570935,
+      "B": 68,
+      "trials": 100,
+      "minimum_gain": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.1649452184685753e-23,
+        "median": 2.53070562202799e-20,
+        "mean": 2.744793730101937e-19,
+        "max": 4.831776632234699e-18
+      },
+      "condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 1.7085031940328722e+18,
+        "median": 3.639820198638303e+20,
+        "mean": 8.019839414151247e+21,
+        "max": 6.961844145730614e+23
+      },
+      "log10_condition": {
+        "count": 100,
+        "nonfinite_count": 0,
+        "min": 18.232615795045554,
+        "median": 20.560985935811185,
+        "mean": 20.501276840453684,
+        "max": 23.842724296539934
+      }
+    }
+  ],
+  "exact_N2_beta": {
+    "N": 2,
+    "n": 257,
+    "K": 21,
+    "gamma": 0.05,
+    "scans": [
+      0,
+      1
+    ],
+    "legal_support_count_including_empty": 158,
+    "support_pairs_including_empty_pair": 12561,
+    "distinct_nonempty_unions": 5894,
+    "beta_numerical_complete_enumeration": 6.6028030451718355e-06,
+    "minimizing_union": [
+      -10,
+      -9,
+      -5,
+      -4
+    ],
+    "minimizing_union_condition": 170293.0486420577,
+    "normalization": "Original raw-lag operator; physical Re/Im coefficient norm; no column normalization.",
+    "qualification": "Every admissible union is enumerated, but its singular values are ordinary floating-point evaluations, not validated interval lower bounds."
+  },
+  "qualification": "Random-pair minimum gains are sampled values, not uniform lower bounds. Only the separate N2 calculation enumerates every legal union, and even it uses unvalidated floating-point SVD.",
+  "suite": "conditioning",
+  "rows": 4000
+}

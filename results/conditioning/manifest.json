@@ -1,0 +1,89 @@
+{
+  "suite": "conditioning",
+  "seed": 20260920,
+  "recorded_sources": {
+    "experiments/run_auxiliary.py": "e73e7b70f5764085e8aae42a4a533f6fa413b83b980260434762f1b722bffe69",
+    "src/twoscan_ptycho/reconstruction.py": "61db4a257c6143c2859ace319c672ff1117e1d4b9b691b16d6d1a6d6cbc1a882",
+    "src/twoscan_ptycho/core.py": "17b00679c7a2917d6b598589ba748768b2a31a48d047a55a926b5174a85701e6",
+    "src/twoscan_ptycho/case2d.py": "c89efce0adeeffb05561a1c1022d29804ce609b437e1a5a67d821c1be6c9e6a2"
+  },
+  "machine": {
+    "cpu": "Apple M4",
+    "logical_cpu_count": 10,
+    "platform": "macOS-15.5-arm64-arm-64bit",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "blas_thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "settings": {
+    "n": 257,
+    "scans": [
+      0,
+      1
+    ],
+    "N": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "width_factors": [
+      0.25,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "base_gamma": "5/B^2",
+    "B": "max(10,ceil((N-1)*(2N+2)/2)+5)",
+    "support_pairs_per_point": 100,
+    "support_pairs_shared_across_widths": true,
+    "normalization": "raw dictionary without row or column normalization"
+  },
+  "smoke": false,
+  "runtime_interpretation": "Diagnostic wall times from this suite are not controlled serial benchmark runtimes.",
+  "recorded_source_file_sha256": {
+    "manifest.json": "05d12c361a740afa11602d1be8d2c1761252fbe1c915ffac29c6696fda7658c4",
+    "summary.json": "03539073edb814f4c6bb76095e343c4482a6f3698d49dcefeb0a5a8c8ebf3f7f",
+    "trials.csv": "6eebbb163a55d75b6bea4e1f10c4f5f6d9da1c7fa75421eae6b806a808dd99d3",
+    "beta_N2_all_support_unions.npz": "be4932e927b266dbb690662c9c5a75814817cc5b98462dd5fb3b573bf0ee4ebc",
+    "raw_dictionaries_and_singular_values.npz": "5250fe4cba625c7f5a30dc44ba677f6534ae62b66aab5684138d8ebd0f891513"
+  },
+  "source_hash_interpretation": "recorded_sources and recorded_source_file_sha256 describe the original acquisition records under neutral component names. These hashes are not claims that the distributed source bytes generated the recorded trials. distribution_source_hashes authenticates the distributed implementation. Numerical cells, seeds, failed trials, and numeric arrays retain their recorded values; private calendar and local-machine metadata are omitted.",
+  "distribution_source_hashes": {
+    "src/twoscan_ptycho/__init__.py": "fa16a13d3fe6ed69cab3b8c78f8fe5629991b7eaad2e1f340a15293478fb78e1",
+    "src/twoscan_ptycho/baselines.py": "ac10035e2c10cc387e7b4d9a2a50f71872e36a3353cf78351fdc3b83de89039d",
+    "src/twoscan_ptycho/beam.py": "9ec2f05a5451b592de97fd6b1e8e8fc3d96d0046bfe23f2e3800b22f3b98f2c5",
+    "src/twoscan_ptycho/case2d.py": "4ec360c338a6f940133eb81a87a1de7b2dc878ffe0ab893e2d141f489315ad91",
+    "src/twoscan_ptycho/core.py": "fc92546fbbe9df15bea3fa027c83c10c912d0d87ce4116d320bab628e13d114d",
+    "src/twoscan_ptycho/reconstruction.py": "fb5990204dd2b04d632af18db4a43fe14ed44d066c77cbf6213b9a883682050e",
+    "experiments/__init__.py": "ce2aeda1ea5e7ee0e4991b8db0220667ababe9c6090dc811455407681edd0a4f",
+    "experiments/_shared.py": "5c32c2131cfa9528aa5395102cd50cfd6552c5c1440aca18b66f72a58a2c2630",
+    "experiments/check_stability.py": "9081a54bdd925e2c0a12bb5dfe33c19c0953ac2187c2eee620f329236975d618",
+    "experiments/plot_figures.py": "9fcd64b8587f91938a271fd26cfa917472dc4286ce09e084c500af8a88741db0",
+    "experiments/run_calibration.py": "210bdefa8f2a9dfe0f01429b8ed50378618b1a932e2855e47f0b09a21d859b40",
+    "experiments/run_case2d.py": "cec6c910957249c4482848d054db98802904dc703e22c378d8ac5304234c0e57",
+    "experiments/run_conditioning.py": "61b20e8cb966a8b6be86c67001415ae2217bb4bf6c9bff02c4a8068dd6361f74",
+    "experiments/run_experiments.py": "d6ae0d088171b8f1e5e37255c4a0991650642cca46fbf76c383aef2cba90715c",
+    "experiments/run_timing_80db.py": "c1589259c6c1bc797cb8fc9319c00d3216b0d8f611121d229451e43fa28f6159",
+    "experiments/run_timing_setup.py": "42c0603fd07cc994934bcc176d14582c23c85062dcfe2752b78972bb9a7fcc95",
+    "experiments/run_validation.py": "745f44834d677c0eb1830131700c2736aa48e34c4d51747c5a5a2afcc7ff3ecd",
+    "experiments/verify_results.py": "62e7342015220a950d7ff84fd172031e7fef8d1ae302a54c4b6a54df1d85565b"
+  },
+  "rows": 4000,
+  "data_sha256": {
+    "beta_N2_all_support_unions.npz": "be4932e927b266dbb690662c9c5a75814817cc5b98462dd5fb3b573bf0ee4ebc",
+    "raw_dictionaries_and_singular_values.npz": "5250fe4cba625c7f5a30dc44ba677f6534ae62b66aab5684138d8ebd0f891513",
+    "summary.json": "2a23d0c9dcbf2cbc8b81d54cbe7cec91093a927c03e612cc609c5251150930ec",
+    "trials.csv": "83ed2b791f1a839754058689b3066bc83e76542e3abf5bef1690a53da9b72701"
+  }
+}

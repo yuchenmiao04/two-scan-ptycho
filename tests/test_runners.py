@@ -23,18 +23,18 @@ class RunnerTests(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         return result
 
-    def test_validation_has_two_methods_and_preserves_seed_formula(self):
+    def test_validation_retains_three_methods_and_preserves_seed_formula(self):
         with tempfile.TemporaryDirectory() as folder:
             output = Path(folder) / "validation"
             self.run_cli("run_validation", output, "--trials", "1")
             with (output / "trials.csv").open(newline="") as handle:
                 rows = list(csv.DictReader(handle))
-            self.assertEqual(len(rows), 6)
-            self.assertEqual({row["method"] for row in rows}, {"joint_global", "spectral_algebraic"})
+            self.assertEqual(len(rows), 9)
+            self.assertEqual({row["method"] for row in rows}, {"joint_global", "spectral_algebraic", "quarter_pixel_single_global"})
             for row in rows:
                 self.assertEqual(int(row["seed"]), 20260920 + 10_000_019 + int(row["N"]) * 100_003)
             with np.load(output / "raw_data.npz") as archive:
-                self.assertEqual(len(archive.files), 9)
+                self.assertEqual(len(archive.files), 12)
                 self.assertEqual(archive["N3_clean_intensities"].shape, (1, 2, 257))
 
     def test_case_smoke_uses_full_budget_indices_and_paired_measurements(self):

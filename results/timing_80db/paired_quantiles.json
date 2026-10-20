@@ -1,0 +1,77 @@
+{
+  "scope": "N=2, 80-dB target defect-intensity SNR, serial Apple M4",
+  "methods": [
+    "joint",
+    "full_linear"
+  ],
+  "trials_per_method": 30,
+  "source_rows": "trials.csv",
+  "units": "milliseconds",
+  "online_ms": {
+    "joint": {
+      "count": 30,
+      "median": 0.1971459132619202,
+      "q25_q75": [
+        0.18548878142610192,
+        0.23885371047072113
+      ],
+      "q10_q90": [
+        0.18194998847320676,
+        0.34193728351965547
+      ]
+    },
+    "full_linear": {
+      "count": 30,
+      "median": 15.258395462296903,
+      "q25_q75": [
+        15.115718997549266,
+        15.508854266954586
+      ],
+      "q10_q90": [
+        14.950779150240123,
+        16.090392228215933
+      ]
+    }
+  },
+  "full_linear_setup_plus_online_ms": {
+    "count": 30,
+    "median": 22.416083491407335,
+    "q25_q75": [
+      22.144604532513767,
+      22.60669830138795
+    ],
+    "q10_q90": [
+      22.06183747621253,
+      23.634366772603247
+    ]
+  },
+  "full_linear_setup_ms": {
+    "count": 30,
+    "median": 7.095521024893969,
+    "q25_q75": [
+      7.043052231892943,
+      7.224604807561263
+    ],
+    "q10_q90": [
+      6.962108355946839,
+      7.694908324629072
+    ]
+  },
+  "paired_online_speedup": {
+    "count": 30,
+    "median": 77.69849706693273,
+    "q25_q75": [
+      64.83291416095457,
+      82.18950216260063
+    ],
+    "q10_q90": [
+      44.42939956049441,
+      84.39484950532194
+    ]
+  },
+  "support_successes": {
+    "joint": 30,
+    "full_linear": 30
+  },
+  "note": "The joint setup_seconds in the online runner is a cached solver attribute, not a fresh per-trial setup measurement. The separate unisolated setup run is not distributed as a benchmark."
+}
